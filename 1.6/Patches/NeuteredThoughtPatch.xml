@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/HediffDefs/ThoughtDef[defName="SEX_Neutered"]/nullifyingPrecepts</xpath>
+		<value>
+				<li>NikolaisIdeology_Neutors_Elevated</li>
+				<li>NikolaisIdeology_Neutors_Sacred</li>
+		</value>
+	</Operation>
+
+
+</Patch>

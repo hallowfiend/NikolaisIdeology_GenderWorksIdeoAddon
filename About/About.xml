@@ -1,0 +1,48 @@
+<ModMetaData>
+	<name>Gender Works - Ideology Addon</name>
+	<author>hallowlock</author>
+    <packageId>hallowlock.GenderWorks-IdeologyAddon</packageId>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<description>
+		An addon for Intimacy: Gender Works that adds ideoligious precepts and memes related to reproductive classes:
+		- 2 new memes: Aphroditic and Chastity, both adding one new role and one new ritual each
+		- New precepts: Aphrodors, Neutors, Intimacy and Beauty
+		- Compatibility with vanilla memes, Alpha Memes and VIE Memes and Structures
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>LovelyDovey.Sex.WithEuterpe</packageId>
+			<displayName>Intimacy - A Lovin' Expansion</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3498422643</steamWorkshopUrl>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3498422643</downloadUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+			<packageId>LovelyDovey.Sex.WithRosaline</packageId>
+			<displayName>Intimacy - Gender Works</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3534254491</steamWorkshopUrl>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3534254491</downloadUrl>
+		</li>
+	</modDependencies>
+<loadAfter>
+	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	<li>LovelyDovey.Sex.WithEuterpe</li>
+	<li>LovelyDovey.Sex.WithRosaline</li>
+	<li>Ludeon.RimWorld.Ideology</li>
+	<li>VanillaExpanded.VMemesE</li>
+	<li>Sarg.AlphaMemes</li>
+</loadAfter>
+		<supportedVersions>
+		<li>1.6</li>
+		</supportedVersions>
+<packageId>NikolaisIdeology.GenderWorks</packageId>
+</ModMetaData>

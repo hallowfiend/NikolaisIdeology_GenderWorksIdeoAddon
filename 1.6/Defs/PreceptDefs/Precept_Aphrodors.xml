@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>NikolaisIdeology_Aphrodors</defName>
+		<label>aphrodors</label>
+		<iconPath>UI/Issues/Aphrodors</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>NikolaisIdeology_Aphrodors_Reviled</defName>
+		<issue>NikolaisIdeology_Aphrodors</issue>
+		<label>reviled</label>
+		<description>Our natural sexual biology ought to be cared for, which those so-called "aphrodors" are a negation of.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This precept only counts aphrodor colonists, not slaves or prisoners.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Aphrodors_Reviled_Opinion_Aphrodor</thought>
+				<description>Aphrodor</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Aphrodor_ReviledAphrodor</thought>
+				<description>Aphrodor self hatred</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AphrodorColonist_Reviled</thought>
+				<description>Aphrodor in colony</description>
+			</li>
+		</comps>
+		<statFactors>
+			<medicalTendQuality>1.10</medicalTendQuality>
+		</statFactors>
+		<conflictingMemes>
+			<li>Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
+		</conflictingMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>NikolaisIdeology_Aphrodors_Elevated</defName>
+		<issue>NikolaisIdeology_Aphrodors</issue>
+		<label>elevated</label>
+		<description>Those of a liminal reproductive nature ought to be respected.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<selectionWeight>0</selectionWeight>
+		<associatedMemes>
+			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Aphrodors_Elevated_Opinion_Aphrodor</thought>
+				<description>Aphrodor</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Aphrodor_ElevatedAphrodor</thought>
+				<description>Elevated aphrodor</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>NikolaisIdeology_Aphrodors_Sacred</defName>
+		<issue>NikolaisIdeology_Aphrodors</issue>
+		<label>sacred</label>
+		<description>To be able to sire and to bear: that is a holy status.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Aphrodors will be happier. Followers will be happy if the moral guide is an aphrodor, and unhappy if they aren't.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<selectionWeight>1</selectionWeight>
+		<associatedMemes>
+			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Aphrodors_Sacred_Opinion_Aphrodor</thought>
+				<description>Aphrodor</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Aphrodor_SacredAphrodor</thought>
+				<description>Sacred aphrodor</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AphrodorColonist_Sacred</thought>
+				<thoughtStageDescriptions>
+					<li>No aphrodors</li>
+					<li>Moral guide is not aphrodor</li>
+					<li>Aphrodor moral guide</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>Aphrodors_Reviled_Opinion_Aphrodor</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>aphrodor</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Aphrodors_Elevated_Opinion_Aphrodor</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>aphrodor</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+	<defName>Aphrodors_Sacred_Opinion_Aphrodor</defName>
+	<thoughtClass>Thought_SituationalSocial</thoughtClass>
+	<workerClass>ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+	<validWhileDespawned>true</validWhileDespawned>
+	<stages>
+		<li>
+			<label>aphrodor</label>
+			<baseOpinionOffset>40</baseOpinionOffset>
+		</li>
+	</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Aphrodor_ElevatedAphrodor</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<stages>
+			<li>
+				<label>elevated aphrodor</label>
+				<description>I am a reproductively liminal being. How moral.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Aphrodor_SacredAphrodor</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<stages>
+			<li>
+				<label>sacred aphrodor</label>
+				<description>I am the in-between, the life-giver, the transcendent.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Aphrodor_ReviledAphrodor</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<stages>
+			<li>
+				<label>aphrodor self hatred</label>
+				<description>I'm a vile freak of nature. I wish I had normal reproductives.</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>AphrodorColonist_Reviled</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_AphrodorPresent</workerClass>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+		<stages>
+			<li>
+				<label>aphrodor in colony</label>
+				<description>There is an aphrodor loose in this colony, inciting strange desires. We should get rid of this living stain on human biology, or at least subjugate it. Surgical intervention is an option too.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>AphrodorColonist_Sacred</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_AphrodorColonist</workerClass>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+		<stages>
+			<li>
+				<label>no aphrodors</label>
+				<description>There are no aphrodors in this colony. Without aphrodors, we cannot consider ourselves moral.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>no aphrodor guide</label>
+				<description>Aphrodors are vital and liminal, and yet our moral guide isn't one. We should make an aphrodor our moral guide.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>aphrodor guide</label>
+				<description>A sacred aphrodor protects our spirit. May we bask in their transcendence.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>
