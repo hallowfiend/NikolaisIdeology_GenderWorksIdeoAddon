@@ -21,6 +21,7 @@
 				</exclusionTags>
 			</value>
 		</match>
+	</Operation>
 		<Operation Class="PatchOperationFindMod">
 			<mods>
 				<li>Alpha Memes</li>
