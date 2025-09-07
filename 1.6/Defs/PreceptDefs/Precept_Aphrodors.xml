@@ -31,10 +31,14 @@
 		<statFactors>
 			<medicalTendQuality>1.10</medicalTendQuality>
 		</statFactors>
+		<associatedMemes>
+			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
+		</associatedMemes>
 		<conflictingMemes>
 			<li>Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
+			<li>NikolaisIdeology_Aphroditic</li>
 		</conflictingMemes>
 	</PreceptDef>
 	<PreceptDef>
@@ -49,6 +53,8 @@
 		<associatedMemes>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
+			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
+			<li>NikolaisIdeology_Aphroditic</li>
 		</associatedMemes>
 		<conflictingMemes>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
@@ -77,6 +83,8 @@
 		<associatedMemes>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
+			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
+			<li>NikolaisIdeology_Aphroditic</li>
 		</associatedMemes>
 		<conflictingMemes>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>NikolaisIdeology_Intimacy</defName>
+		<label>intimacy</label>
+		<iconPath>UI/Issues/Intimacy</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>NikolaisIdeology_Intimacy_Low</defName>
+		<issue>NikolaisIdeology_Intimacy</issue>
+		<label>occasional</label>
+		<description>Humans are social animals and require some level of friendly interaction to maintain their sanity, but focusing solely on them distracts from more noble pursuits.</description>
+		<impact>medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<statFactors>
+			<SEX_IntimacyNeedRate>0.75</SEX_IntimacyNeedRate>
+		</statFactors>
+		<associatedMemes>
+			<li>NikolaisIdeology_Chastity</li>
+			<li>PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+			<li>Transhumanist</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
+		</conflictingMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>NikolaisIdeology_Intimacy_High</defName>
+		<issue>NikolaisIdeology_Intimacy</issue>
+		<label>important</label>
+		<description>Love! Togetherness! Friendship! To go long without them is to wallow in sadness, and who wants that? Nobody!</description>
+		<impact>medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<statFactors>
+			<SEX_IntimacyNeedRate>1.25</SEX_IntimacyNeedRate>
+		</statFactors>
+		<associatedMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+			<li MayRequire="OskarPotocki.VFE.Pirates">VFEP_PirateMeme</li>
+			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>NikolaisIdeology_Chastity</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+		</conflictingMemes>
+	</PreceptDef>
+</Defs>

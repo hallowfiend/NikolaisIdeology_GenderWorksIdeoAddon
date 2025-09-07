@@ -38,6 +38,7 @@
 		<conflictingMemes>
 			<li>Guilty</li>
 			<li>Transhumanist</li>
+			<li>NikolaisIdeology_Chastity</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
@@ -61,6 +62,7 @@
 		<associatedMemes>
 			<li>Guilty</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
+			<li>NikolaisIdeology_Chastity</li>
 		</associatedMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
@@ -83,7 +85,9 @@
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<selectionWeight>1</selectionWeight>
 		<associatedMemes>
+			<li>Guilty</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
+			<li>NikolaisIdeology_Chastity</li>
 		</associatedMemes>
 		<conflictingMemes>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalReconstructors</li>
