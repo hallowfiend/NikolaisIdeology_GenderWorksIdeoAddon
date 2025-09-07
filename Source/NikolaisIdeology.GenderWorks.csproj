@@ -22,6 +22,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="AnnoyingPatchThatHasToRunLate">
       <HintPath>..\..\..\..\..\workshop\content\294100\3534254491\1.6\Assemblies\AnnoyingPatchThatHasToRunLate.dll</HintPath>
     </Reference>
