@@ -21,6 +21,7 @@
 			<li>NikolaisIdeology_Chastity</li>
 			<li>PainIsVirtue</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Monastic</li>
 		</associatedMemes>
 		<conflictingMemes>
 			<li>NikolaisIdeology_Aphroditic</li>

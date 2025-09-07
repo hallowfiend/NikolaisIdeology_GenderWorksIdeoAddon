@@ -34,5 +34,14 @@
 			</exclusionTags>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/MemeDefs[defName="Guilty"]</xpath>
+		<value>
+			<exclusionTags>
+				<li>PainIsVirtueVsPainSucksActually</li>
+			</exclusionTags>
+		</value>
+	</Operation>
 
 </Patch>

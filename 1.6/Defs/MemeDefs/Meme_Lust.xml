@@ -10,7 +10,6 @@
 			<li>LustVsChaste</li>
 			<li>BeautyVsUgliness</li>
 			<li>PainIsVirtueVsPainSucksActually</li>
-			<li>NoLovelusting</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<requireOne>
@@ -69,6 +68,8 @@
 				<li>memeMoralist->nymph</li>
 				<li>memeMoralist->vila</li>
 				<li>memeMoralist->apsara</li>
+				<li>memeMoralist->hijra</li>
+				<li>memeMoralist->two-spirit</li>
 				<li>memeMoralistAdjective->lust</li>
 			</rulesStrings>
 		</generalRules>
@@ -83,7 +84,7 @@
 					<li>intro(tag=meme_Aphroditic)           ->On the [place_summary] [place_name], the [memberNamePlural] built a beauty parlor, and dedicated it to [deity0_name] by scattering [aphroFlower] petals across its floors regularly.</li>
 					<li>conflict(tag=meme_Aphroditic)        ->A loveless [foeLeader] envied the beauty of [foeLeader_possessive] neighbours, and wanted to destroy all that was beautiful so that there was no point of comparison.</li>
 					<li>founderJoin(tag=meme_Aphroditic)     ->[deity0_name] came to [place_name] imbuing the peerless body of [founderName], who heard of the plans of the [foeLeader], and sought to charm [foeLeader_objective] out of it.</li>
-					<li>victory(tag=meme_Aphroditic)         ->[founderName] dazzled the [foeLeader] with [founder_possessive] holy dances, scents and words. The [founder_possessive] saw the glory of [deity0_name] and fell in love with [foeLeader] on the spot.</li>
+					<li>victory(tag=meme_Aphroditic)         ->[founderName] dazzled the [foeLeader] with [founder_possessive] holy dances, scents and words. The [foeLeader] saw the glory of [deity0_name] and fell in love with [founder_objective] on the spot.</li>
 					<!-- ideological founder -->
 					<li>setup(tag=meme_Aphroditic)           ->[founderName] was an artist on one of the Glitterworlds. [founder_pronoun] spent [founder_possessive] whole life seeking the peak of aestheticism, only to find it right in the arms of a beautiful aphrodor.</li>
 					<li>story(uses=1,tag=meme_Aphroditic)    ->Recognizing that love was all people truly needed and wanted, [founderName] assembled a group of enthusiasts and chartered a ship to travel to the Rim, where [founder_possessive] established a free-love commune.</li>
@@ -97,8 +98,9 @@
 					<li>archistBasis(tag=meme_Aphroditic)    ->The archotechs are beyond human concepts of sex or gender.</li>
 					<li>archistFact(tag=meme_Aphroditic)     ->Transcendence occurs when a machine persona comprehends the true meaning of beauty.</li>
 					<li>archistProphecy(tag=meme_Aphroditic) ->[inTheEnd], all those who do not squander their life on ugliness will be taken into the soft embrace of the archotechs, and the rest will drown in their own tears.</li>
+					<li>archistProphecy(tag=meme_Aphroditic) ->[inTheEnd], all the beautiful ones will be ascended to a realm of endless pleasure. The rest will become their servants.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_Aphroditic)    ->The spirit of an aphrodor is stronger than a gestor and phallor spirit combined.</li>
+					<li>animistBasis(tag=meme_Aphroditic)    ->There are spirits all around us, in every thing and every person. The spirit of an aphrodor is stronger than a gestor and phallor spirit combined, and is said to smell of [aphroFlower]s.</li>
 					<li>animistFact(tag=meme_Aphroditic)     ->The spirits prefer beautiful environments and people. Filth and squalor invites their retribution.</li>
 					<li>animistProphecy(tag=meme_Aphroditic) ->[itIsSaid] those who revere the spirits shall be reborn as pure and beautiful spirits of [aphroFlower]s.</li>
 					<!-- serketist -->
@@ -114,7 +116,7 @@
 					<!-- alienist -->
 					<li>alienistFact(tag=meme_Aphroditic)->Of course, we were not content with such an ugly state of things. We warped the bodies of countless creatures until they became strange and beautiful. The list of those creatures included ourselves.</li>
 					<!-- atheist -->
-					<li>atheismlessonReinforcement(tag=meme_Aphroditic)-> If there is a God, She would have prevented anti-aphrodor discrimination before it could occur.</li>
+					<li>atheismlessonReinforcement(tag=meme_Aphroditic)-> If there was a God, She would have prevented anti-aphrodor discrimination before it could occur.</li>
 					<!-- neolithic -->
 					<li>neolithiclessonIntro(tag=meme_Aphroditic)->We lit the [aphroFlower] incense, and the aphrodor oracle spoke thus:</li>
 					<!-- pieces -->

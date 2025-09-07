@@ -27,7 +27,7 @@
 			</value>
 		</match>
 	</Operation>
-		<Operation Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 			<mods>
 				<li>Alpha Memes</li>
 			</mods>
@@ -48,7 +48,39 @@
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>
 				</value>
+				<xpath>Defs/MemeDef[defName="AM_Monastic]</xpath>
+				<value>
+					<exclusionTags>
+						<li>LustVsChaste</li>
+						<li>MonasticVsPreachingZealotTypeShit</li>
+					</exclusionTags>
+				</value>
 			</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded: Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="VME_RecreationLoved"]/associatedMemes</xpath>
+			<value>
+				<li>NikolaisIdeology_Aphroditic</li>
+			</value>
+			<xpath>Defs/MemeDef[defName="VME_HolyDiseases"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BeautyVsUgliness</li>
+					<li>PurityVsDirt</li>
+				</exclusionTags>
+			</value>
+			<xpath>Defs/MemeDef[defName="VME_Scrapper"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BeautyVsUgliness</li>
+					<li>PurityVsDirt</li>
+				</exclusionTags>
+			</value>
+		</match>
 	</Operation>
 
 </Patch>

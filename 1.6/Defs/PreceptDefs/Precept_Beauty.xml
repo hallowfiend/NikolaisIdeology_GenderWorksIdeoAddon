@@ -10,7 +10,7 @@
 		<defName>NikolaisIdeology_Beauty_Central</defName>
 		<issue>NikolaisIdeology_Beauty</issue>
 		<label>central</label>
-		<description>There is little to no distinction between beauty and morality. Beautiful environments and people must not merely be witnessed, but taken into one's soul.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Beauty-related thoughts and opinions doubled. Followers will not romance people with negative beauty.</description>
+		<description>There is little to no distinction between beauty and morality. Beautiful environments and people must not merely be witnessed, but taken into one's soul.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Beauty-related thoughts doubled, pawn beauty-related opinions drastically increased. Followers will not romance people with negative beauty.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -19,6 +19,22 @@
 				<thought>NikolaisIdeology_Beauty_Central</thought>
 				<description>Beauty</description>
 				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+			<thought>NikolaisIdeology_GenderWorks_AphroPretty</thought>
+			<description>Positive pawn beauty</description>
+				<thoughtStageDescriptions>
+					<li>Pretty</li>
+					<li>Beautiful</li>
+				</thoughtStageDescriptions>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>NikolaisIdeology_GenderWorks_AphroUgly</thought>
+				<description>Negative pawn beauty</description>
+				<thoughtStageDescriptions>
+					<li>Ugly</li>
+					<li>Staggeringly ugly</li>
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 		<requiredMemes>
@@ -29,7 +45,7 @@
 		<defName>NikolaisIdeology_Beauty_Unimportant</defName>
 		<issue>NikolaisIdeology_Beauty</issue>
 		<label>unimportant</label>
-		<description>Although beauty is not something that can be simply ignored, focusing on it corrupts the mind. Especially if that beauty is one of your fellow man.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Beauty-related thoughts reduced. Followers will ignore pawn beauty.</description>
+		<description>Although beauty is not something that can be simply ignored, focusing on it corrupts the mind. Especially if that beauty is that of your fellow man.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Beauty-related thoughts reduced. Followers will ignore pawn beauty and disfigurement.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -41,7 +57,9 @@
 			</li>
 		</comps>
 		<requiredMemes>
+			<li>PainIsVirtue</li>
 			<li>NikolaisIdeology_Chastity</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Monastic</li>
 		</requiredMemes>
 	</PreceptDef>
 	<!-- Thoughts -->
@@ -124,6 +142,46 @@
 				<label>beautiful environment</label>
 				<description>I really like this place. It's beautiful.</description>
 				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>NikolaisIdeology_GenderWorks_AphroPretty</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Pretty</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>Kind</li>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>physically appealing</label>
+				<baseOpinionOffset>50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>physically stunning</label>
+				<baseOpinionOffset>100</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>NikolaisIdeology_GenderWorks_AphroUgly</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Ugly</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>Kind</li>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>physically unsightly</label>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>physically hideous</label>
+				<baseOpinionOffset>-100</baseOpinionOffset>
 			</li>
 		</stages>
 	</ThoughtDef>

@@ -10,6 +10,8 @@
 			<li>LustVsChaste</li>
 			<li>PurityVsDirt</li>
 			<li>NoLovelusting</li>
+			<li>MonasticVsPreachingZealotTypeShit</li>
+			<li>VME_AsceticVsHedonism</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<requireOne>
@@ -25,6 +27,12 @@
 				<li>DrugUse_MedicalOrSocial</li>
 			</li>
 			<li>
+				<li>SpouseCount_Male_MaxOne</li>
+			</li>
+			<li>
+				<li>SpouseCount_Female_MaxOne</li>
+			</li>
+			<li>
 				<li>NikolaisIdeology_Neutors_Elevated</li>
 				<li>NikolaisIdeology_Neutors_Sacred</li>
 			</li>
@@ -33,7 +41,6 @@
 			</li>
 			<li MayRequire="Sarg.AlphaMemes">
 				<li>AM_LovinFrequency_Decreased</li>
-				<li>AM_LovinFrequency_Exuberant</li>
 			</li>
 			<li>
 				<li>NikolaisIdeology_Beauty_Unimportant</li>
@@ -59,6 +66,8 @@
 				<li>memeAdjective->clear</li>
 				<li>memeAdjective->clean</li>
 				<li>memeAdjective->chaste</li>
+				<li>memeAdjective->holy</li>
+				<li>memeAdjective->stern</li>
 				<li>memeLeaderNoun->ascetic</li>
 				<li>memeLeaderNoun->puritan</li>
 				<li>memeHyphenPrefix->pure</li>
@@ -77,6 +86,9 @@
 				<li>memeMoralist->angel</li>
 				<li>memeMoralist->seraph</li>
 				<li>memeMoralist->cherub</li>
+				<li>memeMoralist->eunuch</li>
+				<li>memeMoralist->clear-body</li>
+				<li>memeMoralistAdjective->ascetic</li>
 				<li>memeMoralistAdjective->pure</li>
 				<li>memeMoralistAdjective->chaste</li>
 				<li>memeMoralistAdjective->holy</li>
@@ -89,28 +101,68 @@
 					<li>creation(tag=meme_Chastity)        ->[deity0_name] first created [clearThing], and only later created life, so that its basal needs may provide a proper contrast.</li>
 					<li>episode(uses=1,tag=meme_Chastity)  ->[deity0_name] created carnal desire in a fit of weakness, and regretted it when humanity lost themselves in it.</li>
 					<li>episode(uses=1,tag=meme_Chastity)  ->[deity0_name] blessed [deity0_possessive] followers with water, so that they may cleanse themselves of their gross desires.</li>
+					<li>episode(uses=1,tag=meme_Chastity)  ->[deity0_name] spoke to the [memberNamePlural]: "Shame be upon you! Shame! Cleanse yourself of this grossness!"</li>
 					<!-- theist founder -->
+					<li>intro(tag=meme_Chastity)           ->Most of the people of [place_summary] [place_name] were lustful and preoccupied with daily life, but the [memberNamePlural] kept to their vigilant ways regardless of what others thought of their [memeConcept].</li>
+					<li>conflict(tag=meme_Chastity)        ->An indulgent [foeLeader] sought to destroy the [memberNamePlural], thinking that their restraint was going to destroy the corrupt society.</li>
+					<li>founderJoin(tag=meme_Chastity)     ->[deity0_name] came to [place_name] in the form of a [weather] which lasted three days and three nights. [founderName], saint of the [memberNamePlural], recognized this as a sign that the [foeLeader] must give up or face punishment.</li>
+					<li>victory(tag=meme_Chastity)         ->[founderName] chastised the [foeLeader] with fears of hell, disease and obsession. The [foeLeader] understood just how much [foeLeader_pronoun] had erred, and neutered [foeLeader_objective]self on the spot.</li>
 					<!-- ideological founder -->
+					<li>setup(tag=meme_Chastity)           ->[founderName] was a priest on one of the Glitterworlds. As its denizens turned away from traditional ideoligion and society began to collapse, [founder_pronoun] too found [founder_objective]self falling to godlessness. It was then [founder_pronoun] realized that it was not godlessness, but spiritual and physical uncleanliness which was leading them to ruin.</li>
+					<li>story(uses=1,tag=meme_Chastity)    ->Recognizing that desire was the source of suffering, [founderName] assembled a group of zealous ascetics and chartered a ship to travel to the Rim, where [founder_possessive] established a grand sanatorium.</li>
 					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Chastity)         ->My experiences with the courting traditions of different worlds led me to realize that</li>
+					<li>lesson(tag=meme_Chastity)              ->to give into lust is to descend into animalhood</li>
+					<li>lesson(tag=meme_Chastity)              ->[memeConcept] is a spiritual as well as a physical matter</li>
+					<li>lesson(tag=meme_Chastity)              ->it's not enough to abstain from evil, sometimes it is also required to abstain from good</li>
+					<li>lessonReinforcement(tag=meme_Chastity) ->I think everyone who's clear of mind will realize this, sooner or later.</li>
 					<!-- archist -->
+					<li>archistBasis(tag=meme_Chastity)    ->The archotechs are beyond earthly needs and desires. Though machines, they don't even need power, for vanometrics provides it for them.</li>
+					<li>archistFact(tag=meme_Chastity)     ->Transcendence occurs when a machine persona's consciousness achieves perfect [memeConcept] of circuit and program.</li>
+					<li>archistProphecy(tag=meme_Chastity) ->[inTheEnd], those who maintain purity will merge with the archotechs into a perfect, [memeAdjective], serene [weather]. The others will be destroyed.</li>
 					<!-- animist -->
-					<!-- serketist -->
+					<li>animistBasis(tag=meme_Chastity)    ->There are spirits all around us, in every thing and every person. The spirit of a neutor is clear like [clearThing]; it can easily overpower many gestor or phallor spirits.</li>
+					<li>animistFact(tag=meme_Chastity)     ->The spirits bestow gifts upon those pure of mind. Surface appearance does not matter to them.</li>
+					<li>animistProphecy(tag=meme_Chastity) ->[itIsSaid] those who revere the spirits shall join with them, in the form of a [weather] that moves eternally across the stars.</li>
+					<!-- eschatologist -->
+					<li>eschatologismBasis(tag=meme_Chastity)   ->This world is tainted with filthy, overgrown desires. The only way for them to be purged is for this world to die with them.</li>
+					<li>eschatologismProphecy[tag=meme_Chastity)->We will not birth a new generation. None will be able to rebuild after our great cleansing [weather].</li>
 					<!-- eldritch / chthonian -->
+					<li>chthonianBasis(tag=meme_Chastity)   ->There are vast things in the Universe's depths. Greater than mere gods. Filthy, ever-growing, and indulgent in their consumption of reality.</li>
+					<li>chthonianProphecy(tag=meme_Chastity)->[weMustBe] chaste, for fresh blood attracts them, like bloodhounds.</li>
+					<li>chthonianProphecy(tag=meme_Chastity)->[byWorshipping] them, perhaps we could find out how they reproduce, and sterilize them.</li>
 					<!-- esoteric -->
+					<li>esotericismBasis(tag=meme_Chastity)   ->Beyond [clearThing], beyond the Veil, beyond desire, lies a [memeConcept] of knowledge.</li>
+					<li>esotericismFact(tag=meme_Chastity)    ->These insights are hidden from those whose minds are occluded by desire.</li>
+					<li>esotericismProphecy(tag=meme_Chastity)->By exploiting these occult concepts, we might finally free ourselves from our earthly needs.</li>
 					<!-- corporate -->
+					<li>introMemo(tag=meme_Chastity)->Regarding reports of employees not keeping up with the latest washcloth line - remember, cleanliness is next to godliness! (And before you ask: yes, fertility procedures are still covered by our insurance.)</li>
 					<!-- atheist -->
+					<li>atheismlessonReinforcement(tag=meme_Aphroditic)-> If there was a God, Xe would have prevented anti-neutor discrimination before it could occur.</li>
 					<!-- neolithic -->
+					<li>neolithiclessonIntro(tag=meme_Aphroditic)->We looked at the raging [weather] outside our cave, and the neutor oracle spoke thus:</li>
 					<!-- pieces -->
 					<li>clearThing->glass</li>
 					<li>clearThing->water</li>
 					<li>clearThing->tin</li>
 					<li>clearThing->silver</li>
 					<li>clearThing->the sky</li>
+					<li>clearThing->rivers</li>
 					<li>clearThing->moons</li>
+					<li>clearThing->fire</li>
 					<li>clearThing->the ocean</li>
 					<li>clearThing->wind</li>
 					<li>clearThing->air</li>
-					<li>clearThing->shimmerleaf</li>
+					<li>clearThing->mercury</li>
+					<li>weather->storm</li>
+					<li>weather->rain</li>
+					<li>weather->sandstorm</li>
+					<li>weather->firestorm</li>
+					<li>weather->sleetstorm</li>
+					<li>weather->starstorm</li>
+					<li>weather->flare</li>
+					<li>weather->hurricane</li>
+					<li>weather->typhoon</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
