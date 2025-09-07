@@ -7,8 +7,8 @@
     <ProjectGuid>{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GenderWorks.IdeologyAddon</RootNamespace>
-    <AssemblyName>GenderWorks.IdeologyAddon</AssemblyName>
+    <RootNamespace>NikolaisIdeology.GenderWorks</RootNamespace>
+    <AssemblyName>NikolaisIdeology.GenderWorks</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -63,10 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InternalDefOf.cs" />
+    <Compile Include="NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch.cs" />
     <Compile Include="PawnExtension_JunkCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker_Precept_AphrodorColonist.cs" />
-    <Compile Include="ThoughtWorker_Precept_Beauty.cs" />
     <Compile Include="ThoughtWorker_Precept_NeutorColonist.cs" />
     <Compile Include="ThoughtWorker_Precept_NeutorPresent.cs" />
     <Compile Include="ThoughtWorker_Precept_AphrodorPresent.cs" />
