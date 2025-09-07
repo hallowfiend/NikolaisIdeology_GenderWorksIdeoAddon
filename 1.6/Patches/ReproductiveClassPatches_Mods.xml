@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReSplice: Charmweavers</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/MemeDef[defName="RS_LoveLusting"]</xpath>
+			<value>
+				<requireOne>
+					<li>NikolaisIdeology_Aphrodors_Elevated</li>
+					<li>NikolaisIdeology_Aphrodors_Sacred</li>
+				</requireOne>
+				<requireOne>
+					<li>NikolaisIdeology_Neutors_Reviled</li>
+				</requireOne>
+			</value>
+		</match>
+		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Alpha Memes</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/MemeDef[defName="AM_LovinFrequency_Exuberant"]/associatedMemes</xpath>
+				<value>
+					<li>NikolaisIdeology_Aphroditic</li>
+				</value>
+			</match>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/MemeDef[defName="AM_LovinFrequency_Increased"]/associatedMemes</xpath>
+				<value>
+					<li>NikolaisIdeology_Aphroditic</li>
+				</value>
+			</match>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/MemeDef[defName="AM_LovinFrequency_Exuberant"]/requiredMemes</xpath>
+				<value>
+					<li>NikolaisIdeology_Aphroditic</li>
+				</value>
+			</match>
+	</Operation>
+
+</Patch>

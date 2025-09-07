@@ -48,9 +48,9 @@
 		<selectionWeight>0</selectionWeight>
 		<associatedMemes>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
 		</associatedMemes>
 		<conflictingMemes>
-			<li>Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 		</conflictingMemes>
@@ -76,9 +76,9 @@
 		<selectionWeight>1</selectionWeight>
 		<associatedMemes>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
 		</associatedMemes>
 		<conflictingMemes>
-			<li>Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 		</conflictingMemes>
@@ -105,7 +105,7 @@
 	<ThoughtDef>
 		<defName>Aphrodors_Reviled_Opinion_Aphrodor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -118,7 +118,7 @@
 	<ThoughtDef>
 		<defName>Aphrodors_Elevated_Opinion_Aphrodor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -131,7 +131,7 @@
 	<ThoughtDef>
 	<defName>Aphrodors_Sacred_Opinion_Aphrodor</defName>
 	<thoughtClass>Thought_SituationalSocial</thoughtClass>
-	<workerClass>ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+	<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
 	<validWhileDespawned>true</validWhileDespawned>
 	<stages>
 		<li>
@@ -144,7 +144,7 @@
 	<ThoughtDef>
 		<defName>Aphrodor_ElevatedAphrodor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
 		<stages>
 			<li>
 				<label>elevated aphrodor</label>
@@ -157,7 +157,7 @@
 	<ThoughtDef>
 		<defName>Aphrodor_SacredAphrodor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
 		<stages>
 			<li>
 				<label>sacred aphrodor</label>
@@ -170,7 +170,7 @@
 	<ThoughtDef>
 		<defName>Aphrodor_ReviledAphrodor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
 		<stages>
 			<li>
 				<label>aphrodor self hatred</label>
@@ -183,7 +183,7 @@
 	<ThoughtDef>
 		<defName>AphrodorColonist_Reviled</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_AphrodorPresent</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_AphrodorPresent</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
@@ -197,7 +197,7 @@
 	<ThoughtDef>
 		<defName>AphrodorColonist_Sacred</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_AphrodorColonist</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_AphrodorColonist</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

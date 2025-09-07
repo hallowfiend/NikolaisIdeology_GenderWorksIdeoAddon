@@ -66,6 +66,7 @@
     <Compile Include="PawnExtension_JunkCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker_Precept_AphrodorColonist.cs" />
+    <Compile Include="ThoughtWorker_Precept_Beauty.cs" />
     <Compile Include="ThoughtWorker_Precept_NeutorColonist.cs" />
     <Compile Include="ThoughtWorker_Precept_NeutorPresent.cs" />
     <Compile Include="ThoughtWorker_Precept_AphrodorPresent.cs" />

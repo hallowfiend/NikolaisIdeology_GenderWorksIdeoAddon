@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-
 namespace NikolaisIdeology.GenderWorks
 {
     public class ThoughtWorker_Precept_AphrodorPresent : ThoughtWorker_Precept

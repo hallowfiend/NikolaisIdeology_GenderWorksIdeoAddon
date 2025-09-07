@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>NikolaisIdeology_Aphroditic</defName>
+		<label>aphroditic</label>
+		<description>Love and beauty are the essence of life, and those who embody that essence must be adored.</description>
+		<iconPath>UI/Meme/MemeAphroditic</iconPath>
+		<groupDef>NikolaisIdeology_LustAndLove</groupDef>
+		<exclusionTags>
+			<li>LustVsChaste</li>
+			<li>BeautyVsUgliness</li>
+			<li>PainIsVirtueVsPainSucksActually</li>
+		</exclusionTags>
+		<impact>3</impact>
+		<requireOne>
+			<li>
+				<li>SEX_Lovin_HaremPlay</li>
+				<li>Lovin_SpouseOnly_Mild</li>
+				<li>Lovin_FreeApproved</li>
+				<li>Lovin_Free</li>
+			</li>
+			<li>
+				<li>NikolaisIdeology_Aphrodors_Elevated</li>
+				<li>NikolaisIdeology_Aphrodors_Sacred</li>
+			</li>
+			<li MayRequire="Sarg.AlphaMemes">
+				<li>AM_FertilityIssue_Increased</li>
+			</li>
+			<li MayRequire="Sarg.AlphaMemes">
+				<li>AM_LovinFrequency_Increased</li>
+				<li>AM_LovinFrequency_Exuberant</li>
+			</li>
+			<li>
+				<li>NikolaisIdeology_Beauty_Central</li>
+			</li>
+		</requireOne>
+		<agreeableTraits>
+			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
+		</agreeableTraits>
+		<disagreeableTraits>
+			<li>Ascetic</li>
+		</disagreeableTraits>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->loving</li>
+				<li>memeAdjective->aesthetic</li>
+				<li>memeAdjective->aphroditic</li>
+				<li>memeAdjective->beau</li>
+				<li>memeAdjective->beautiful</li>
+				<li>memeLeaderNoun->aphrodisiac</li>
+				<li>memeLeaderNoun->cupid</li>
+				<li>memeHyphenPrefix->beau</li>
+				<li>memeHyphenPrefix->aes</li>
+				<li>memeHyphenPrefix->aphro</li>
+				<li>memeConcept->beauty</li>
+				<li>memeConcept->love</li>
+				<li>memeConcept->charisma</li>
+				<li>memeLeaderAdjective->beautiful</li>
+				<li>memeLeaderAdjective->essential</li>
+				<li>memeLeaderAdjective->aphrodisiac</li>
+				<li>memeMoralist->sylph</li>
+				<li>memeMoralist->nymph</li>
+				<li>memeMoralist->vila</li>
+				<li>memeMoralist->apsara</li>
+				<li>memeMoralistAdjective->lust</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Aphroditic)        ->[deity0_name] fashioned humanity as aphrodors, but a great accident split them into gestors and phallors.</li>
+					<li>creation(tag=meme_Aphroditic)        ->[deity0_name] rose naked out of the ocean foam, surrounded by pleasant sounds and smells.</li>
+					<li>episode(uses=1,tag=meme_Aphroditic)  ->[deity0_name] sought beauty in all things, and sometimes came down to [deity0_possessive] followers as a beautiful aphrodor.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Aphroditic)           ->On the [place_summary] [place_name], the [memberNamePlural] built a beauty parlor, and dedicated it to [deity0_name] by scattering [aphroFlower] petals across its floors regularly.</li>
+					<li>conflict(tag=meme_Aphroditic)        ->A loveless [foeLeader] envied the beauty of [foeLeader_possessive] neighbours, and wanted to destroy all that was beautiful so that there was no point of comparison.</li>
+					<li>founderJoin(tag=meme_Aphroditic)     ->[deity0_name] came to [place_name] imbuing the peerless body of [founderName], who heard of the plans of the [foeLeader], and sought to charm [foeLeader_objective] out of it.</li>
+					<li>victory(tag=meme_Aphroditic)         ->[founderName] dazzled the [foeLeader] with [founder_possessive] holy dances, scents and words. The [founder_possessive] saw the glory of [deity0_name] and fell in love with [foeLeader] on the spot.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Aphroditic)           ->[founderName] was an artist on one of the Glitterworlds. [founder_pronoun] spent [founder_possessive] whole life seeking the peak of aestheticism, only to find it right in the arms of a beautiful aphrodor.</li>
+					<li>story(uses=1,tag=meme_Aphroditic)    ->Recognizing that love was all people truly needed and wanted, [founderName] assembled a group of enthusiasts and chartered a ship to travel to the Rim, where [founder_possessive] established a free-love commune.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Aphroditic)         ->My experiences with beauty standards on different worlds taught me that</li>
+					<li>lesson(tag=meme_Aphroditic)              ->life is love, and love is life, and loving life is beautiful</li>
+					<li>lesson(tag=meme_Aphroditic)              ->beauty is the greatest good</li>
+					<li>lesson(tag=meme_Aphroditic)              ->it's not enough to survive, you have to live, and enjoy living</li>
+					<li>lessonReinforcement(tag=meme_Aphroditic) ->To live is to love. And the attractive deserve love the most.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Aphroditic)    ->The archotechs are beyond human concepts of sex or gender.</li>
+					<li>archistFact(tag=meme_Aphroditic)     ->Transcendence occurs when a machine persona comprehends the true meaning of beauty.</li>
+					<li>archistProphecy(tag=meme_Aphroditic) ->[inTheEnd], all those who do not squander their life on ugliness will be taken into the soft embrace of the archotechs, and the rest will drown in their own tears.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Aphroditic)    ->The spirit of an aphrodor is stronger than a gestor and phallor spirit combined.</li>
+					<li>animistFact(tag=meme_Aphroditic)     ->The spirits prefer beautiful environments and people. Filth and squalor invites their retribution.</li>
+					<li>animistProphecy(tag=meme_Aphroditic) ->[itIsSaid] those who revere the spirits shall be reborn as pure and beautiful spirits of [aphroFlower]s.</li>
+					<!-- serketist -->
+					<li>serketistBasis(tag=meme_Aphroditic)  ->Insectoids are biologically perfect creatures, accidentally blessed by a foolish humanity with fruitful bodies and shiny chitin.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianFact(tag=meme_Aphroditic)->These horrors are unfathomably vile, knowing nothing of intimacy or love. To them, the bonds we share are grains of sand.</li>
+					<li>chthonianFact(tag=meme_Aphroditic)->Like aphrodors, they are beyond the foolish human concepts of sex and gender; unlike aphrodors, they are evil and unsightly.</li>
+					<li>chthonianProphecy(tag=meme_Aphroditic)->Perhaps if we and our environments become beautiful and lovely enough, we could charm at least a few of them into bestowing their secrets upon us.</li>
+					<!-- esoteric -->
+					<li>esotericismBasis(tag=meme_Aphroditic)->The Universe most know is merely a skin covering a wealth of beautiful secrets, some strong enough to warp even flesh.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Aphroditic)->Regarding reports of employees not keeping up with the latest beauty product line - remember, looking good is feeling good! (And before you ask: yes, gender transition is still covered by our insurance.)</li>
+					<!-- alienist -->
+					<li>alienistFact(tag=meme_Aphroditic)->Of course, we were not content with such an ugly state of things. We warped the bodies of countless creatures until they became strange and beautiful. The list of those creatures included ourselves.</li>
+					<!-- atheist -->
+					<li>atheismlessonReinforcement(tag=meme_Aphroditic)-> If there is a God, She would have prevented anti-aphrodor discrimination before it could occur.</li>
+					<!-- neolithic -->
+					<li>neolithiclessonIntro(tag=meme_Aphroditic)->We lit the [aphroFlower] incense, and the aphrodor oracle spoke thus:</li>
+					<!-- pieces -->
+					<li>aphroFlower->rose</li>
+					<li>aphroFlower->orchid</li>
+					<li>aphroFlower->hydrangea</li>
+					<li>aphroFlower->anemone</li>
+					<li>aphroFlower->dahlia</li>
+					<li>aphroFlower->pereskia</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+	</MemeDef>
+</Defs>

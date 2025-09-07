@@ -14,5 +14,15 @@
 			</requireOne>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/MemeDefs[defName="PainIsVirtue"]</xpath>
+		<value>
+			<requireOne>
+				<li>NikolaisIdeology_Neutors_Elevated</li>
+				<li>NikolaisIdeology_Neutors_Sacred</li>
+			</requireOne>
+		</value>
+	</Operation>
 
 </Patch>

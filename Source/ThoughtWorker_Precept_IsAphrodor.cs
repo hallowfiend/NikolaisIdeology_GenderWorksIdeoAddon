@@ -2,10 +2,8 @@ using LoveyDoveySexWithRosaline;
 using NikolaisIdeology.GenderWorks;
 using Verse;
 using RimWorld;
-
 namespace NikolaisIdeology.GenderWorks
 {
-
 
 	public class ThoughtWorker_Precept_IsAphrodor : ThoughtWorker_Precept
 	{

@@ -32,11 +32,14 @@
 			<Fertility>1.10</Fertility>
 		</statFactors>
 		<associatedMemes>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalReconstructors</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
 		</associatedMemes>
 		<conflictingMemes>
+			<li>Guilty</li>
 			<li>Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 		</conflictingMemes>
 	</PreceptDef>
@@ -44,17 +47,21 @@
 		<defName>NikolaisIdeology_Neutors_Elevated</defName>
 		<issue>NikolaisIdeology_Neutors</issue>
 		<label>elevated</label>
-		<description>To be unable to reproduce is a status that should be respected.g</description>
+		<description>To be unable to reproduce is a status that should be respected.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<selectionWeight>0</selectionWeight>
 		<conflictingMemes>
-			<li>Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalReconstructors</li>
 		</conflictingMemes>
+		<associatedMemes>
+			<li>Guilty</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
+		</associatedMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutors_Elevated_Opinion_Neutor</thought>
@@ -75,8 +82,11 @@
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<selectionWeight>1</selectionWeight>
+		<associatedMemes>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
+		</associatedMemes>
 		<conflictingMemes>
-			<li>Transhumanist</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalReconstructors</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
@@ -104,7 +114,7 @@
 	<ThoughtDef>
 		<defName>Neutors_Reviled_Opinion_Neutor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_Neutor_Social</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -117,7 +127,7 @@
 	<ThoughtDef>
 		<defName>Neutors_Elevated_Opinion_Neutor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_Neutor_Social</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -130,7 +140,7 @@
 	<ThoughtDef>
 		<defName>Neutors_Sacred_Opinion_Neutor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_Neutor_Social</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -143,7 +153,7 @@
 	<ThoughtDef>
 		<defName>Neutor_ElevatedNeutor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsNeutor</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
 				<label>elevated neutor</label>
@@ -156,7 +166,7 @@
 	<ThoughtDef>
 		<defName>Neutor_SacredNeutor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsNeutor</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
 				<label>sacred neutor</label>
@@ -169,7 +179,7 @@
 	<ThoughtDef>
 		<defName>Neutor_ReviledNeutor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsNeutor</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
 				<label>neutor self hatred</label>
@@ -182,7 +192,7 @@
 	<ThoughtDef>
 		<defName>NeutorColonist_Reviled</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_NeutorPresent</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_NeutorPresent</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
@@ -195,7 +205,7 @@
 	<ThoughtDef>
 		<defName>NeutorColonist_Sacred</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_NeutorColonist</workerClass>
+		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_NeutorColonist</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

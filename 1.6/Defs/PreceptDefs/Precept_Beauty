@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>NikolaisIdeology_Beauty</defName>
+		<label>Beauty</label>
+		<iconPath>UI/Issues/Beauty</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>NikolaisIdeology_Beauty_Central</defName>
+		<issue>NikolaisIdeology_Beauty</issue>
+		<label>central</label>
+		<description>There is little to no distinction between beauty and morality. Beautiful environments and people must not merely be witnessed, but taken into one's soul.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Beauty-related thoughts and opinions doubled. Followers will not romance people with negative beauty.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>NikolaisIdeology_Beauty_Central</thought>
+				<description>Beauty</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+		</requiredMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>NikolaisIdeology_Beauty_Unimportant</defName>
+		<issue>NikolaisIdeology_Beauty</issue>
+		<label>unimportant</label>
+		<description>Although beauty is not something that can be simply ignored, focusing on it corrupts the mind. Especially if that beauty is one of your fellow man.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Beauty-related thoughts reduced. Followers will ignore pawn beauty.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>NikolaisIdeology_Beauty_Unimportant</thought>
+				<description>Beauty</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>NikolaisIdeology_Chastity</li>
+		</requiredMemes>
+	</PreceptDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>NikolaisIdeology_Beauty_Central</defName>
+		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Slob</li>
+			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>grotesque environment</label>
+				<description>This place is so vile, it almost feels like it's rubbing off on me! I'd rather be anywhere else!</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+			<li>
+				<label>horrendous environment</label>
+				<description>This place is very ugly! I don't want to look at any of it if I can help it!</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>ugly environment</label>
+				<description>This place is noticeably ugly. Not enough to be totally immoral, but it's close.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>beautiful environment</label>
+				<description>I really like this place. It's beautiful.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>gorgeous environment</label>
+				<description>This place is so beautiful. It lifts me up and makes me love life.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>ethereal environment</label>
+				<description>This place is so beautiful, I can barely believe it! Ah, it blesses me so!</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>NikolaisIdeology_Beauty_Unimportant</defName>
+		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Slob</li>
+			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>ugly environment</label>
+				<description>This place is really ugly. I wish I didn't have to look at this any more.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>unsightly environment</label>
+				<description>This place is kind of unsightly. I wish I didn't have to look at all this.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>unappealing environment</label>
+				<description>This place is a little bit uglier than the average. Maybe some cleaning is in order.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>nice environment</label>
+				<description>This place is a bit nicer than average.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>pretty environment</label>
+				<description>This place looks nice.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>beautiful environment</label>
+				<description>I really like this place. It's beautiful.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
