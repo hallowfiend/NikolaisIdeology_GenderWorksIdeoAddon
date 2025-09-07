@@ -69,7 +69,6 @@
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Slob</li>
-			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
 		</nullifyingTraits>
 		<stages>
 			<li>
@@ -109,7 +108,6 @@
 		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
-			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Slob</li>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
 		</nullifyingTraits>
 		<stages>
