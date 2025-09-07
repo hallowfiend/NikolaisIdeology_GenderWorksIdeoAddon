@@ -2,7 +2,7 @@
 using RimWorld;
 namespace NikolaisIdeology.GenderWorks
 {
-    public class ThoughtWorker_Precept_Aphrodor : ThoughtWorker_Precept
+    public class ThoughtWorker_Precept_AphrodorColonist : ThoughtWorker_Precept
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {

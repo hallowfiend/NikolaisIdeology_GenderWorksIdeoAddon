@@ -10,11 +10,15 @@
 			<xpath>Defs/MemeDef[defName="RS_LoveLusting"]</xpath>
 			<value>
 				<requireOne>
+					<li>
 					<li>NikolaisIdeology_Aphrodors_Elevated</li>
 					<li>NikolaisIdeology_Aphrodors_Sacred</li>
+					</li>
 				</requireOne>
 				<requireOne>
+					<li>
 					<li>NikolaisIdeology_Neutors_Reviled</li>
+					</li>
 				</requireOne>
 				<exclusionTags>
 					<li>NoLovelusting</li>
@@ -31,20 +35,14 @@
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>
 				</value>
-			</match>
-			<match Class="PatchOperationAdd">
 				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Increased"]/associatedMemes</xpath>
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>
 				</value>
-			</match>
-			<match Class="PatchOperationAdd">
 				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Decreased"]/associatedMemes</xpath>
 				<value>
 					<li>NikolaisIdeology_Chastity</li>
 				</value>
-			</match>
-			<match Class="PatchOperationAdd">
 				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/requiredMemes</xpath>
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>

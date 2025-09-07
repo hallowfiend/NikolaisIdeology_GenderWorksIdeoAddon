@@ -45,9 +45,6 @@
 				<li>VME_DumbLabor_Exalted</li>
 				<li>VME_DumbLabor_Liked</li>
 			</li>
-			<li MayRequire="VanillaExpanded.VMemesE">
-				<li>VME_Expectations_Low</li>
-			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li>Ascetic</li>
