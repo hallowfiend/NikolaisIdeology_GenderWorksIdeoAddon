@@ -27,19 +27,25 @@
 				<li>Alpha Memes</li>
 			</mods>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/MemeDef[defName="AM_LovinFrequency_Exuberant"]/associatedMemes</xpath>
+				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/associatedMemes</xpath>
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>
 				</value>
 			</match>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/MemeDef[defName="AM_LovinFrequency_Increased"]/associatedMemes</xpath>
+				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Increased"]/associatedMemes</xpath>
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>
 				</value>
 			</match>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/MemeDef[defName="AM_LovinFrequency_Exuberant"]/requiredMemes</xpath>
+				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Decreased"]/associatedMemes</xpath>
+				<value>
+					<li>NikolaisIdeology_Chastity</li>
+				</value>
+			</match>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/requiredMemes</xpath>
 				<value>
 					<li>NikolaisIdeology_Aphroditic</li>
 				</value>
