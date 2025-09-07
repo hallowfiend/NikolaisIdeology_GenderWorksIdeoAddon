@@ -25,27 +25,12 @@
     <Reference Include="0Harmony">
       <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="AnnoyingPatchThatHasToRunLate">
-      <HintPath>..\..\..\..\..\workshop\content\294100\3534254491\1.6\Assemblies\AnnoyingPatchThatHasToRunLate.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-    <Reference Include="com.rlabrecque.steamworks.net">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
-    </Reference>
-    <Reference Include="ISharpZipLib">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\ISharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="LoveyDoveySexWithRosaline">
       <HintPath>..\..\..\..\..\workshop\content\294100\3534254491\1.6\Assemblies\LoveyDoveySexWithRosaline.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Security">
-      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,9 +46,6 @@
     <None Include="..\1.6\Defs\**" />
     <None Include="..\1.6\Languages\**" />
     <None Include="..\1.6\Patches\**" />
-    <Reference Include="VEF">
-      <HintPath>..\..\..\..\..\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InternalDefOf.cs" />

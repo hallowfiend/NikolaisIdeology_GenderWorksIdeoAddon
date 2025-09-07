@@ -1,15 +1,12 @@
 <ModMetaData>
-	<name>Gender Works - Ideology Addon</name>
+	<name>Nikolai's Ideology: Gender Works</name>
 	<author>hallowlock</author>
-    <packageId>hallowlock.GenderWorks-IdeologyAddon</packageId>
-	<supportedVersions>
-		<li>1.1</li>
-	</supportedVersions>
+    <packageId>hallolwock.NikolaisIdeology.GenderWorks</packageId>
 	<description>
-		An addon for Intimacy: Gender Works that adds ideoligious precepts and memes related to reproductive classes:
-		- 2 new memes: Aphroditic and Chastity, both adding one new role and one new ritual each
-		- New precepts: Aphrodors, Neutors, Intimacy and Beauty
-		- Compatibility with vanilla memes, Alpha Memes, VIE: Memes and Structures, Altered Carbon 2, ReSplice: Charmweavers
+An addon for Intimacy: Gender Works that adds ideoligious precepts and memes related to reproductive classes:
+- 2 new memes: Aphroditic and Chastity, both adding one new role and one new ritual each
+- New precepts: Aphrodors, Neutors, Intimacy and Beauty
+- Compatibility with vanilla memes, Alpha Memes, VIE: Memes and Structures, ReSplice: Charmweavers, and more
 	</description>
 	<modDependencies>
 		<li>
@@ -53,5 +50,4 @@
 		<supportedVersions>
 		<li>1.6</li>
 		</supportedVersions>
-<packageId>NikolaisIdeology.GenderWorks</packageId>
 </ModMetaData>

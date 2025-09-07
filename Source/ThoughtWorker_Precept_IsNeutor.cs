@@ -1,5 +1,3 @@
-using LoveyDoveySexWithRosaline;
-using NikolaisIdeology.GenderWorks;
 using Verse;
 using RimWorld;
 namespace NikolaisIdeology.GenderWorks
