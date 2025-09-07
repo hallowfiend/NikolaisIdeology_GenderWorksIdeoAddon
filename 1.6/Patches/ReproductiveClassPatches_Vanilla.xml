@@ -22,6 +22,9 @@
 				<li>NikolaisIdeology_Neutors_Elevated</li>
 				<li>NikolaisIdeology_Neutors_Sacred</li>
 			</requireOne>
+			<exclusionTags>
+				<li>PainIsVirtueVsPainSucksActually</li>
+			</exclusionTags>
 		</value>
 	</Operation>
 

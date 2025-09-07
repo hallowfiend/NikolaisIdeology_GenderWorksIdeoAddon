@@ -4,7 +4,7 @@
 		<defName>NikolaisIdeology_Chastity</defName>
 		<label>chastity</label>
 		<description>To live virtuously, one must have a pure mind and body alike. Giving into basal urges is to forfeit one's morality.</description>
-		<iconPath>UI/Meme/MemeChastity</iconPath>
+		<iconPath>UI/Memes/Chastity</iconPath>
 		<groupDef>NikolaisIdeology_LustAndLove</groupDef>
 		<exclusionTags>
 			<li>LustVsChaste</li>
@@ -37,6 +37,9 @@
 			</li>
 			<li>
 				<li>NikolaisIdeology_Beauty_Unimportant</li>
+			</li>
+			<li>
+				<li>NikolaisIdeology_Intimacy_Low</li>
 			</li>
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_DumbLabor_Exalted</li>

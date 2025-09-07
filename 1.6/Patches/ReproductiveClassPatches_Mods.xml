@@ -16,6 +16,9 @@
 				<requireOne>
 					<li>NikolaisIdeology_Neutors_Reviled</li>
 				</requireOne>
+				<exclusionTags>
+					<li>NoLovelusting</li>
+				</exclusionTags>
 			</value>
 		</match>
 		<Operation Class="PatchOperationFindMod">
