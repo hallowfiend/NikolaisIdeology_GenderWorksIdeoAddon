@@ -28,26 +28,54 @@
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationFindMod">
-			<mods>
-				<li>Alpha Memes</li>
-			</mods>
-			<match Class="PatchOperationAdd">
-				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/associatedMemes</xpath>
-				<value>
-					<li>NikolaisIdeology_Aphroditic</li>
-				</value>
-				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Increased"]/associatedMemes</xpath>
-				<value>
-					<li>NikolaisIdeology_Aphroditic</li>
-				</value>
-				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Decreased"]/associatedMemes</xpath>
-				<value>
-					<li>NikolaisIdeology_Chastity</li>
-				</value>
-				<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/requiredMemes</xpath>
-				<value>
-					<li>NikolaisIdeology_Aphroditic</li>
-				</value>
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/associatedMemes</xpath>
+			<value>
+				<li>NikolaisIdeology_Aphroditic</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Increased"]/associatedMemes</xpath>
+			<value>
+				<li>NikolaisIdeology_Aphroditic</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Decreased"]/associatedMemes</xpath>
+			<value>
+				<li>NikolaisIdeology_Chastity</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Exuberant"]/requiredMemes</xpath>
+			<value>
+				<li>NikolaisIdeology_Aphroditic</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
 				<xpath>Defs/MemeDef[defName="AM_Monastic]</xpath>
 				<value>
 					<exclusionTags>
@@ -66,6 +94,13 @@
 			<value>
 				<li>NikolaisIdeology_Aphroditic</li>
 			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded: Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
 			<xpath>Defs/MemeDef[defName="VME_HolyDiseases"]</xpath>
 			<value>
 				<exclusionTags>
@@ -73,6 +108,13 @@
 					<li>PurityVsDirt</li>
 				</exclusionTags>
 			</value>
+		</match>
+		</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded: Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
 			<xpath>Defs/MemeDef[defName="VME_Scrapper"]</xpath>
 			<value>
 				<exclusionTags>

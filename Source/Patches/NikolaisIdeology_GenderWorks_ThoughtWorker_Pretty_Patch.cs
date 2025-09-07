@@ -4,12 +4,12 @@ using HarmonyLib;
 
 namespace NikolaisIdeology.GenderWorks;
 
-[HarmonyPatch(typeof(ThoughtWorker_NeedBeauty))]
+[HarmonyPatch(typeof(ThoughtWorker_Pretty))]
 [HarmonyPatch("PostAdd")]
-public static class NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch
+public static class NikolaisIdeology_GenderWorks_ThoughtWorker_Pretty_Patch
 {
     [HarmonyPostfix]
-    private static void DontShowIfBeautyPrecept(Pawn p, ref ThoughtState __result)
+    public static void DontShowIfBeautyPrecept(Pawn p, ref ThoughtState __result)
     {
         Pawn_IdeoTracker ideo1 = p.ideo;
         bool? nullable1;

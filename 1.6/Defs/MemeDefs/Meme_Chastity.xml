@@ -104,7 +104,7 @@
 					<li>episode(uses=1,tag=meme_Chastity)  ->[deity0_name] spoke to the [memberNamePlural]: "Shame be upon you! Shame! Cleanse yourself of this grossness!"</li>
 					<!-- theist founder -->
 					<li>intro(tag=meme_Chastity)           ->Most of the people of [place_summary] [place_name] were lustful and preoccupied with daily life, but the [memberNamePlural] kept to their vigilant ways regardless of what others thought of their [memeConcept].</li>
-					<li>conflict(tag=meme_Chastity)        ->An indulgent [foeLeader] sought to destroy the [memberNamePlural], thinking that their restraint was going to destroy the corrupt society.</li>
+					<li>conflict(tag=meme_Chastity)        ->An indulgent [foeLeader] sought to destroy the [memberNamePlural], thinking that their restraint was going to destroy the society of [place_name].</li>
 					<li>founderJoin(tag=meme_Chastity)     ->[deity0_name] came to [place_name] in the form of a [weather] which lasted three days and three nights. [founderName], saint of the [memberNamePlural], recognized this as a sign that the [foeLeader] must give up or face punishment.</li>
 					<li>victory(tag=meme_Chastity)         ->[founderName] chastised the [foeLeader] with fears of hell, disease and obsession. The [foeLeader] understood just how much [foeLeader_pronoun] had erred, and neutered [foeLeader_objective]self on the spot.</li>
 					<!-- ideological founder -->
