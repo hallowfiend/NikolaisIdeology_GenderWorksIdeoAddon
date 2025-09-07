@@ -11,7 +11,7 @@
 		<issue>NikolaisIdeology_Intimacy</issue>
 		<label>occasional</label>
 		<description>Humans are social animals and require some level of friendly interaction to maintain their sanity, but focusing solely on them distracts from more noble pursuits.</description>
-		<impact>medium</impact>
+		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<statFactors>
@@ -34,7 +34,7 @@
 		<issue>NikolaisIdeology_Intimacy</issue>
 		<label>important</label>
 		<description>Love! Togetherness! Friendship! To go long without them is to wallow in sadness, and who wants that? Nobody!</description>
-		<impact>medium</impact>
+		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<statFactors>

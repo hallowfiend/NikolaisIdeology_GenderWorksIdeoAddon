@@ -11,13 +11,14 @@
 			<value>
 				<requireOne>
 					<li>
-					<li>NikolaisIdeology_Aphrodors_Elevated</li>
-					<li>NikolaisIdeology_Aphrodors_Sacred</li>
+						<li>NikolaisIdeology_Aphrodors_Elevated</li>
+						<li>NikolaisIdeology_Aphrodors_Sacred</li>
 					</li>
-				</requireOne>
-				<requireOne>
 					<li>
-					<li>NikolaisIdeology_Neutors_Reviled</li>
+						<li>NikolaisIdeology_Neutors_Reviled</li>
+					</li>
+					<li>
+						<li>NikolaisIdeology_Intimacy_High</li>
 					</li>
 				</requireOne>
 				<exclusionTags>

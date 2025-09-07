@@ -40,9 +40,6 @@
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_Recreation_Loved</li>
 			</li>
-			<li MayRequire="VanillaExpanded.VMemesE">
-				<li>VME_Expectations_High</li>
-			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>

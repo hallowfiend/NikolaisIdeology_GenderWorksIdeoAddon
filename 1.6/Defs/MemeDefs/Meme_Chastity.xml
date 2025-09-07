@@ -3,7 +3,7 @@
 	<MemeDef>
 		<defName>NikolaisIdeology_Chastity</defName>
 		<label>chastity</label>
-		<description>To live virtuously, one must have a pure mind and body alike. Giving into basal urges is to forfeit one's morality.</description>
+		<description>To live virtuously, one must have a pure mind and body alike. Giving into basal urges is equal to forfeiting one's morality.</description>
 		<iconPath>UI/Memes/Chastity</iconPath>
 		<groupDef>NikolaisIdeology_LustAndLove</groupDef>
 		<exclusionTags>
@@ -22,7 +22,7 @@
 			<li>
 				<li>DrugUse_Prohibited</li>
 				<li>DrugUse_MedicalOnly</li>
-				<li>DrugUse_MedicalOrSocialOnly</li>
+				<li>DrugUse_MedicalOrSocial</li>
 			</li>
 			<li>
 				<li>NikolaisIdeology_Neutors_Elevated</li>
