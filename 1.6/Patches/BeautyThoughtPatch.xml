@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDefs/ThoughtDef[ThoughtDef_NeedBeauty]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>NikolaisIdeology_Beauty_Central</li>
+				<li>NikolaisIdeology_Beauty_Unimportant</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+
+
+</Patch>
