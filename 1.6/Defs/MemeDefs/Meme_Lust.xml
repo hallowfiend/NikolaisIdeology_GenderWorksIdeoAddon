@@ -10,6 +10,7 @@
 			<li>LustVsChaste</li>
 			<li>BeautyVsUgliness</li>
 			<li>PainIsVirtueVsPainSucksActually</li>
+			<li>NoLovelusting</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<requireOne>
@@ -32,6 +33,12 @@
 			</li>
 			<li>
 				<li>NikolaisIdeology_Beauty_Central</li>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<li>VME_Recreation_Loved</li>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<li>VME_Expectations_High</li>
 			</li>
 		</requireOne>
 		<agreeableTraits>
@@ -97,8 +104,8 @@
 					<!-- serketist -->
 					<li>serketistBasis(tag=meme_Aphroditic)  ->Insectoids are biologically perfect creatures, accidentally blessed by a foolish humanity with fruitful bodies and shiny chitin.</li>
 					<!-- eldritch / chthonian -->
-					<li>chthonianFact(tag=meme_Aphroditic)->These horrors are unfathomably vile, knowing nothing of intimacy or love. To them, the bonds we share are grains of sand.</li>
-					<li>chthonianFact(tag=meme_Aphroditic)->Like aphrodors, they are beyond the foolish human concepts of sex and gender; unlike aphrodors, they are evil and unsightly.</li>
+					<li>chthonianFact(tag=meme_Aphroditic)    ->These horrors are unfathomably vile, knowing nothing of intimacy or love. To them, the bonds we share are grains of sand.</li>
+					<li>chthonianFact(tag=meme_Aphroditic)    ->Like aphrodors, they are beyond the foolish human concepts of sex and gender; unlike aphrodors, they are evil and unsightly.</li>
 					<li>chthonianProphecy(tag=meme_Aphroditic)->Perhaps if we and our environments become beautiful and lovely enough, we could charm at least a few of them into bestowing their secrets upon us.</li>
 					<!-- esoteric -->
 					<li>esotericismBasis(tag=meme_Aphroditic)->The Universe most know is merely a skin covering a wealth of beautiful secrets, some strong enough to warp even flesh.</li>

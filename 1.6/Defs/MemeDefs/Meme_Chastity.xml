@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>NikolaisIdeology_Chastity</defName>
+		<label>chastity</label>
+		<description>To live virtuously, one must have a pure mind and body alike. Giving into basal urges is to forfeit one's morality.</description>
+		<iconPath>UI/Meme/MemeChastity</iconPath>
+		<groupDef>NikolaisIdeology_LustAndLove</groupDef>
+		<exclusionTags>
+			<li>LustVsChaste</li>
+			<li>PurityVsDirt</li>
+			<li>NoLovelusting</li>
+		</exclusionTags>
+		<impact>3</impact>
+		<requireOne>
+			<li>
+				<li>Lovin_SpouseOnly_Moderate</li>
+				<li>Lovin_SpouseOnly_Strict</li>
+				<li>Lovin_Horrible</li>
+				<li>Lovin_Prohibited</li>
+			</li>
+			<li>
+				<li>DrugUse_Prohibited</li>
+				<li>DrugUse_MedicalOnly</li>
+				<li>DrugUse_MedicalOrSocialOnly</li>
+			</li>
+			<li>
+				<li>NikolaisIdeology_Neutors_Elevated</li>
+				<li>NikolaisIdeology_Neutors_Sacred</li>
+			</li>
+			<li MayRequire="Sarg.AlphaMemes">
+				<li>AM_FertilityIssue_Decreased</li>
+			</li>
+			<li MayRequire="Sarg.AlphaMemes">
+				<li>AM_LovinFrequency_Decreased</li>
+				<li>AM_LovinFrequency_Exuberant</li>
+			</li>
+			<li>
+				<li>NikolaisIdeology_Beauty_Unimportant</li>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<li>VME_DumbLabor_Exalted</li>
+				<li>VME_DumbLabor_Liked</li>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<li>VME_Expectations_Low</li>
+			</li>
+		</requireOne>
+		<agreeableTraits>
+			<li>Ascetic</li>
+			<li>Asexual</li>
+		</agreeableTraits>
+		<disagreeableTraits>
+			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
+		</disagreeableTraits>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->pure</li>
+				<li>memeAdjective->clear</li>
+				<li>memeAdjective->clean</li>
+				<li>memeAdjective->chaste</li>
+				<li>memeLeaderNoun->ascetic</li>
+				<li>memeLeaderNoun->puritan</li>
+				<li>memeHyphenPrefix->pure</li>
+				<li>memeHyphenPrefix->clear</li>
+				<li>memeHyphenPrefix->stern</li>
+				<li>memeConcept->clarity</li>
+				<li>memeConcept->cleanliness</li>
+				<li>memeConcept->chastity</li>
+				<li>memeConcept->purity</li>
+				<li>memeConcept->nirvana</li>
+				<li>memeLeaderAdjective->pure</li>
+				<li>memeLeaderAdjective->clear</li>
+				<li>memeLeaderAdjective->chaste</li>
+				<li>memeLeaderAdjective->holy</li>
+				<li>memeMoralist->zealot</li>
+				<li>memeMoralist->flagellant</li>
+				<li>memeMoralist->angel</li>
+				<li>memeMoralist->seraph</li>
+				<li>memeMoralistAdjective->pure</li>
+				<li>memeMoralistAdjective->chaste</li>
+				<li>memeMoralistAdjective->holy</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Chastity)        ->[deity0_name] first created [clearThing], and only later created life, so that its basal needs may provide a proper contrast.</li>
+					<li>episode(uses=1,tag=meme_Chastity)  ->[deity0_name] created carnal desire in a fit of weakness, and regretted it when humanity lost themselves in it.</li>
+					<li>episode(uses=1,tag=meme_Chastity)  ->[deity0_name] blessed [deity0_possessive] followers with water, so that they may cleanse themselves of their gross desires.</li>
+					<!-- theist founder -->
+					<!-- ideological founder -->
+					<!-- ideological lesson -->
+					<!-- archist -->
+					<!-- animist -->
+					<!-- serketist -->
+					<!-- eldritch / chthonian -->
+					<!-- esoteric -->
+					<!-- corporate -->
+					<!-- atheist -->
+					<!-- neolithic -->
+					<!-- pieces -->
+					<li>clearThing->glass</li>
+					<li>clearThing->water</li>
+					<li>clearThing->tin</li>
+					<li>clearThing->silver</li>
+					<li>clearThing->the sky</li>
+					<li>clearThing->moons</li>
+					<li>clearThing->the ocean</li>
+					<li>clearThing->wind</li>
+					<li>clearThing->air</li>
+					<li>clearThing->shimmerleaf</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+	</MemeDef>
+</Defs>
