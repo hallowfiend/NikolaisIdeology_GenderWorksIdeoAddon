@@ -25,7 +25,6 @@
 		</associatedMemes>
 		<conflictingMemes>
 			<li>NikolaisIdeology_Aphroditic</li>
-			<li>Transhumanist</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Fertility</li>
 			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
 		</conflictingMemes>

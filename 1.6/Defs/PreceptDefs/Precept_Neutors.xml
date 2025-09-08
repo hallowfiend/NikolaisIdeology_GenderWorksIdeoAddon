@@ -10,7 +10,7 @@
 		<defName>NikolaisIdeology_Neutors_Reviled</defName>
 		<issue>NikolaisIdeology_Neutors</issue>
 		<label>reviled</label>
-		<description>To be deprived of one's natural reproductive capabilities is to be deprived of one's moral standing.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n This precept only counts neutor colonists, not slaves or prisoners.</description>
+		<description>To be deprived of one's natural reproductive capabilities is to be deprived of one's moral standing.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nThis precept only counts neutor colonists, not slaves or prisoners.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -61,6 +61,7 @@
 		</conflictingMemes>
 		<associatedMemes>
 			<li>Guilty</li>
+			<li>PainIsVirtue</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
 			<li>NikolaisIdeology_Chastity</li>
 		</associatedMemes>
@@ -79,13 +80,14 @@
 		<defName>NikolaisIdeology_Neutors_Sacred</defName>
 		<issue>NikolaisIdeology_Neutors</issue>
 		<label>sacred</label>
-		<description>Those who are above the pleasures of the flesh are also above us all.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n Neutors will be happier. Followers will be happy if the moral guide is a neutor, and unhappy if they aren't.</description>
+		<description>Those who are above the pleasures of the flesh are also above us all.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nNeutors will be happier. Followers will be happy if the moral guide is a neutor, and unhappy if they aren't.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<selectionWeight>1</selectionWeight>
 		<associatedMemes>
 			<li>Guilty</li>
+			<li>PainIsVirtue</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_BiologicalDefilers</li>
 			<li>NikolaisIdeology_Chastity</li>
 		</associatedMemes>

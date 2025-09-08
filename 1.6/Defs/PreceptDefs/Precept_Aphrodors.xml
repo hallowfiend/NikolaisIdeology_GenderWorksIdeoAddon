@@ -10,7 +10,7 @@
 		<defName>NikolaisIdeology_Aphrodors_Reviled</defName>
 		<issue>NikolaisIdeology_Aphrodors</issue>
 		<label>reviled</label>
-		<description>Our natural sexual biology ought to be cared for, which those so-called "aphrodors" are a negation of.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n This precept only counts aphrodor colonists, not slaves or prisoners.</description>
+		<description>Our natural sexual biology ought to be cared for, which those so-called "aphrodors" are a negation of.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nThis precept only counts aphrodor colonists, not slaves or prisoners.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -31,11 +31,9 @@
 		<statFactors>
 			<medicalTendQuality>1.10</medicalTendQuality>
 		</statFactors>
-		<associatedMemes>
-			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
-		</associatedMemes>
 		<conflictingMemes>
 			<li>Transhumanist</li>
+			<li MayRequire="ReSplice.XOTR.Charmweavers">RS_LoveLusting</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 			<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 			<li>NikolaisIdeology_Aphroditic</li>
@@ -75,7 +73,7 @@
 		<defName>NikolaisIdeology_Aphrodors_Sacred</defName>
 		<issue>NikolaisIdeology_Aphrodors</issue>
 		<label>sacred</label>
-		<description>To be able to sire and to bear: that is a holy status.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n Aphrodors will be happier. Followers will be happy if the moral guide is an aphrodor, and unhappy if they aren't.</description>
+		<description>To be able to sire and to bear: that is a holy status.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nAphrodors will be happier. Followers will be happy if the moral guide is an aphrodor, and unhappy if they aren't.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

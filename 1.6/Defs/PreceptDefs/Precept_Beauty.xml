@@ -10,7 +10,7 @@
 		<defName>NikolaisIdeology_Beauty_Central</defName>
 		<issue>NikolaisIdeology_Beauty</issue>
 		<label>central</label>
-		<description>There is little to no distinction between beauty and morality. Beautiful environments and people must not merely be witnessed, but taken into one's soul.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n Beauty-related thoughts doubled, pawn beauty-related opinions drastically increased. Followers will not romance people with negative beauty.</description>
+		<description>There is little to no distinction between beauty and morality. Beautiful environments and people must not merely be witnessed, but taken into one's soul.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nBeauty-related thoughts doubled, pawn beauty-related opinions drastically increased. Followers will not romance people with negative beauty.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -45,7 +45,7 @@
 		<defName>NikolaisIdeology_Beauty_Unimportant</defName>
 		<issue>NikolaisIdeology_Beauty</issue>
 		<label>unimportant</label>
-		<description>Although beauty is not something that can be simply ignored, focusing on it corrupts the mind. Especially if that beauty is that of your fellow man.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n Beauty-related thoughts reduced. Followers will ignore pawn beauty and disfigurement.</description>
+		<description>Although beauty is not something that can be simply ignored, focusing on it corrupts the mind. Especially if that beauty is that of your fellow man.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nBeauty-related thoughts reduced. Followers will ignore pawn beauty and disfigurement.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

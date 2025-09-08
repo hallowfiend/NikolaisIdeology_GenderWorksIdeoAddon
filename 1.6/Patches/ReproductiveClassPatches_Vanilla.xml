@@ -18,9 +18,8 @@
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/MemeDefs[defName="PainIsVirtue"]</xpath>
+		<xpath>/Defs/MemeDefs[defName="PainIsVirtue"]/requireOne</xpath>
 		<value>
-			<requireOne>
 				<li>
 					<li>NikolaisIdeology_Neutors_Elevated</li>
 					<li>NikolaisIdeology_Neutors_Sacred</li>
@@ -28,7 +27,12 @@
 				<li>
 					<li>NikolaisIdeology_Intimacy_Low</li>
 				</li>
-			</requireOne>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/MemeDefs[defName="Guilty"]</xpath>
+		<value>
 			<exclusionTags>
 				<li>PainIsVirtueVsPainSucksActually</li>
 			</exclusionTags>
@@ -36,7 +40,7 @@
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/MemeDefs[defName="Guilty"]</xpath>
+		<xpath>/Defs/MemeDefs[defName="PainIsVirtue"]</xpath>
 		<value>
 			<exclusionTags>
 				<li>PainIsVirtueVsPainSucksActually</li>
