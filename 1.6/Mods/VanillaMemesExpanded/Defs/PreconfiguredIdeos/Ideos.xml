@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IdeoPresetDef>
+		<defName>NikolaisIdeology_CircleOfLife</defName>
+		<label>circle of life</label>
+		<description>Hearts high, flowers fly. Let's sing together and feel all right.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>VME_Structure_Pantheism</li>
+			<li>NikolaisIdeology_Aphroditic</li>
+			<li>VME_Pacifist</li>
+			<li>VME_Vegan</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>NikolaisIdeology_SternPurifiers</defName>
+		<label>stern purifiers</label>
+		<description>All must be cleansed of its vile filth in the name of our god. Even those who do not yet know of their failures.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>Structure_TheistAbstract</li>
+			<li>NikolaisIdeology_Chastity</li>
+			<li>VME_ViolentConversion</li>
+			<li>FleshPurity</li>
+		</memes>
+	</IdeoPresetDef>
+</Defs>
