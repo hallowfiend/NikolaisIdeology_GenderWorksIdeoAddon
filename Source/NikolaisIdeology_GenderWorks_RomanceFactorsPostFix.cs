@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Verse;
 
-namespace NikolaisIdeology.GenderWorks;
+namespace NikolaisIdeology_GenderWorks;
 [HarmonyPatch(typeof(InteractionWorker_RomanceAttempt), "RomanceFactors")]
 [HarmonyPatch("PostAdd")]
 public class NikolaisIdeology_GenderWorks_RomanceFactorPostfix

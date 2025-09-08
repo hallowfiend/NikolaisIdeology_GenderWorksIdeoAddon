@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 
-namespace NikolaisIdeology.GenderWorks;
+namespace NikolaisIdeology_GenderWorks;
 
     [DefOf]
     public static class InternalDefOf

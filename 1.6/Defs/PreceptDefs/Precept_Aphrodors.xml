@@ -111,7 +111,7 @@
 	<ThoughtDef>
 		<defName>Aphrodors_Reviled_Opinion_Aphrodor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -124,7 +124,7 @@
 	<ThoughtDef>
 		<defName>Aphrodors_Elevated_Opinion_Aphrodor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -137,7 +137,7 @@
 	<ThoughtDef>
 	<defName>Aphrodors_Sacred_Opinion_Aphrodor</defName>
 	<thoughtClass>Thought_SituationalSocial</thoughtClass>
-	<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
+	<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Aphrodor_Social</workerClass>
 	<validWhileDespawned>true</validWhileDespawned>
 	<stages>
 		<li>
@@ -150,7 +150,7 @@
 	<ThoughtDef>
 		<defName>Aphrodor_ElevatedAphrodor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
 		<stages>
 			<li>
 				<label>elevated aphrodor</label>
@@ -163,7 +163,7 @@
 	<ThoughtDef>
 		<defName>Aphrodor_SacredAphrodor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
 		<stages>
 			<li>
 				<label>sacred aphrodor</label>
@@ -176,7 +176,7 @@
 	<ThoughtDef>
 		<defName>Aphrodor_ReviledAphrodor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_IsAphrodor</workerClass>
 		<stages>
 			<li>
 				<label>aphrodor self hatred</label>
@@ -189,7 +189,7 @@
 	<ThoughtDef>
 		<defName>AphrodorColonist_Reviled</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_AphrodorPresent</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_AphrodorPresent</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
@@ -203,7 +203,7 @@
 	<ThoughtDef>
 		<defName>AphrodorColonist_Sacred</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_AphrodorColonist</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_AphrodorColonist</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

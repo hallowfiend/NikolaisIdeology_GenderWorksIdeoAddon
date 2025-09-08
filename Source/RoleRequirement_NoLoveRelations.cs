@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Verse;
 
-namespace NikolaisIdeology.GenderWorks;
+namespace NikolaisIdeology_GenderWorks;
 
 public class RoleRequirement_NoLoveRelations : RoleRequirement
 {

@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace NikolaisIdeology.GenderWorks;
+namespace NikolaisIdeology_GenderWorks;
 
 public class RoleRequirement_Beauty : RoleRequirement
 {

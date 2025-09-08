@@ -120,7 +120,7 @@
 	<ThoughtDef>
 		<defName>Neutors_Reviled_Opinion_Neutor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -133,7 +133,7 @@
 	<ThoughtDef>
 		<defName>Neutors_Elevated_Opinion_Neutor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -146,7 +146,7 @@
 	<ThoughtDef>
 		<defName>Neutors_Sacred_Opinion_Neutor</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Neutor_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -159,7 +159,7 @@
 	<ThoughtDef>
 		<defName>Neutor_ElevatedNeutor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
 				<label>elevated neuter</label>
@@ -172,7 +172,7 @@
 	<ThoughtDef>
 		<defName>Neutor_SacredNeutor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
 				<label>sacred neuter</label>
@@ -185,7 +185,7 @@
 	<ThoughtDef>
 		<defName>Neutor_ReviledNeutor</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
 				<label>neuter self hatred</label>
@@ -198,7 +198,7 @@
 	<ThoughtDef>
 		<defName>NeutorColonist_Reviled</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_NeutorPresent</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_NeutorPresent</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
@@ -211,7 +211,7 @@
 	<ThoughtDef>
 		<defName>NeutorColonist_Sacred</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_NeutorColonist</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_NeutorColonist</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

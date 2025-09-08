@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace NikolaisIdeology.GenderWorks
+namespace NikolaisIdeology_GenderWorks
 {
     public class ThoughtWorker_Precept_Aphrodor_Social : ThoughtWorker_Precept_Social
     {

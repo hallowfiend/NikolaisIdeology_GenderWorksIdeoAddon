@@ -2,7 +2,7 @@
 using Verse;
 using HarmonyLib;
 
-namespace NikolaisIdeology.GenderWorks;
+namespace NikolaisIdeology_GenderWorks;
 
 [HarmonyPatch(typeof(ThoughtWorker_NeedBeauty))]
 [HarmonyPatch("PostAdd")]

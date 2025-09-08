@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using Verse;
-namespace NikolaisIdeology.GenderWorks
+namespace NikolaisIdeology_GenderWorks
 {
     public class ThoughtWorker_Precept_AphrodorPresent : ThoughtWorker_Precept
     {
