@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleSingleBase">
+		<defName>NikolaisIdeology_IdeoRole_Idol</defName>
+		<label>idol</label>
+		<description>A special ideoligious designation focused on beauty and performance. This specialized role gives drastically increased social stats and the ability to dazzle allies and enemies alike with sheer glamour. Holders of this role will refuse to do strenuous manual labor, so as to preserve their natural beauty.</description>
+		<iconPath>UI/Roles/Idol</iconPath>
+		<nameMaker>NamerRoleIdol</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Social>8</Social>
+				</skills>
+			</li>
+			<li Class="RoleRequirement_SameIdeo">
+				<labelKey>RoleRequirementLabelSameIdeo</labelKey>
+			</li>
+			<li Class="RoleRequirement_NotChild">
+				<labelKey>RoleRequirementCannotBe</labelKey>
+			</li>
+			<li Class="RoleRequirement_Beauty">
+				<labelKey>RoleRequirement_Beauty</labelKey>
+			</li>
+			</roleRequirements>
+		<roleRequiredWorkTags>
+			<li>Warden</li>
+			<li>Caring</li>
+		</roleRequiredWorkTags>
+		<roleTags>
+			<li>Idol</li>
+		</roleTags>
+		<requiredMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>NegotiationAbility</statDef>
+				<modifier>5</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>SocialImpact</statDef>
+				<modifier>5</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>VEF_MTBLovinFactor</statDef>
+				<modifier>-0.5</modifier>
+			</li>
+		</roleEffects>
+		<grantedAbilities>
+			<li>NikolaisIdeology_IdolGlamour</li>
+		</grantedAbilities>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<roleDisabledWorkTags>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Constructing</li>
+			<li>ManualDumb</li>
+			<li>Hunting</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_WarVeil</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<allowedFactionCategoryTags>
+					<li>Tribal</li>
+				</allowedFactionCategoryTags>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_TribalHeaddress</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<disallowedFactionCategoryTags>
+					<li>Tribal</li>
+				</disallowedFactionCategoryTags>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_VisageMask</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Eyes</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VAE_Headgear_Sunglasses</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Hands</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VAE_Handwear_Gloves</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VIEHAR">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Neck</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VIEHAR_Apparel_Beads</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
+	</PreceptDef>
+</Defs>

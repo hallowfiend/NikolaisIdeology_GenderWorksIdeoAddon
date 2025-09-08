@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Idol -->
+	<RulePackDef>
+		<defName>NamerRoleIdol</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_roleName->[idolAlias]</li>
+				<li>r_roleName->[memeAdjective] [idolAlias]</li>
+				<li>r_roleName->[idolAlias] of [chosenTheme]</li>
+				<li>r_roleName->[idolAlias] of [keyDeity]</li>
+				<li>r_roleName->[idolAlias] of [memeConcept]</li>
+				<li>r_roleName->[chosenAdjective] [idolAlias]</li>
+				<li>r_roleName->[keyDeity]'s [idolAlias]</li>
+				<li>r_roleName->[aphroFlower][idolAlias]</li>
+				<li>r_roleName->[aphroFlower] [idolAlias]</li>
+				<li>r_roleName->[idolAlias] of [aphroFlower]s</li>
+
+				<li>idolAlias->idol</li>
+				<li>idolAlias->incarnation</li>
+				<li>idolAlias->icon</li>
+				<li>idolAlias->fetish</li>
+				<li>idolAlias->star</li>
+				<li>idolAlias->aspect</li>
+				<li>idolAlias->anito</li>
+				<li>idolAlias->yantra</li>
+				<li>idolAlias->reification</li>
+				<li>idolAlias->avatar</li>
+				<li>idolAlias->shintai</li>
+				<li>idolAlias->performer</li>
+				<li>idolAlias->dancer</li>
+				<li>idolAlias->singer</li>
+				<li>idolAlias->charmer</li>
+				<li>idolAlias->darling</li>
+				<li>idolAlias->heart</li>
+				<li>idolAlias->favorite</li>
+				<li>idolAlias->imago</li>
+				<li>idolAlias->devata</li>
+				<li>idolAlias->aura</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- Oathspouse -->
+	<RulePackDef>
+		<defName>NamerRoleOathspouse</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_roleName->[spouseAlias]</li>
+				<li>r_roleName->[memeAdjective] [spouseAlias]</li>
+				<li>r_roleName->[spouseAlias] of [chosenTheme]</li>
+				<li>r_roleName->[spouseAlias] of [keyDeity]</li>
+				<li>r_roleName->[spouseAlias] of [memeConcept]</li>
+				<li>r_roleName->[chosenAdjective] [spouseAlias]</li>
+				<li>r_roleName->[keyDeity]'s [spouseAlias]</li>
+				<li>r_roleName->[clearThing][spouseAlias]</li>
+				<li>r_roleName->[clearThing] [spouseAlias]</li>
+				<li>r_roleName->[spouseAlias] of [weather]</li>
+
+				<li>spouseAlias->spouse</li>
+				<li>spouseAlias->devotee</li>
+				<li>spouseAlias->sworn</li>
+				<li>spouseAlias->conduit</li>
+				<li>spouseAlias->emblem</li>
+				<li>spouseAlias->epithet</li>
+				<li>spouseAlias->aion</li>
+				<li>spouseAlias->aeon</li>
+				<li>spouseAlias->halo</li>
+				<li>spouseAlias->aureola</li>
+				<li>spouseAlias->chastizer</li>
+				<li>spouseAlias->silencer</li>
+				<li>spouseAlias->oath</li>
+				<li>spouseAlias->devata</li>
+				<li>spouseAlias->aura</li>
+				<li>spouseAlias->argus</li>
+				<li>spouseAlias->archon</li>
+				<li>spouseAlias->ahura</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

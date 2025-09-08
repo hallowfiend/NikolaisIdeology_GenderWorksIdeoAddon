@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Hediffs -->
+<HediffDef ParentName="RoleStatBuff">
+	<defName>NikolaisIdeology_IdolGlamourHediff</defName>
+	<label>infatuated in an Idol</label>
+	<description>Dazzled by the sheer glamour of an Idol, this person has been driven into a lovely stupor.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<isBad>false</isBad>
+	<stages>
+		<li>
+			<partEfficiencyOffset>-0.20</partEfficiencyOffset>
+			<painFactor>0.8</painFactor>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+	<isBad>false</isBad>
+</HediffDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>NikolaisIdeology_IdolGlamourThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NikolaisIdeology_IdolGlamourHediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>glamour</label>
+				<description>Ahh... How can someone possibly be so beautiful...</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -49,11 +49,13 @@
     <None Include="..\1.6\Textures\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InternalDefOf.cs" />
+    <Compile Include="Misc\InternalDefOf.cs" />
+    <Compile Include="Misc\RoleRequirement_Beauty.cs" />
+    <Compile Include="Misc\RoleRequirement_NoLoveRelations.cs" />
     <Compile Include="Patches\NikolaisIdeology_GenderWorks_RomanceFactorsPostFix.cs" />
     <Compile Include="Patches\NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch.cs" />
     <Compile Include="Patches\NikolaisIdeology_GenderWorks_ThoughtWorker_Pretty_Patch.cs" />
-    <Compile Include="PawnExtension_JunkCheck.cs" />
+    <Compile Include="Misc\PawnExtension_JunkCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_AphrodorColonist.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_NeutorColonist.cs" />

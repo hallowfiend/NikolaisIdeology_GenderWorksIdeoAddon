@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+<AbilityDef>
+		<defName>NikolaisIdeology_IdolGlamour</defName>
+		<label>enforce compliance</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<cooldownTicks>30000</cooldownTicks>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<description>Dazzle a target with sheer glamour, infatuating them. The infatuation increases mood and dulls pain, but also reduces consciousness. Can be cast on hostile targets. Lasts for 24 hours.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/IdolGlamour</iconPath>
+		<displayOrder>200</displayOrder>
+		<warmupMoteSocialSymbol>UI/Abilities/IdolGlamour</warmupMoteSocialSymbol>
+		<statBases>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>4</range>
+			<warmupTime>1</warmupTime>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetSubhumans>false</canTargetSubhumans>
+				<onlyTargetColonistsOrPrisonersOrSlaves>false</onlyTargetColonistsOrPrisonersOrSlaves>
+			</targetParams>
+			<comps>
+				<li Class="CompProperties_AbilityGiveHediff">
+					<compClass>CompAbilityEffect_GiveHediff</compClass>
+					<hediffDef>NikolaisIdeology_IdolGlamourHediff</hediffDef>
+					<onlyBrain>True</onlyBrain>
+					<applicableToMechs>False</applicableToMechs>
+					<canTargetBaby>False</canTargetBaby>
+					<goodwillImpact>10</goodwillImpact>
+				</li>
+				<li Class="CompProperties_AbilityMustBeCapableOf">
+					<workTags>
+						<li>Social</li>
+					</workTags>
+				</li>
+				<li Class="CompProperties_AbilitySocialInteraction">
+					<interactionDef>NikolaisIdeology_IdolGlamourInteraction</interactionDef>
+					<canApplyToUnconscious>false</canApplyToUnconscious>
+				</li>
+			</comps>
+		</verbProperties>
+		<requiredMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+		</requiredMemes>
+</AbilityDef>
+	
+	<!-- Interactions -->
+	<InteractionDef>
+		<defName>NikolaisIdeology_IdolGlamourInteraction</defName>
+		<label>dazzled</label>
+		<symbol>UI/Abilities/IdolGlamour</symbol>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] dazzled [RECIPIENT_nameDef] with [INITIATIOR_possessive] [charmAction].</li>
+				<li>r_logentry->[INITIATOR_nameDef] batted [INITIATIOR_possessive] eyelashes at [RECIPIENT_nameDef].</li>
+				<li>r_logentry->[INITIATOR_nameDef] got [RECIPIENT_nameDef]'s attention, then overwhelmed [RECIPIENT_objective] with [INITIATIOR_possessive] [charmAction].</li>
+				
+				
+				<li>charmAction->looks</li>
+				<li>charmAction->movements</li>
+				<li>charmAction->scent</li>
+				<li>charmAction->voice</li>
+				<li>charmAction->appearance</li>
+				<li>charmAction->beauty</li>
+				<li>charmAction->song</li>
+				<li>charmAction->dance</li>
+				<li>charmAction->suggestive way of speaking</li>
+				<li>charmAction->lovely way of speaking</li>
+				<li>charmAction->eyes</li>
+				<li>charmAction->hands</li>
+
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+
+
+
+</Defs>
