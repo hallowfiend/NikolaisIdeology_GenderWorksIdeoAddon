@@ -19,7 +19,7 @@
 				<labelKey>RoleRequirementCannotBe</labelKey>
 			</li>
 			<li Class="NikolaisIdeology.GenderWorks.RoleRequirement_Beauty">
-				<labelKey>NikolaisIdeology.GenderWorks.RoleRequirement_Beauty</labelKey>
+				<labelKey>RoleRequirementBeauty</labelKey>
 			</li>
 			</roleRequirements>
 		<roleRequiredWorkTags>

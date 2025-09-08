@@ -19,7 +19,6 @@
 		</li>
 		<li Class="HediffCompProperties_DisappearsOnDeath"/>
 	</comps>
-	<isBad>false</isBad>
 </HediffDef>
 	<!-- Thoughts -->
 	<ThoughtDef>
@@ -27,7 +26,7 @@
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>NikolaisIdeology_IdolGlamourHediff</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
-		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
 		<stages>
 			<li>
 				<label>glamour</label>

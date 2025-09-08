@@ -39,9 +39,6 @@
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_Recreation_Loved</li>
 			</li>
-			<li>
-				<li>NikolaisIdeology_IdeoRole_Idol</li>
-			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
@@ -131,5 +128,15 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
+		<thingStyleCategories>
+			<li MayRequire="GM.Erotic.Style">
+				<category>GM_EroticStyle</category>
+				<priority>4</priority>
+			</li>
+			<li MayRequire="VME_Hedonist">
+				<category>GM_EroticStyle</category>
+				<priority>3</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 </Defs>
