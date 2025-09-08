@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<AbilityGroupDef>
+		<defName>Idol</defName>
+		<cooldownTicks>300000</cooldownTicks>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<ritualRoleIds>
+			<li>speaker</li>
+			<li>leader</li>
+		</ritualRoleIds>
+	</AbilityGroupDef>
  
 <AbilityDef>
 		<defName>NikolaisIdeology_IdolGlamour</defName>
 		<label>enforce compliance</label>
 		<jobDef>CastAbilityOnThing</jobDef>
-		<cooldownTicks>30000</cooldownTicks>
-		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<groupDef>Idol</groupDef>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<description>Dazzle a target with sheer glamour, infatuating them. The infatuation increases mood and dulls pain, but also reduces consciousness. Can be cast on hostile targets. Lasts for 24 hours.</description>
 		<targetRequired>True</targetRequired>
@@ -31,6 +40,7 @@
 				<canTargetSubhumans>false</canTargetSubhumans>
 				<onlyTargetColonistsOrPrisonersOrSlaves>false</onlyTargetColonistsOrPrisonersOrSlaves>
 			</targetParams>
+		</verbProperties>
 			<comps>
 				<li Class="CompProperties_AbilityGiveHediff">
 					<compClass>CompAbilityEffect_GiveHediff</compClass>
@@ -50,7 +60,6 @@
 					<canApplyToUnconscious>false</canApplyToUnconscious>
 				</li>
 			</comps>
-		</verbProperties>
 		<requiredMemes>
 			<li>NikolaisIdeology_Aphroditic</li>
 		</requiredMemes>

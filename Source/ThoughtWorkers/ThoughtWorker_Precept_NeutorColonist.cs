@@ -1,8 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 
-namespace NikolaisIdeology.GenderWorks
-{
+namespace NikolaisIdeology.GenderWorks;
     public class ThoughtWorker_Precept_NeutorColonist : ThoughtWorker_Precept
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
@@ -24,5 +23,4 @@ namespace NikolaisIdeology.GenderWorks
             return flag ? ThoughtState.ActiveAtStage(1) : ThoughtState.ActiveAtStage(0);
         }
     }
-}
 
