@@ -2,7 +2,7 @@
 <Defs>
 	<IssueDef>
 		<defName>NikolaisIdeology_Neutors</defName>
-		<label>neutors</label>
+		<label>neuters</label>
 		<iconPath>UI/Issues/Neutors</iconPath>
 	</IssueDef>
 	<!-- Precepts -->
@@ -10,22 +10,22 @@
 		<defName>NikolaisIdeology_Neutors_Reviled</defName>
 		<issue>NikolaisIdeology_Neutors</issue>
 		<label>reviled</label>
-		<description>To be deprived of one's natural reproductive capabilities is to be deprived of one's moral standing.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nThis precept only counts neutor colonists, not slaves or prisoners.</description>
+		<description>To be deprived of one's natural reproductive capabilities is to be deprived of one's moral standing.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nThis precept only counts neuter colonists, not slaves or prisoners.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutors_Reviled_Opinion_Neutor</thought>
-				<description>Neutor</description>
+				<description>Neuter</description>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutor_ReviledNeutor</thought>
-				<description>Neutor self hatred</description>
+				<description>Neuter self hatred</description>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>NeutorColonist_Reviled</thought>
-				<description>Neutor in colony</description>
+				<description>Neuter in colony</description>
 			</li>
 		</comps>
 		<statFactors>
@@ -68,11 +68,11 @@
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutors_Elevated_Opinion_Neutor</thought>
-				<description>Neutor</description>
+				<description>Neuter</description>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutor_ElevatedNeutor</thought>
-				<description>Elevated neutor</description>
+				<description>Elevated neuter</description>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -80,7 +80,7 @@
 		<defName>NikolaisIdeology_Neutors_Sacred</defName>
 		<issue>NikolaisIdeology_Neutors</issue>
 		<label>sacred</label>
-		<description>Those who are above the pleasures of the flesh are also above us all.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nNeutors will be happier. Followers will be happy if the moral guide is a neutor, and unhappy if they aren't.</description>
+		<description>Those who are above the pleasures of the flesh are also above us all.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nNeutors will be happier. Followers will be happy if the moral guide is a neuter, and unhappy if they aren't.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -100,18 +100,18 @@
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutors_Sacred_Opinion_Neutor</thought>
-				<description>Neutor</description>
+				<description>Neuter</description>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Neutor_SacredNeutor</thought>
-				<description>Sacred neutor</description>
+				<description>Sacred neuter</description>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>NeutorColonist_Sacred</thought>
 				<thoughtStageDescriptions>
-					<li>No neutors</li>
-					<li>Moral guide is not neutor</li>
-					<li>Neutor moral guide</li>
+					<li>No neuters</li>
+					<li>Moral guide is not neuter</li>
+					<li>Neuter moral guide</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -124,7 +124,7 @@
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>neutor</label>
+				<label>neuter</label>
 				<baseOpinionOffset>-20</baseOpinionOffset>
 			</li>
 		</stages>
@@ -137,7 +137,7 @@
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>neutor</label>
+				<label>neuter</label>
 				<baseOpinionOffset>15</baseOpinionOffset>
 			</li>
 		</stages>
@@ -150,7 +150,7 @@
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>neutor</label>
+				<label>neuter</label>
 				<baseOpinionOffset>40</baseOpinionOffset>
 			</li>
 		</stages>
@@ -162,7 +162,7 @@
 		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
-				<label>elevated neutor</label>
+				<label>elevated neuter</label>
 				<description>I cannot reproduce by normal means. Others respect me because of this.</description>
 				<baseMoodEffect>1</baseMoodEffect>
 			</li>
@@ -175,7 +175,7 @@
 		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
-				<label>sacred neutor</label>
+				<label>sacred neuter</label>
 				<description>I am the clear-bodied, the flesh-saved, the transcendent.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
@@ -188,7 +188,7 @@
 		<workerClass>NikolaisIdeology.GenderWorks.ThoughtWorker_Precept_IsNeutor</workerClass>
 		<stages>
 			<li>
-				<label>neutor self hatred</label>
+				<label>neuter self hatred</label>
 				<description>It's not enough that I was neutered - my very soul was damaged.</description>
 				<baseMoodEffect>-8</baseMoodEffect>
 			</li>
@@ -202,8 +202,8 @@
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
-				<label>neutor in colony</label>
-				<description>There is a neutor at large in this colony, dry and inhuman. We should get rid of this sterile half-dead thing, or at least subjugate it. Surgical intervention is an option too.</description>
+				<label>neuter in colony</label>
+				<description>There is a neuter at large in this colony, dry and inhuman. We should get rid of this sterile half-dead thing, or at least subjugate it. Surgical intervention is an option too.</description>
 				<baseMoodEffect>-4</baseMoodEffect>
 			</li>
 		</stages>
@@ -215,18 +215,18 @@
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
-				<label>no neutors</label>
-				<description>There are no neutors in this colony. Without neutors, we cannot consider ourselves moral.</description>
+				<label>no neuters</label>
+				<description>There are no neuters in this colony. Without neuters, we cannot consider ourselves moral.</description>
 				<baseMoodEffect>-4</baseMoodEffect>
 			</li>
 			<li>
-				<label>no neutor guide</label>
-				<description>Neutors are pure and holy, and yet our moral guide isn't one. We should make a neutor our moral guide.</description>
+				<label>no neuter guide</label>
+				<description>Neuters are pure and holy, and yet our moral guide isn't one. We should make a neuter our moral guide.</description>
 				<baseMoodEffect>-2</baseMoodEffect>
 			</li>
 			<li>
-				<label>neutor guide</label>
-				<description>A sacred neutor protects our spirit. May we bask in their transcendence.</description>
+				<label>neuter guide</label>
+				<description>A sacred neuter protects our spirit. May we bask in their transcendence.</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
