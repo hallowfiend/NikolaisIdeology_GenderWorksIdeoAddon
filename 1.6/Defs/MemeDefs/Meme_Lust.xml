@@ -39,6 +39,9 @@
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_Recreation_Loved</li>
 			</li>
+			<li>
+				<li>NikolaisIdeology_IdeoRole_Idol</li>
+			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
@@ -51,7 +54,6 @@
 				<li>memeAdjective->loving</li>
 				<li>memeAdjective->aesthetic</li>
 				<li>memeAdjective->aphroditic</li>
-				<li>memeAdjective->beau</li>
 				<li>memeAdjective->beautiful</li>
 				<li>memeLeaderNoun->aphrodisiac</li>
 				<li>memeLeaderNoun->cupid</li>
@@ -81,7 +83,7 @@
 					<li>creation(tag=meme_Aphroditic)        ->[deity0_name] rose naked out of the ocean foam, surrounded by pleasant sounds and smells.</li>
 					<li>episode(uses=1,tag=meme_Aphroditic)  ->[deity0_name] sought beauty in all things, and sometimes came down to [deity0_possessive] followers as a beautiful aphrodor.</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_Aphroditic)           ->On the [place_summary] [place_name], the [memberNamePlural] built a beauty parlor, and dedicated it to [deity0_name] by scattering [aphroFlower] petals across its floors regularly.</li>
+					<li>intro(tag=meme_Aphroditic)           ->On the [place_summary] [place_name], the [memberNamePlural] built a [memeAdjective] beauty parlor, and dedicated it to [deity0_name] by scattering [aphroFlower] petals across its floors regularly.</li>
 					<li>conflict(tag=meme_Aphroditic)        ->A loveless [foeLeader] envied the beauty of [foeLeader_possessive] neighbours, and wanted to destroy all that was beautiful so that there was no point of comparison.</li>
 					<li>founderJoin(tag=meme_Aphroditic)     ->[deity0_name] came to [place_name] imbuing the peerless body of [founderName], who heard of the plans of the [foeLeader], and sought to charm [foeLeader_objective] out of it.</li>
 					<li>victory(tag=meme_Aphroditic)         ->[founderName] dazzled the [foeLeader] with [founder_possessive] holy dances, scents and words. The [foeLeader] saw the glory of [deity0_name] and fell in love with [founder_objective] on the spot.</li>

@@ -18,7 +18,7 @@
 			<li Class="RoleRequirement_NotChild">
 				<labelKey>RoleRequirementCannotBe</labelKey>
 			</li>
-			<li Class="RoleRequirement_Beauty">
+			<li Class="NikolaisIdeology.GenderWorks.RoleRequirement_Beauty">
 				<labelKey>NikolaisIdeology.GenderWorks.RoleRequirement_Beauty</labelKey>
 			</li>
 			</roleRequirements>

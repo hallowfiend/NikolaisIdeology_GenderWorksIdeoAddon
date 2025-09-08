@@ -49,22 +49,22 @@
     <None Include="..\1.6\Textures\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Misc\InternalDefOf.cs" />
-    <Compile Include="Misc\RoleRequirement_Beauty.cs" />
-    <Compile Include="Misc\RoleRequirement_NoLoveRelations.cs" />
-    <Compile Include="Patches\NikolaisIdeology_GenderWorks_RomanceFactorsPostFix.cs" />
-    <Compile Include="Patches\NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch.cs" />
-    <Compile Include="Patches\NikolaisIdeology_GenderWorks_ThoughtWorker_Pretty_Patch.cs" />
-    <Compile Include="Misc\PawnExtension_JunkCheck.cs" />
+    <Compile Include="InternalDefOf.cs" />
+    <Compile Include="RoleRequirement_Beauty.cs" />
+    <Compile Include="RoleRequirement_NoLoveRelations.cs" />
+    <Compile Include="NikolaisIdeology_GenderWorks_RomanceFactorsPostFix.cs" />
+    <Compile Include="NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch.cs" />
+    <Compile Include="NikolaisIdeology_GenderWorks_ThoughtWorker_Pretty_Patch.cs" />
+    <Compile Include="PawnExtension_JunkCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_AphrodorColonist.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_NeutorColonist.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_NeutorPresent.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_AphrodorPresent.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_IsNeutor.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Neutor_Social.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Aphrodor_Social.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_IsAphrodor.cs" />
+    <Compile Include="ThoughtWorker_Precept_AphrodorColonist.cs" />
+    <Compile Include="ThoughtWorker_Precept_NeutorColonist.cs" />
+    <Compile Include="ThoughtWorker_Precept_NeutorPresent.cs" />
+    <Compile Include="ThoughtWorker_Precept_AphrodorPresent.cs" />
+    <Compile Include="ThoughtWorker_Precept_IsNeutor.cs" />
+    <Compile Include="ThoughtWorker_Precept_Neutor_Social.cs" />
+    <Compile Include="ThoughtWorker_Precept_Aphrodor_Social.cs" />
+    <Compile Include="ThoughtWorker_Precept_IsAphrodor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -54,9 +54,11 @@
 			<li>Alpha Memes</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Decreased"]/associatedMemes</xpath>
+			<xpath>Defs/PreceptDef[defName="AM_LovinFrequency_Decreased"]</xpath>
 			<value>
+				<associatedMemes>
 				<li>NikolaisIdeology_Chastity</li>
+				</associatedMemes>
 			</value>
 		</match>
 	</Operation>
@@ -76,12 +78,10 @@
 			<li>Alpha Memes</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-				<xpath>Defs/MemeDef[defName="AM_Monastic]</xpath>
+				<xpath>Defs/MemeDef[defName="AM_Monastic"]/exclusionTags</xpath>
 				<value>
-					<exclusionTags>
 						<li>LustVsChaste</li>
 						<li>MonasticVsPreachingZealotTypeShit</li>
-					</exclusionTags>
 				</value>
 			</match>
 	</Operation>
