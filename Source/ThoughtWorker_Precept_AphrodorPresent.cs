@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using Verse;
+using LoveyDoveySexWithRosaline;
 namespace NikolaisIdeology_GenderWorks
 {
     public class ThoughtWorker_Precept_AphrodorPresent : ThoughtWorker_Precept
