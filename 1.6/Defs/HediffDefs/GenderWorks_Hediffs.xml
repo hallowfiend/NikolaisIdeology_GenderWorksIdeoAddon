@@ -38,7 +38,7 @@
 				<capMods>
 					<li>
 						<capacity>Talking</capacity>
-						<factor>0</factor>
+						<factor>0.0</factor>
 					</li>
 				</capMods>
 			</li>
