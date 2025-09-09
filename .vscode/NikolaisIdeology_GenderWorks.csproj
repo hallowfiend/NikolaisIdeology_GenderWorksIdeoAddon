@@ -308,6 +308,7 @@
 	 	</Reference>
 	 	<Reference Include="0Harmony">
 	 	  <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
+	 	  <Private>False</Private>
 	 	</Reference>
 		
 	 	<!-- Rimworld -->
@@ -315,9 +316,11 @@
 		<!-- *Uncomment for Harmony*-->
 		<Reference Include="LoveyDoveySexWithEuterpe">
 		  <HintPath>..\..\..\..\..\workshop\content\294100\3498422643\1.6\Assemblies\LoveyDoveySexWithEuterpe.dll</HintPath>
+		  <Private>False</Private>
 		</Reference>
 		<Reference Include="LoveyDoveySexWithRosaline">
 		  <HintPath>..\..\..\..\..\workshop\content\294100\3534254491\1.6\Assemblies\LoveyDoveySexWithRosaline.dll</HintPath>
+		  <Private>False</Private>
 		</Reference>
 	</ItemGroup>
 
