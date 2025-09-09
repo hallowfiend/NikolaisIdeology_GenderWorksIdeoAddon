@@ -3,38 +3,13 @@
 
 	<AbilityGroupDef>
 		<defName>Idol</defName>
-		<cooldownTicks>200000</cooldownTicks>
+		<cooldownTicks>180000</cooldownTicks>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<ritualRoleIds>
 			<li>speaker</li>
 			<li>leader</li>
 		</ritualRoleIds>
 	</AbilityGroupDef>
-	<AbilityDef Name="IdolPowerBase" ParentName="PsycastBase" Abstract="True">
-		<jobDef>CastAbilityOnThingMelee</jobDef>
-		<warmupMote>Mote_WarmupWordOf</warmupMote>
-		<warmupSound>Psycast_WordOf_Warmup</warmupSound>
-		<category>WordOf</category>
-		<stunTargetWhileCasting>True</stunTargetWhileCasting>
-		<showPsycastEffects>False</showPsycastEffects>
-		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
-		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
-		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<comps>
-			<li Class="CompProperties_AbilityFleckOnTarget">
-				<fleckDef>WordOfApply</fleckDef>
-				<sound>Psycast_WordOf_Effect</sound>
-			</li>
-		</comps>
-		<verbProperties>
-			<drawAimPie>False</drawAimPie>
-			<range>-1</range>
-			<targetParams>
-				<canTargetBuildings>False</canTargetBuildings>
-				<neverTargetHostileFaction>True</neverTargetHostileFaction>
-			</targetParams>
-		</verbProperties>
-	</AbilityDef>
  
 <AbilityDef>
 		<defName>NikolaisIdeology_IdolGlamour</defName>
