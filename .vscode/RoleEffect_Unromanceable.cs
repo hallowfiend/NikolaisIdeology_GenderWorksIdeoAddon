@@ -9,7 +9,5 @@ namespace NikolaisIdeology_GenderWorks
         public override bool IsBad => true;
 
         public RoleEffect_Unromanceable() => this.labelKey = "RoleEffectUnromanceable";
-
-        public override bool SexUtilities.CanDoLovinAtAll(Pawn pawn) => false;
     }
 }
