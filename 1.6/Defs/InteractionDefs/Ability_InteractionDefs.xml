@@ -2,7 +2,7 @@
 <Defs>
 	<InteractionDef>
 		<defName>NikolaisIdeology_IdolGlamourInteraction</defName>
-		<label>dazzled</label>
+		<label>idol glamour</label>
 		<symbol>UI/Abilities/IdolGlamour</symbol>
 		<logRulesInitiator>
 			<rulesStrings>
