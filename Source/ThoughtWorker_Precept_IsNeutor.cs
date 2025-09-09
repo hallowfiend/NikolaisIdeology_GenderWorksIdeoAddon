@@ -8,7 +8,7 @@ namespace NikolaisIdeology_GenderWorks
 	{
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			return !ModsConfig.BiotechActive || !ModsConfig.IdeologyActive ? ThoughtState.Inactive : (ThoughtState)p.IsNeutor();
+			return !ModsConfig.BiotechActive || !ModsConfig.IdeologyActive ? ThoughtState.Inactive : (ThoughtState)!GenderUtilities.HasAnyReproductiveOrgan(p);
 		}
 	}
 }

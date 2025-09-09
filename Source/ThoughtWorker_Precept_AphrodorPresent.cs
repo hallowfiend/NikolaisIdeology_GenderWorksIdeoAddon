@@ -9,11 +9,11 @@ namespace NikolaisIdeology_GenderWorks
 
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            if (!ModsConfig.BiotechActive || !ModsConfig.IdeologyActive || p.IsAphrodor())
+            if (!ModsConfig.BiotechActive || !ModsConfig.IdeologyActive || (GenderUtilities.HasMaleReproductiveOrgan(p) && GenderUtilities.HasFemaleReproductiveOrgan(p)))
                 return ThoughtState.Inactive;
             foreach (Pawn pawn in (IEnumerable<Pawn>)p.MapHeld.mapPawns.AllPawnsSpawned)
             {
-                if (pawn.IsAphrodor() && (!pawn.IsPrisonerOfColony && !pawn.IsSlaveOfColony && pawn.IsColonist))
+                if (GenderUtilities.HasMaleReproductiveOrgan(pawn) && GenderUtilities.HasFemaleReproductiveOrgan(pawn) && (!pawn.IsPrisonerOfColony && !pawn.IsSlaveOfColony && pawn.IsColonist))
                     return ThoughtState.ActiveDefault;
             }
             return ThoughtState.Inactive;

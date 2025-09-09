@@ -2,14 +2,14 @@
 using Verse;
 using RimWorld;
 
-namespace NikolaisIdeology.GenderWorks
+namespace NikolaisIdeology_GenderWorks
 {
 
     public static class GenderUtil_IsAphrodor
     {
         public static bool IsAphrodor(this Pawn pawn)
         {
-            return (GenderUtilities.HasMaleReproductiveOrgan(pawn) && GenderUtilities.HasFemaleReproductiveOrgan(pawn));
+            return GenderUtilities.HasMaleReproductiveOrgan(pawn) && GenderUtilities.HasFemaleReproductiveOrgan(pawn);
 
         }
     }
@@ -17,7 +17,7 @@ namespace NikolaisIdeology.GenderWorks
     {
         public static bool IsNeutor(this Pawn pawn)
         {
-            return (!GenderUtilities.HasAnyReproductiveOrgan(pawn));
+            return !GenderUtilities.HasAnyReproductiveOrgan(pawn);
         }
     }
 }

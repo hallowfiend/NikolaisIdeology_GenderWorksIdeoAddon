@@ -29,7 +29,7 @@
 			</li>
 		</comps>
 		<statFactors>
-			<medicalTendQuality>1.10</medicalTendQuality>
+			<MedicalTendQualityOffset>1.10</MedicalTendQualityOffset>
 		</statFactors>
 		<conflictingMemes>
 			<li>Transhumanist</li>

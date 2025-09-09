@@ -2,17 +2,18 @@
 using Verse;
 using LoveyDoveySexWithRosaline;
 
-namespace NikolaisIdeology_GenderWorks;
-
-public class RoleRequirement_Beauty : RoleRequirement
+namespace NikolaisIdeology_GenderWorks
 {
-    public static readonly RoleRequirement_Beauty Requirement = new RoleRequirement_Beauty();
-
-    public override string GetLabel(Precept_Role role)
+    public class RoleRequirement_Beauty : RoleRequirement
     {
-        return (string)"RoleRequirementBeauty".Translate();
+        public static readonly RoleRequirement_Beauty Requirement = new RoleRequirement_Beauty();
+
+        public override string GetLabel(Precept_Role role)
+        {
+            return (string)"RoleRequirementBeauty".Translate();
+        }
+
+        public override bool Met(Pawn p, Precept_Role role) => (p.GetStatValue(StatDefOf.PawnBeauty) >= 1.0);
     }
 
-    public override bool Met(Pawn p, Precept_Role role) => (p.GetStatValue(StatDefOf.PawnBeauty) >= 1.0);
 }
-

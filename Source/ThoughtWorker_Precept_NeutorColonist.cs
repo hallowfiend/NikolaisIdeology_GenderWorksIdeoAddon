@@ -8,13 +8,13 @@ namespace NikolaisIdeology_GenderWorks
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            if (!ModsConfig.BiotechActive || !ModsConfig.IdeologyActive || p.IsNeutor() || p.Faction == null)
+            if (!ModsConfig.BiotechActive || !ModsConfig.IdeologyActive || (!GenderUtilities.HasAnyReproductiveOrgan(p)) || p.Faction == null)
                 return ThoughtState.Inactive;
             Ideo ideo = p.Ideo;
             bool flag = false;
             foreach (Pawn pawn in p.MapHeld.mapPawns.SpawnedPawnsInFaction(p.Faction))
             {
-                if (pawn.IsNeutor())
+                if (GenderUtilities.HasAnyReproductiveOrgan(pawn))
                 {
                     flag = true;
                     Precept_Role role = pawn.Ideo?.GetRole(pawn);

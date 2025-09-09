@@ -39,6 +39,9 @@
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_Recreation_Loved</li>
 			</li>
+			<li>
+				<li>NikolaisIdeology_IdeoRole_Idol</li>
+			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
