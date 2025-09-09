@@ -23,6 +23,7 @@
 		<iconPath>UI/Abilities/IdolGlamour</iconPath>
 		<displayOrder>200</displayOrder>
 		<warmupMoteSocialSymbol>UI/Abilities/IdolGlamour</warmupMoteSocialSymbol>
+		<warmupSound>MoralistAbility_Warmup</warmupSound>
 		<statBases>
 			<Ability_Duration>1000</Ability_Duration>
 			<Ability_EffectRadius>0</Ability_EffectRadius>
