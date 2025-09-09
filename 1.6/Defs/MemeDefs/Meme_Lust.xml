@@ -135,8 +135,8 @@
 				<category>GM_EroticStyle</category>
 				<priority>4</priority>
 			</li>
-			<li MayRequire="VME_Hedonist">
-				<category>GM_EroticStyle</category>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>VME_Hedonist</category>
 				<priority>3</priority>
 			</li>
 		</thingStyleCategories>

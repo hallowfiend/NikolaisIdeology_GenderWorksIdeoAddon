@@ -15,7 +15,7 @@
 	<IdeoPresetDef>
 		<defName>NikolaisIdeology_SternPurifiers</defName>
 		<label>stern purifiers</label>
-		<description>All must be cleansed of its vile filth in the name of our god. Even those who do not yet know of their failures.</description>
+		<description>All must be cleansed of its vile filth in the name of our god. Even those who do not yet know of their impurity.</description>
 		<categoryDef>Strong</categoryDef>
 		<memes>
 			<li>Structure_TheistAbstract</li>

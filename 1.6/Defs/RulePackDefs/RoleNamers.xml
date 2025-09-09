@@ -38,6 +38,8 @@
 				<li>idolAlias->imago</li>
 				<li>idolAlias->devata</li>
 				<li>idolAlias->aura</li>
+				<li>idolAlias->fey</li>
+				<li>idolAlias->faerie</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
