@@ -10,7 +10,6 @@
 				<li>r_logentry->[INITIATOR_nameDef] batted [INITIATIOR_possessive] eyelashes at [RECIPIENT_nameDef].</li>
 				<li>r_logentry->[INITIATOR_nameDef] got [RECIPIENT_nameDef]'s attention, then overwhelmed [RECIPIENT_objective] with [INITIATIOR_possessive] [charmAction].</li>
 
-
 				<li>charmAction->looks</li>
 				<li>charmAction->movements</li>
 				<li>charmAction->scent</li>
@@ -24,6 +23,39 @@
 				<li>charmAction->eyes</li>
 				<li>charmAction->hands</li>
 
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	<InteractionDef>
+		<defName>NikolaisIdeology_OathspouseShameInteraction</defName>
+		<label>oathshame</label>
+		<symbol>UI/Abilities/OathspouseShame</symbol>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] shamed [RECIPIENT_nameDef] for [RECIPIENT_possessive] [badThing].</li>
+				<li>r_logentry->[INITIATOR_nameDef] berated [RECIPIENT_nameDef] for [RECIPIENT_possessive] [badAdjective] [badThing].</li>
+				<li>r_logentry->[INITIATOR_nameDef] admonished [RECIPIENT_nameDef] by sternly lecturing [RECIPIENT_possessive] on [admonishments].</li>
+
+				<li>badThing->sins</li>
+				<li>badThing->failures</li>
+				<li>badThing->imperfections</li>
+				<li>badThing->impurities</li>
+				<li>badThing->desires</li>
+				<li>badThing->lack of restraint</li>
+				<li>badThing->lack of virtues</li>
+				<li>badThing->lack of mental safeguards</li>
+
+				<li>badAdjective->terrible</li>
+				<li>badAdjective->lustful</li>
+				<li>badAdjective->dire</li>
+				<li>badAdjective->impure</li>
+
+				<li>admonishments->purity</li>
+				<li>admonishments->cleanliness</li>
+				<li>admonishments->virtue and the lack thereof</li>
+				<li>admonishments->water</li>
+				<li>admonishments->rain</li>
+				<li>admonishments->cleaning products</li>
 			</rulesStrings>
 		</logRulesInitiator>
 	</InteractionDef>

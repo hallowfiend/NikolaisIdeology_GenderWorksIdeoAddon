@@ -20,6 +20,36 @@
 		<li Class="HediffCompProperties_DisappearsOnDeath"/>
 	</comps>
 </HediffDef>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>NikolaisIdeology_OathspouseShameHediff</defName>
+		<label>admonished by an Oathspouse</label>
+		<description>Ideoligiously shamed by an Oathspouse, this person has gotten terribly embarrassed into steeling themselves in the hopes they may yet still be saved.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeditationFocusGain>0.5</MeditationFocusGain>
+					<CleaningSpeed>1</CleaningSpeed>
+					<MoveSpeed>0.25</MoveSpeed>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<factor>0</factor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
 	<!-- Thoughts -->
 	<ThoughtDef>
 		<defName>NikolaisIdeology_IdolGlamourThought</defName>
@@ -32,6 +62,20 @@
 				<label>glamour</label>
 				<description>Ahh... How can someone possibly be so beautiful...</description>
 				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>NikolaisIdeology_OathspouseShameThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NikolaisIdeology_OathspouseShameHediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>shame</label>
+				<description>I had no idea I was still so immoral! I need to fix this!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

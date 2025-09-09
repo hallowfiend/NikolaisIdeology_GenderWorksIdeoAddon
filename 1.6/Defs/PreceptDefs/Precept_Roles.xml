@@ -3,7 +3,6 @@
 	<PreceptDef Abstract="True" Name="PreceptRoleSingleIdolSpouse">
 		<issue>IdeoRole</issue>
 		<preceptClass>Precept_RoleSingle</preceptClass>
-		<certaintyLossFactor>0.5</certaintyLossFactor>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<roleRequirements>
 			<li Class="RoleRequirement_SameIdeo">
@@ -28,10 +27,11 @@
 			</points>
 		</roleApparelRequirementCountCurve>
 	</PreceptDef>
+	<!-- Idol -->
 	<PreceptDef ParentName="PreceptRoleSingleIdolSpouse">
 		<defName>NikolaisIdeology_IdeoRole_Idol</defName>
 		<label>idol</label>
-		<description>A special ideoligious designation focused on beauty and performance. This specialized role gives drastically increased social stats and the ability to dazzle allies and enemies alike with sheer glamour. Holders of this role will refuse to do strenuous manual labor, so as to preserve their natural beauty.</description>
+		<description>A special ideoligious status focused on beauty and performance. This specialized role gives drastically increased social stats and the ability to dazzle allies and enemies alike with sheer glamour. Holders of this role will refuse to do strenuous manual labor, so as to preserve their natural beauty.</description>
 		<iconPath>UI/Roles/Idol</iconPath>
 		<nameMaker>NamerRoleIdol</nameMaker>
 		<roleRequirements>
@@ -149,20 +149,22 @@
 			</li>
 		</roleApparelRequirements>
 	</PreceptDef>
+	<!-- Oathspouse -->
 	<PreceptDef ParentName="PreceptRoleSingleIdolSpouse">
-		<defName>NikolaisIdeology_IdeoRole_Idol</defName>
-		<label>idol</label>
-		<description>A special ideoligious designation focused on beauty and performance. This specialized role gives drastically increased social stats and the ability to dazzle allies and enemies alike with sheer glamour. Holders of this role will refuse to do strenuous manual labor, so as to preserve their natural beauty.</description>
-		<iconPath>UI/Roles/Idol</iconPath>
-		<nameMaker>NamerRoleIdol</nameMaker>
+		<defName>NikolaisIdeology_IdeoRole_Oathspouse</defName>
+		<label>oathspouse</label>
+		<description>A special ideoligious status focused on pure adherence to precepts, to the point of dedicating one's very body and soul to them. This specialized role gives increased social stats, a stronger will and the ability to shame others into quiet embarrassment. Holders of this role will refuse to do certain kinds of "unclean" work. Additionally, it is very difficult to sway them away from their beliefs, and they can neither romance others or be romanced.</description>
+		<iconPath>UI/Roles/Oathspouse</iconPath>
+		<nameMaker>NamerRoleOathspouse</nameMaker>
+		<certaintyLossFactor>0.1</certaintyLossFactor>
 		<roleRequirements>
 			<li Class="RoleRequirement_MinSkillAny">
 				<skills>
 					<Social>8</Social>
 				</skills>
 			</li>
-			<li Class="NikolaisIdeology_GenderWorks.RoleRequirement_Beauty">
-				<labelKey>RoleRequirementBeauty</labelKey>
+			<li Class="NikolaisIdeology_GenderWorks.RoleRequirement_NoLoveRelations">
+				<labelKey>RoleRequirementNoLoveRelations</labelKey>
 			</li>
 		</roleRequirements>
 		<roleRequiredWorkTags>
@@ -170,34 +172,39 @@
 			<li>Caring</li>
 		</roleRequiredWorkTags>
 		<roleTags>
-			<li>Idol</li>
+			<li>Oathspouse</li>
 		</roleTags>
 		<requiredMemes>
-			<li>NikolaisIdeology_Aphroditic</li>
+			<li>NikolaisIdeology_Chastity</li>
 		</requiredMemes>
 		<roleEffects>
 			<li Class="RoleEffect_PawnStatOffset">
 				<statDef>NegotiationAbility</statDef>
-				<modifier>1</modifier>
+				<modifier>0.5</modifier>
 			</li>
 			<li Class="RoleEffect_PawnStatOffset">
 				<statDef>SocialImpact</statDef>
-				<modifier>1</modifier>
+				<modifier>0.5</modifier>
 			</li>
 			<li Class="RoleEffect_PawnStatOffset">
-				<statDef>VEF_MTBLovinFactor</statDef>
-				<modifier>-0.25</modifier>
+				<statDef>MentalBreakThreshold</statDef>
+				<modifier>-0.1</modifier>
 			</li>
+			<li Class="RoleEffect_PawnStatFactor">
+				<statDef>SEX_IntimacyNeedRate</statDef>
+				<modifier>0.5</modifier>
+			</li>
+			<li Class="NikolaisIdeology_GenderWorks.RoleEffect_Unromanceable"></li>
 		</roleEffects>
 		<grantedAbilities>
-			<li>NikolaisIdeology_IdolGlamour</li>
+			<li>NikolaisIdeology_OathspouseShame</li>
 		</grantedAbilities>
 		<displayOrderInImpact>2</displayOrderInImpact>
 		<roleDisabledWorkTags>
-			<li>PlantWork</li>
+			<li>Construction</li>
 			<li>Mining</li>
-			<li>Constructing</li>
-			<li>ManualDumb</li>
+			<li>Cooking</li>
+			<li>Animals</li>
 			<li>Hunting</li>
 		</roleDisabledWorkTags>
 		<roleApparelRequirements>
@@ -262,6 +269,16 @@
 					</requiredDefs>
 				</requirement>
 			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Neck</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VAE_Neckwear_Scarf</li>
+					</requiredDefs>
+				</requirement>
+			</li>
 			<li MayRequire="VanillaExpanded.VIEHAR">
 				<requirement>
 					<bodyPartGroupsMatchAny>
@@ -269,6 +286,19 @@
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VIEHAR_Apparel_Beads</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VIEHAR">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+						<li>Shoulders</li>
+						<li>Arms</li>
+						<li>Legs</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VIEHAR_Apparel_Rags</li>
 					</requiredDefs>
 				</requirement>
 			</li>
@@ -288,7 +318,7 @@
 				</disallowedFactionCategoryTags>
 				<anyMemeRequired>
 					<li>Transhumanist</li>
-					<li MayRequire="hlx.UltratechAlteredCarbon"></li>
+					<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 				</anyMemeRequired>
 				<requirement>
 					<bodyPartGroupsMatchAny>
