@@ -3,4 +3,5 @@
 	<NikolaisIdeology_GenderWorks_BeautyCentral>Beauty: Central precept</NikolaisIdeology_GenderWorks_BeautyCentral>
 	<RoleRequirementBeauty>Must have a Beauty stat above or equal to 1</RoleRequirementBeauty>
 	<RoleRequirementNoLoveRelations>Cannot have any living lovers, fiances or spouses</RoleRequirementNoLoveRelations>
+	<RoleEffectUnromanceable>Cannot take on new lovers or be romanced</RoleEffectUnromanceable>
 </LanguageData>

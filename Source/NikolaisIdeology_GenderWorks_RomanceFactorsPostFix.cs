@@ -12,7 +12,7 @@ namespace NikolaisIdeology_GenderWorks
     public class NikolaisIdeology_GenderWorks_RomanceFactorPostfix
     {
         [HarmonyPostfix]
-        public void BeautyImportantFactor(ref string __result, Pawn romancer, Pawn romanceTarget)
+        public static void BeautyImportantFactor(ref string __result, Pawn romancer, Pawn romanceTarget)
         {
             float beautyfloat = 1f;
             float statValue = romanceTarget.GetStatValue(StatDefOf.PawnBeauty);

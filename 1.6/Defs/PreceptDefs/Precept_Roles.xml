@@ -21,6 +21,12 @@
 		<impact>Medium</impact>
 		<activationBelieverCount>5</activationBelieverCount>
 		<deactivationBelieverCount>1</deactivationBelieverCount>
+		<roleApparelRequirementCountCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(1, 1)</li>
+			</points>
+		</roleApparelRequirementCountCurve>
 	</PreceptDef>
 	<PreceptDef ParentName="PreceptRoleSingleIdolSpouse">
 		<defName>NikolaisIdeology_IdeoRole_Idol</defName>
@@ -142,11 +148,158 @@
 				</requirement>
 			</li>
 		</roleApparelRequirements>
-		<roleApparelRequirementCountCurve>
-			<points>
-				<li>(0, 1)</li>
-				<li>(1, 1)</li>
-			</points>
-		</roleApparelRequirementCountCurve>
+	</PreceptDef>
+	<PreceptDef ParentName="PreceptRoleSingleIdolSpouse">
+		<defName>NikolaisIdeology_IdeoRole_Idol</defName>
+		<label>idol</label>
+		<description>A special ideoligious designation focused on beauty and performance. This specialized role gives drastically increased social stats and the ability to dazzle allies and enemies alike with sheer glamour. Holders of this role will refuse to do strenuous manual labor, so as to preserve their natural beauty.</description>
+		<iconPath>UI/Roles/Idol</iconPath>
+		<nameMaker>NamerRoleIdol</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Social>8</Social>
+				</skills>
+			</li>
+			<li Class="NikolaisIdeology_GenderWorks.RoleRequirement_Beauty">
+				<labelKey>RoleRequirementBeauty</labelKey>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTags>
+			<li>Social</li>
+			<li>Caring</li>
+		</roleRequiredWorkTags>
+		<roleTags>
+			<li>Idol</li>
+		</roleTags>
+		<requiredMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>NegotiationAbility</statDef>
+				<modifier>1</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>SocialImpact</statDef>
+				<modifier>1</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>VEF_MTBLovinFactor</statDef>
+				<modifier>-0.25</modifier>
+			</li>
+		</roleEffects>
+		<grantedAbilities>
+			<li>NikolaisIdeology_IdolGlamour</li>
+		</grantedAbilities>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<roleDisabledWorkTags>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Constructing</li>
+			<li>ManualDumb</li>
+			<li>Hunting</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+						<li>Neck</li>
+						<li>Shoulders</li>
+						<li>Arms</li>
+						<li>Legs</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Robe</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<allowedFactionCategoryTags>
+					<li>Tribal</li>
+				</allowedFactionCategoryTags>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_TribalHeaddress</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_HatHood</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<disallowedFactionCategoryTags>
+					<li>Tribal</li>
+				</disallowedFactionCategoryTags>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_VisageMask</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Hands</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VAE_Handwear_Gloves</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VIEHAR">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Neck</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VIEHAR_Apparel_Beads</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredTags>
+						<li>Cape</li>
+					</requiredTags>
+				</requirement>
+			</li>
+			<li>
+				<disallowedFactionCategoryTags>
+					<li>Tribal</li>
+				</disallowedFactionCategoryTags>
+				<anyMemeRequired>
+					<li>Transhumanist</li>
+					<li MayRequire="hlx.UltratechAlteredCarbon"></li>
+				</anyMemeRequired>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Slicecap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
 	</PreceptDef>
 </Defs>

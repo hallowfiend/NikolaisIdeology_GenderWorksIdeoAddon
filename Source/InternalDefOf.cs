@@ -13,6 +13,5 @@ namespace NikolaisIdeology_GenderWorks
         {
         public static PreceptDef NikolaisIdeology_Beauty_Central;
         public static PreceptDef NikolaisIdeology_Beauty_Unimportant;
-        public static PreceptDef NikolaisIdeology_IdeoRole_Idol;
     }
 }
