@@ -23,6 +23,7 @@
 		<iconPath>UI/Abilities/IdolGlamour</iconPath>
 		<displayOrder>200</displayOrder>
 		<warmupMoteSocialSymbol>UI/Abilities/IdolGlamour</warmupMoteSocialSymbol>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<warmupSound>MoralistAbility_Warmup</warmupSound>
 		<statBases>
 			<Ability_Duration>1000</Ability_Duration>
@@ -56,6 +57,9 @@
 					<workTags>
 						<li>Social</li>
 					</workTags>
+				</li>
+				<li Class="CompProperties_AbilityRequiresCapacity">
+					<capacity>Talking</capacity>
 				</li>
 				<li Class="CompProperties_AbilitySocialInteraction">
 					<interactionDef>NikolaisIdeology_IdolGlamourInteraction</interactionDef>
