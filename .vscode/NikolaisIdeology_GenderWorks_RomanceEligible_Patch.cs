@@ -24,7 +24,7 @@ namespace NikolaisIdeology_GenderWorks
                     {
                         if (roleEffect is NikolaisIdeology_GenderWorks.RoleEffect_Unromanceable)
                         {
-                            __result = false;
+                            __result = (AcceptanceReport) false;
                         }
                     }
                 }

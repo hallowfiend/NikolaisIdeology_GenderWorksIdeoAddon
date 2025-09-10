@@ -3,13 +3,13 @@
 
 	<AbilityGroupDef>
 		<defName>Idol</defName>
-		<cooldownTicks>120000</cooldownTicks>
+		<cooldownTicks>180000</cooldownTicks>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 	</AbilityGroupDef>
 	
 	<AbilityGroupDef>
 		<defName>Oathspouse</defName>
-		<cooldownTicks>120000</cooldownTicks>
+		<cooldownTicks>180000</cooldownTicks>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 	</AbilityGroupDef>
 	<!-- Glamour -->
