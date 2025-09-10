@@ -38,7 +38,7 @@
 				<capMods>
 					<li>
 						<capacity>Talking</capacity>
-						<factor>0</factor>
+						<setMax>0</setMax>
 					</li>
 				</capMods>
 			</li>

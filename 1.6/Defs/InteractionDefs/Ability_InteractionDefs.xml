@@ -6,9 +6,9 @@
 		<symbol>UI/Abilities/IdolGlamour</symbol>
 		<logRulesInitiator>
 			<rulesStrings>
-				<li>r_logentry->[INITIATOR_nameDef] dazzled [RECIPIENT_nameDef] with [INITIATIOR_possessive] [charmAction].</li>
-				<li>r_logentry->[INITIATOR_nameDef] batted [INITIATIOR_possessive] eyelashes at [RECIPIENT_nameDef].</li>
-				<li>r_logentry->[INITIATOR_nameDef] got [RECIPIENT_nameDef]'s attention, then overwhelmed [RECIPIENT_objective] with [INITIATIOR_possessive] [charmAction].</li>
+				<li>r_logentry->[INITIATOR_nameDef] dazzled [RECIPIENT_nameDef] with [INITIATOR_possessive] [charmAction].</li>
+				<li>r_logentry->[INITIATOR_nameDef] batted [INITIATOR_possessive] eyelashes at [RECIPIENT_nameDef].</li>
+				<li>r_logentry->[INITIATOR_nameDef] got [RECIPIENT_nameDef]'s attention, then overwhelmed [RECIPIENT_objective] with [INITIATOR_possessive] [charmAction].</li>
 				<li>charmAction->looks</li>
 				<li>charmAction->movements</li>
 				<li>charmAction->scent</li>

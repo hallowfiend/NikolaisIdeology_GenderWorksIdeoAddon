@@ -80,7 +80,7 @@
 		<defName>NikolaisIdeology_Neutors_Sacred</defName>
 		<issue>NikolaisIdeology_Neutors</issue>
 		<label>sacred</label>
-		<description>Those who are above the pleasures of the flesh are also above us all.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nNeutors will be happier. Followers will be happy if the moral guide is a neuter, and unhappy if they aren't.</description>
+		<description>Those who are above the pleasures of the flesh are also above us all.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nNeuters will be happier. Followers will be happy if the moral guide is a neuter, and unhappy if they aren't.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

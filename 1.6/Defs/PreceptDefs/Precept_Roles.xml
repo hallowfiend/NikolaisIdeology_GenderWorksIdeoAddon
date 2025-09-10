@@ -277,19 +277,6 @@
 					</requiredDefs>
 				</requirement>
 			</li>
-			<li>
-				<disallowedFactionCategoryTags>
-					<li>Tribal</li>
-				</disallowedFactionCategoryTags>
-				<requirement>
-					<bodyPartGroupsMatchAny>
-						<li>FullHead</li>
-					</bodyPartGroupsMatchAny>
-					<requiredDefs>
-						<li>Apparel_VisageMask</li>
-					</requiredDefs>
-				</requirement>
-			</li>
 			<li MayRequire="VanillaExpanded.VAPPE">
 				<requirement>
 					<bodyPartGroupsMatchAny>
@@ -400,6 +387,19 @@
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>Apparel_Slicecap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<disallowedFactionCategoryTags>
+					<li>Tribal</li>
+				</disallowedFactionCategoryTags>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_VisageMask</li>
 					</requiredDefs>
 				</requirement>
 			</li>
