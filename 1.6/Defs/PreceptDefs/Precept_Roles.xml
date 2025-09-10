@@ -96,6 +96,7 @@
 				</allowedFactionCategoryTags>
 				<requirement>
 					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
@@ -138,9 +139,9 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VAPPE">
 				<requirement>
-					<bodyPartGroupMatchAny>
+					<bodyPartGroupsMatchAny>
 						<li>Legs</li>
-					</bodyPartGroupMatchAny>
+					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VAE_Apparel_Skirt</li>
 					</requiredDefs>
@@ -148,9 +149,9 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VAPPE">
 				<requirement>
-					<bodyPartGroupMatchAny>
+					<bodyPartGroupsMatchAny>
 						<li>Feet</li>
-					</bodyPartGroupMatchAny>
+					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VAE_Footwear_Shoes</li>
 					</requiredDefs>
@@ -169,6 +170,7 @@
 			<li MayRequire="OskarPotocki.VFE.Classical">
 				<requirement>
 					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
@@ -230,7 +232,7 @@
 		</grantedAbilities>
 		<displayOrderInImpact>2</displayOrderInImpact>
 		<roleDisabledWorkTags>
-			<li>Construction</li>
+			<li>Constructing</li>
 			<li>Mining</li>
 			<li>Cooking</li>
 			<li>Animals</li>
@@ -257,6 +259,7 @@
 				</allowedFactionCategoryTags>
 				<requirement>
 					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
@@ -309,9 +312,9 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VAPPE">
 				<requirement>
-					<bodyPartGroupMatchAny>
+					<bodyPartGroupsMatchAny>
 						<li>Feet</li>
-					</bodyPartGroupMatchAny>
+					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VAE_Footwear_Boots</li>
 					</requiredDefs>
@@ -353,7 +356,7 @@
 			<li MayRequire="VanillaExpanded.VIEHAR">
 				<requirement>
 					<bodyPartGroupsMatchAny>
-						<li>FullHead</li>
+						<li>UpperHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VIEHAR_Apparel_Skullcap</li>
@@ -367,7 +370,7 @@
 				</anyMemeRequired>
 				<requirement>
 					<bodyPartGroupsMatchAny>
-						<li>FullHead</li>
+						<li>UpperHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VIEHAR_Apparel_SpikedSkullcap</li>
