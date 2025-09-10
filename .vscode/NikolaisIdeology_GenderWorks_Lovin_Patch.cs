@@ -15,7 +15,7 @@ namespace NikolaisIdeology_GenderWorks
         [HarmonyPrefix]
         public static void Prefix(Pawn pawn, ref bool __result)
         {
-            if (ModsConfig.IdeologyActive && pawn != null && pawn.Ideo != null)
+            if (pawn != null && pawn.Ideo != null)
             {
                 Precept_Role role = pawn.Ideo.GetRole(pawn);
                 if (role != null && role.def.roleEffects != null)

@@ -96,7 +96,6 @@
 				</allowedFactionCategoryTags>
 				<requirement>
 					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
@@ -137,6 +136,26 @@
 					</requiredDefs>
 				</requirement>
 			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupMatchAny>
+						<li>Legs</li>
+					</bodyPartGroupMatchAny>
+					<requiredDefs>
+						<li>VAE_Apparel_Skirt</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupMatchAny>
+						<li>Feet</li>
+					</bodyPartGroupMatchAny>
+					<requiredDefs>
+						<li>VAE_Footwear_Shoes</li>
+					</requiredDefs>
+				</requirement>
+			</li>
 			<li MayRequire="VanillaExpanded.VIEHAR">
 				<requirement>
 					<bodyPartGroupsMatchAny>
@@ -144,6 +163,16 @@
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VIEHAR_Apparel_Beads</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="OskarPotocki.VFE.Classical">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VFEC_Wreath</li>
 					</requiredDefs>
 				</requirement>
 			</li>
@@ -188,7 +217,7 @@
 			</li>
 			<li Class="RoleEffect_PawnStatOffset">
 				<statDef>MentalBreakThreshold</statDef>
-				<modifier>-0.1</modifier>
+				<modifier>-0.15</modifier>
 			</li>
 			<li Class="RoleEffect_PawnStatFactor">
 				<statDef>SEX_IntimacyNeedRate</statDef>
@@ -228,7 +257,6 @@
 				</allowedFactionCategoryTags>
 				<requirement>
 					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
@@ -239,7 +267,7 @@
 			<li>
 				<requirement>
 					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
+						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>Apparel_HatHood</li>
@@ -275,7 +303,17 @@
 						<li>Neck</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
-						<li>VAE_Neckwear_Scarf</li>
+						<li>VAE_Headwear_Scarf</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VAPPE">
+				<requirement>
+					<bodyPartGroupMatchAny>
+						<li>Feet</li>
+					</bodyPartGroupMatchAny>
+					<requiredDefs>
+						<li>VAE_Footwear_Boots</li>
 					</requiredDefs>
 				</requirement>
 			</li>
@@ -302,6 +340,40 @@
 					</requiredDefs>
 				</requirement>
 			</li>
+			<li MayRequire="VanillaExpanded.VIEHAR">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VIEHAR_Apparel_Headbag</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VIEHAR">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VIEHAR_Apparel_Skullcap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="VanillaExpanded.VIEHAR">
+				<anyMemeRequired>
+					<li>PainIsVirtue</li>
+					<li>Guilty</li>
+				</anyMemeRequired>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VIEHAR_Apparel_SpikedSkullcap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<requirement>
 					<bodyPartGroupsMatchAny>
@@ -318,11 +390,9 @@
 				</disallowedFactionCategoryTags>
 				<anyMemeRequired>
 					<li>Transhumanist</li>
-					<li MayRequire="hlx.UltratechAlteredCarbon">AC_Ouroboros</li>
 				</anyMemeRequired>
 				<requirement>
 					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>

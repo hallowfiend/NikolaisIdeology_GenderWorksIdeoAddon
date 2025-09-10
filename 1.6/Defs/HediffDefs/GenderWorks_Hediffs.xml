@@ -65,6 +65,7 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
 	<ThoughtDef>
 		<defName>NikolaisIdeology_OathspouseShameThought</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>

@@ -16,7 +16,7 @@ namespace NikolaisIdeology_GenderWorks
         {
             float beautyfloat = 1f;
             float statValue = romanceTarget.GetStatValue(StatDefOf.PawnBeauty);
-            if (ModsConfig.IdeologyActive && romancer.ideo != null && (romancer.story?.traits == null || !romancer.story.traits.HasTrait(TraitDefOf.Kind) || !romancer.story.traits.HasTrait(TraitDefOf.Ascetic)))
+            if (romancer.ideo != null && (romancer.story?.traits == null || !romancer.story.traits.HasTrait(TraitDefOf.Kind) || !romancer.story.traits.HasTrait(TraitDefOf.Ascetic)))
             {
                 if (CommonChecks.HasIdeoPrecept(romancer, "NikolaisIdeology_Beauty_Central"))
                     {
@@ -29,7 +29,7 @@ namespace NikolaisIdeology_GenderWorks
             else
                 return;
             StringBuilder stringBuilder = new StringBuilder(__result);
-            stringBuilder.AppendLine((string)("NikolaisIdeology_GenderWorks_BeautyCentral".Translate() + ": x" + beautyfloat.ToStringPercent()));
+            stringBuilder.AppendLine((string)("NikolaisIdeology_Beauty_Central".Translate() + ": x" + beautyfloat.ToStringPercent()));
             __result = stringBuilder.ToString();
         }
     }

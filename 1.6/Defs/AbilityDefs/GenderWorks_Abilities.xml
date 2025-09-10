@@ -6,6 +6,7 @@
 		<cooldownTicks>120000</cooldownTicks>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 	</AbilityGroupDef>
+	
 	<AbilityGroupDef>
 		<defName>Oathspouse</defName>
 		<cooldownTicks>120000</cooldownTicks>
@@ -81,7 +82,7 @@
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<groupDef>Oathspouse</groupDef>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<description>Cast great shame on someone by speaking precisely of how they fail to live up to ideoligious ideals that the oathspouse is so dedicated to. The embarrasment will upset the target and make them too awkward to speak, but will make it easier to focus on certain tasks. Can be cast on hostile targets. Lasts for 24 hours.</description>
+		<description>Cast great shame on someone by speaking precisely of how they fail to live up to ideoligious ideals that the oathspouse is so dedicated to. The embarrasment will upset the target and make them too awkward to speak, but will make it easier to focus on certain tasks. Can only be cast on friendly targets or prisoners. Lasts for 24 hours.</description>
 		<targetRequired>True</targetRequired>
 		<iconPath>UI/Abilities/OathspouseShame</iconPath>
 		<displayOrder>200</displayOrder>
@@ -103,8 +104,7 @@
 				<canTargetBuildings>false</canTargetBuildings>
 				<canTargetMechs>false</canTargetMechs>
 				<canTargetSubhumans>false</canTargetSubhumans>
-				<onlyTargetColonistsOrPrisonersOrSlaves>false</onlyTargetColonistsOrPrisonersOrSlaves>
-				<neverTargetHostileFaction>false</neverTargetHostileFaction>
+				<onlyTargetColonistsOrPrisonersOrSlaves>true</onlyTargetColonistsOrPrisonersOrSlaves>
 			</targetParams>
 		</verbProperties>
 		<comps>
