@@ -1,12 +1,13 @@
 ﻿using RimWorld;
 using Verse;
 using HarmonyLib;
+using System;
 
 namespace NikolaisIdeology_GenderWorks
 {
     [HarmonyPatch(typeof(ThoughtWorker_NeedBeauty))]
-    [HarmonyPatch("PostAdd")]
-    public static class NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch
+    [HarmonyPatch("PreAdd")]
+    public class NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch
     {
         [HarmonyPostfix]
         public static void DontShowIfBeautyPrecept(Pawn p, ref ThoughtState __result)

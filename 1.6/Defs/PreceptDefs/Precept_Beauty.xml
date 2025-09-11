@@ -65,9 +65,10 @@
 	<!-- Thoughts -->
 	<ThoughtDef>
 		<defName>NikolaisIdeology_Beauty_Central</defName>
-		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_NeedBeauty</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
+			<li>Ascetic</li>
 			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Slob</li>
 		</nullifyingTraits>
 		<stages>
@@ -105,7 +106,7 @@
 	</ThoughtDef>
 	<ThoughtDef>
 		<defName>NikolaisIdeology_Beauty_Unimportant</defName>
-		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_NeedBeauty</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
@@ -146,7 +147,7 @@
 	<ThoughtDef>
 		<defName>NikolaisIdeology_GenderWorks_AphroPretty</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Pretty</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Pretty</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li>Kind</li>
@@ -166,7 +167,7 @@
 	<ThoughtDef>
 		<defName>NikolaisIdeology_GenderWorks_AphroUgly</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Ugly</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.ThoughtWorker_Precept_Ugly</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li>Kind</li>
