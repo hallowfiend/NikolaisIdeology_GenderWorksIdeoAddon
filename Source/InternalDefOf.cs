@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
+using LoveyDoveySexWithEuterpe;
 
 namespace NikolaisIdeology_GenderWorks
 {
@@ -13,5 +14,6 @@ namespace NikolaisIdeology_GenderWorks
         {
         public static PreceptDef NikolaisIdeology_Beauty_Central;
         public static PreceptDef NikolaisIdeology_Beauty_Unimportant;
+        public static NeedDef SEX_Intimacy;
     }
 }

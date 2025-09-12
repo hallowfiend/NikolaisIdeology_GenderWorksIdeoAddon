@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<RitualBehaviorDef>
+		<defName>NikolaisIdeology_PerformanceRitualBehavior</defName>
+		<durationTicks>6000</durationTicks>
+		<workerClass>RitualBehaviorWorker_Performance</workerClass>
+		<roles>
+			<li Class="RitualRoleTag">
+				<label>performer</label>
+				<id>performer</id>
+				<required>True</required>
+				<precept>NikolaisIdeology_IdeoRole_Idol</precept>
+				<substitutable>True</substitutable>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<allowChild>false</allowChild>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+		</roles>
+		<spectatorsLabel>Spectators</spectatorsLabel>
+		<spectatorGerund>spectate</spectatorGerund>
+		<stages>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<essential>True</essential>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>1</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1</percentage>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>Performer</roleId>
+						<dutyDef>PartyDance</dutyDef>
+					</li>
+				</roleBehaviors>
+
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+
+
+
+
+
+</Defs>

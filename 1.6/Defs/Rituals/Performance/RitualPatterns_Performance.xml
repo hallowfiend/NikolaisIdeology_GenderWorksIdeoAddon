@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualPatternDef>
+		<defName>NikolaisIdeology_PerformanceRitual</defName>
+		<ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+		<ritualBehavior>NikolaisIdeology_PerformanceRitualBehavior</ritualBehavior>
+		<ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
+		<ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
+		<alwaysStartAnytime>false</alwaysStartAnytime>
+		<canStartAnytime>true</canStartAnytime>
+		<ritualOutcomeEffect>NikolaisIdeology_PerformanceRitualOutcome</ritualOutcomeEffect>
+		<playsIdeoMusic>true</playsIdeoMusic>
+	</RitualPatternDef>
+
+
+
+
+
+</Defs>

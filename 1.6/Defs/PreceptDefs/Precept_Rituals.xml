@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>NikolaisIdeology_GenderWorks_PerformancePrecept</defName>
+		<label>performance</label>
+		<description>A performance by a beautiful and socially skilled person, for the rest of the colony to adore.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>NikolaisIdeology_PerformanceRitual</ritualPatternBase>
+		<iconPath>UI/Rituals/Performance</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>
+			<li>NikolaisIdeology_Aphroditic</li>
+		</requiredMemes>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<visible>true</visible>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>NikolaisIdeology_GenderWorks_ArrangedMarriagePrecept</defName>
+		<label>arranged marriage</label>
+		<description>An arranged marriage ceremony between two colonists, so that they may live virtuously.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>NikolaisIdeology_ArrangedMarriageRitual</ritualPatternBase>
+		<iconPath>UI/Rituals/ArrangedMarriage</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>
+			<li>NikolaisIdeology_Chastity</li>
+		</requiredMemes>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<visible>true</visible>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

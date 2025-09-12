@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Outcomes -->
+	<RitualOutcomeEffectDef>
+		<defName>NikolaisIdeology_PerformanceRitualOutcome</defName>
+		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+		<workerClass>RitualOutcomeEffectWorker_Performance</workerClass>
+		<extraPredictedOutcomeDescriptions>
+			<li>The performer will gain social experience and fill their intimacy bar.</li>
+			<li>Spectators will gain a mood boost and fill their recreation bars. At the highest quality, they will also get a small boost to their intimacy bar.</li>
+		</extraPredictedOutcomeDescriptions>
+		<comps>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.1)</li>
+						<li>(10, 0.2)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+				<roleId>performer</roleId>
+				<label>performer is the idol</label>
+				<qualityOffset>0.15</qualityOffset>
+				<disableInClassicMode>true</disableInClassicMode>
+			</li>
+			<li Class="RitualOutcomeComp_RitualSeatPresent">
+				<qualityOffset>0.15</qualityOffset>
+			</li>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>50,  0.1</li>
+						<li>120, 0.2</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_PawnStatScaled">
+				<label>{PAWN_labelShort}'s social impact</label>
+				<labelAbstract>Performer's social impact</labelAbstract>
+				<statDef>SocialImpact</statDef>
+				<roleId>performer</roleId>
+				<scaledBy>0.25</scaledBy>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Dull</label>
+				<chance>0.05</chance>
+				<memory>NikolaisIdeology_DullPerformance</memory>
+				<description>The {0} was so dull! The performer just repeated some basic dance moves in silence and didn't interact with the audience whatsoever. Everyone was waiting for it to end.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Awkward</label>
+				<chance>0.15</chance>
+				<memory>NikolaisIdeology_AwkwardPerformance</memory>
+				<description>The {0} was awkward. The performer's moves were clumsy and their voice stuttered. At least it feels like they sort of tried.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Enjoyable</label>
+				<chance>0.6</chance>
+				<memory>NikolaisIdeology_EnjoyablePerformance</memory>
+				<description>The {0} was enjoyable. The performer moved smoothly, incorporating song into the rhythm of their dances. They certainly earned the adoration of their spectators.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Enchanting</label>
+				<chance>0.2</chance>
+				<memory>NikolaisIdeology_EnchantingPerformance</memory>
+				<description>The {0} was enchanting! The performer's body flowed with sweet allure, their voice dripping with honey. When they teased the audience, some of them almost fainted.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+	
+	<!-- Thoughts -->
+	
+		<ThoughtDef>
+			<defName>NikolaisIdeology_DullPerformance</defName>
+			<thoughtClass>Thought_AttendedRitual</thoughtClass>
+			<durationDays>6</durationDays>
+			<stackLimit>3</stackLimit>
+			<stages>
+				<li>
+					<label>dull performance</label>
+					<description>The performance was so dull! The performer just repeated some basic dance moves in silence and didn't interact with the audience whatsoever. I was waiting for it to end.</description>
+					<baseMoodEffect>-8</baseMoodEffect>
+				</li>
+			</stages>
+		</ThoughtDef>
+
+		<ThoughtDef>
+			<defName>NikolaisIdeology_AwkwardPerformance</defName>
+			<thoughtClass>Thought_AttendedRitual</thoughtClass>
+			<durationDays>6</durationDays>
+			<stackLimit>3</stackLimit>
+			<stages>
+				<li>
+					<label>awkward performance</label>
+					<description>The performance was awkward. The performer's moves were clumsy and their voice stuttered. At least it feels like they sort of tried.</description>
+					<baseMoodEffect>-4</baseMoodEffect>
+				</li>
+			</stages>
+		</ThoughtDef>
+
+		<ThoughtDef>
+			<defName>NikolaisIdeology_EnjoyablePerformance</defName>
+			<thoughtClass>Thought_AttendedRitual</thoughtClass>
+			<durationDays>6</durationDays>
+			<stackLimit>3</stackLimit>
+			<stages>
+				<li>
+					<label>enjoyable performance</label>
+					<description>The perfomance was enjoyable. The performer moved smoothly, incorporating song into the rhythm of their dances. They certainly earned the adoration of their spectators.</description>
+					<baseMoodEffect>4</baseMoodEffect>
+				</li>
+			</stages>
+		</ThoughtDef>
+
+		<ThoughtDef>
+			<defName>NikolaisIdeology_EnchantingPerformance</defName>
+			<thoughtClass>Thought_AttendedRitual</thoughtClass>
+			<durationDays>6</durationDays>
+			<stackLimit>3</stackLimit>
+			<stages>
+				<li>
+					<label>enchanting performance</label>
+					<description>The perfomance was enchanting! The performer's body flowed with sweet allure, their voice dripping with honey. When they teased the audience, I almost fainted.</description>
+					<baseMoodEffect>10</baseMoodEffect>
+				</li>
+			</stages>
+		</ThoughtDef>
+</Defs>
