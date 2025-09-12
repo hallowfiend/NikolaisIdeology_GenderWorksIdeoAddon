@@ -31,7 +31,7 @@
 				<statOffsets>
 					<MeditationFocusGain>0.5</MeditationFocusGain>
 					<CleaningSpeed>1</CleaningSpeed>
-					<MoveSpeed>0.25</MoveSpeed>
+					<MoveSpeed>0.15</MoveSpeed>
 					<GlobalLearningFactor>0.25</GlobalLearningFactor>
 					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 				</statOffsets>

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
+	
 	<RitualBehaviorDef>
 		<defName>NikolaisIdeology_PerformanceRitualBehavior</defName>
 		<durationTicks>6000</durationTicks>
-		<workerClass>RitualBehaviorWorker_Performance</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.RitualBehaviorWorker_Performance</workerClass>
 		<roles>
 			<li Class="RitualRoleTag">
 				<label>performer</label>
@@ -35,19 +32,23 @@
 						<percentage>1</percentage>
 					</li>
 				</endTriggers>
+				<failTriggers>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>performer asleep</desc>
+						<pawnId>performer</pawnId>
+					</li>
+				</failTriggers>
 				<roleBehaviors>
 					<li>
-						<roleId>Performer</roleId>
+						<roleId>performer</roleId>
 						<dutyDef>PartyDance</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_InFrontThingCenter" />
+						</customPositions>
 					</li>
 				</roleBehaviors>
-
 			</li>
 		</stages>
 	</RitualBehaviorDef>
-
-
-
-
 
 </Defs>

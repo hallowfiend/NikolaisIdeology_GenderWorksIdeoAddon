@@ -4,7 +4,7 @@
 	<RitualOutcomeEffectDef>
 		<defName>NikolaisIdeology_PerformanceRitualOutcome</defName>
 		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
-		<workerClass>RitualOutcomeEffectWorker_Performance</workerClass>
+		<workerClass>NikolaisIdeology_GenderWorks.RitualOutcomeEffectWorker_Performance</workerClass>
 		<extraPredictedOutcomeDescriptions>
 			<li>The performer will gain social experience and fill their intimacy bar.</li>
 			<li>Spectators will gain a mood boost and fill their recreation bars. At the highest quality, they will also get a small boost to their intimacy bar.</li>
@@ -45,7 +45,7 @@
 				<labelAbstract>Performer's social impact</labelAbstract>
 				<statDef>SocialImpact</statDef>
 				<roleId>performer</roleId>
-				<scaledBy>0.25</scaledBy>
+				<scaledBy>0.2</scaledBy>
 			</li>
 		</comps>
 		<outcomeChances>

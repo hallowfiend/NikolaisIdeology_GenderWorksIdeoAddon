@@ -42,6 +42,9 @@
 			<li>
 				<li>NikolaisIdeology_IdeoRole_Idol</li>
 			</li>
+			<li>
+				<li>NikolaisIdeology_GenderWorks_PerformancePrecept</li>
+			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
