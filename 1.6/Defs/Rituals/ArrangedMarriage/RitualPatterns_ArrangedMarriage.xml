@@ -6,7 +6,7 @@
 	<RitualPatternDef>
 		<defName>NikolaisIdeology_ArrangedMarriageRitual</defName>
 		<ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
-		<ritualBehavior>NikolaisIdeology_ArrangedMarrriageRitualBehavior</ritualBehavior>
+		<ritualBehavior>NikolaisIdeology_ArrangedMarriageRitualBehavior</ritualBehavior>
 		<ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
 		<ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
 		<alwaysStartAnytime>false</alwaysStartAnytime>
