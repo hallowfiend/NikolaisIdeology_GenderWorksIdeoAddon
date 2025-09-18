@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RitualBehaviorDef>
+		<defName>NikolaisIdeology_ArrangedMarriageRitualBehavior</defName>
+		<durationTicks>6000</durationTicks>
+		<workerClass>NikolaisIdeology_GenderWorks.RitualBehaviorWorker_ArrangedMarriage</workerClass>
+		<roles>
+			<li Class="RitualRoleTag">
+				<label>officiator</label>
+				<id>officiator</id>
+				<required>True</required>
+				<precept>NikolaisIdeology_IdeoRole_Oathspouse</precept>
+				<substitutable>True</substitutable>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<allowChild>false</allowChild>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+			<li Class="RitualRoleColonist">
+				<label>first pawn to be married</label>
+				<id>pawn1</id>
+				<required>True</required>
+				<substitutable>false</substitutable>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<allowChild>false</allowChild>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+			<li Class="RitualRoleColonist">
+				<label>second pawn to be married</label>
+				<id>pawn2</id>
+				<required>True</required>
+				<substitutable>false</substitutable>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<allowChild>false</allowChild>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+		</roles>
+		<spectatorsLabel>Spectators</spectatorsLabel>
+		<spectatorGerund>spectate</spectatorGerund>
+		<stages>
+			<!-- Pawns arrive-->
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<essential>True</essential>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>1</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+							<li>officiator</li>
+							<li>pawn1</li>
+							<li>pawn2</li>
+						</roleIds>
+					</li>
+				</endTriggers>
+				<failTriggers>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>pawn asleep</desc>
+						<pawnId>pawn1</pawnId>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>pawn asleep</desc>
+						<pawnId>pawn2</pawnId>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>officiator asleep</desc>
+						<pawnId>officiator</pawnId>
+					</li>
+				</failTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>officiator</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_InFrontThingCenter" />
+						</customPositions>
+					</li>
+					<li>
+						<roleId>pawn1</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse1" />
+						</customPositions>
+					</li>
+					<li>
+						<roleId>pawn2</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse2" />
+						</customPositions>
+					</li>
+				</roleBehaviors>
+			</li>
+			<!-- Do you take this pawn to be your spouse? -->
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<essential>True</essential>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>1</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+							<li>officiator</li>
+							<li>pawn1</li>
+							<li>pawn2</li>
+						</roleIds>
+					</li>
+				</endTriggers>
+				<failTriggers>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>pawn asleep</desc>
+						<pawnId>pawn1</pawnId>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>pawn asleep</desc>
+						<pawnId>pawn2</pawnId>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>officiator asleep</desc>
+						<pawnId>officiator</pawnId>
+					</li>
+				</failTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>officiator</roleId>
+						<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+						<speakerInteraction>NikolaisIdeology_GenderWorks_ArrangedMarriageInteraction</speakerInteraction>
+						<customPositions>
+							<li Class="RitualPosition_InFrontThingCenter" />
+						</customPositions>
+					</li>
+					<li>
+						<roleId>pawn1</roleId>
+						<dutyDef>Spectate</dutyDef>
+						<customPositions>
+							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse1" />
+						</customPositions>
+					</li>
+					<li>
+						<roleId>pawn2</roleId>
+						<dutyDef>Spectate</dutyDef>
+						<customPositions>
+							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse2" />
+						</customPositions>
+					</li>
+				</roleBehaviors>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+
+</Defs>
