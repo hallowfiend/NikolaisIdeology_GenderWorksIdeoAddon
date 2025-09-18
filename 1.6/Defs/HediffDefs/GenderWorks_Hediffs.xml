@@ -50,6 +50,27 @@
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
 	</HediffDef>
+	<HediffDef>
+		<defName>NikolaisIdeology_BeFruitful</defName>
+		<label>arranged fertility</label>
+		<description>This person just got married in a special arranged ceremony. They are encouraged to do lovin' with their new eternal partner: not to sate their physical needs, of course, but to procreate.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>60000~60000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<Fertility>0.5</Fertility>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 	<!-- Thoughts -->
 	<ThoughtDef>
 		<defName>NikolaisIdeology_IdolGlamourThought</defName>

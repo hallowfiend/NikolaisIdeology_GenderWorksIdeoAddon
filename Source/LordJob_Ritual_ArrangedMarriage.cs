@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using NAudio.CoreAudioApi;
+using RimWorld;
 using System.Collections.Generic;
 using Verse;
 using Verse.AI.Group;
@@ -9,10 +10,8 @@ namespace NikolaisIdeology_GenderWorks
     public class LordJob_Ritual_ArrangedMarriage : LordJob_Ritual
     {
         public List<Pawn> spouses = new List<Pawn>();
-        public Pawn pawn1;
-        public Pawn pawn2;
         public bool pawnsAreLovers;
-        public bool pawnsAreSpouses;
+        public bool pawnsAreFiances;
         protected override int MinTicksToFinish => this.DurationTicks / 2;
 
         public override bool AllowStartNewGatherings => false;
@@ -43,6 +42,15 @@ namespace NikolaisIdeology_GenderWorks
           RitualRoleAssignments assignments,
           Pawn organizer = null)
           : base(selectedTarget, ritual, obligation, allStages, assignments, organizer)
-        { }
+        {
+            foreach (RitualRole role in assignments.AllRolesForReading)
+            {
+                if (role != null && role.id.Contains("pawn1") || role.id.Contains("pawn2"))
+                {
+                    Pawn pawn = assignments.FirstAssignedPawn(role);
+                    this.spouses.Add(pawn);
+                }
+            }
+        }
     }
 }

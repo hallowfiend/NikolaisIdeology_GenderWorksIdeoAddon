@@ -1,6 +1,12 @@
 using RimWorld;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Security.Cryptography;
+using UnityEngine.UIElements;
 using Verse;
+using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
 
 namespace NikolaisIdeology_GenderWorks
 {
@@ -11,7 +17,20 @@ namespace NikolaisIdeology_GenderWorks
 
         public override bool DataRequired => false;
 
-        public override bool Applies(LordJob_Ritual ritual) => ritual is LordJob_Ritual_ArrangedMarriage lordJobRitualArrangedMarriage && (PawnRelationUtility.GetRelations(lordJobRitualArrangedMarriage.pawn1, lordJobRitualArrangedMarriage.pawn2) = PawnRelationDefOf.Lover);
+        public override bool Applies(LordJob_Ritual ritual) {
+            Pawn pawn1 = ritual.assignments.FirstAssignedPawn("pawn1");
+            Pawn pawn2 = ritual.assignments.FirstAssignedPawn("pawn2");
+            List<DirectPawnRelation> directRelations = (List<DirectPawnRelation>)PawnRelationUtility.GetRelations(pawn1, pawn2);
+
+            foreach (DirectPawnRelation directRelation in directRelations)
+            {
+                if (directRelation.def == PawnRelationDefOf.Lover && directRelation.otherPawn == pawn2)
+                    return true;
+                else
+                    return false;
+            }
+            return false;
+        }
 
         public override QualityFactor GetQualityFactor(
           Precept_Ritual ritual,
