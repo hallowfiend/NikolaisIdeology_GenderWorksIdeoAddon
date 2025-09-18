@@ -54,7 +54,7 @@ namespace NikolaisIdeology_GenderWorks
                 }
                 else if (lordJobArrangedMarriage.spouses.Contains(key))
                 {
-                    key.health.AddHediff(HediffDefOf.NikolaisIdeology_BeFruitful);
+                    key.health.AddHediff(InternalDefOf.NikolaisIdeology_BeFruitful);
                 }
             }
         }
