@@ -20,6 +20,7 @@
 			<li>NikolaisIdeology_Aphroditic</li>
 		</requiredMemes>
 		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<nameMaker>NikolaisIdeology_NamerRitualPerformance</nameMaker>
 		<visible>true</visible>
 	</PreceptDef>
 
@@ -38,6 +39,7 @@
 			<li>NikolaisIdeology_Chastity</li>
 		</requiredMemes>
 		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<nameMaker>NikolaisIdeology_NamerRitualArrangedMarriage</nameMaker>
 		<visible>true</visible>
 	</PreceptDef>
 

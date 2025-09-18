@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<InteractionDef>
+		<defName>NikolaisIdeology_GenderWorks_ArrangedMarriageInteraction</defName>
+		<label>arranged marriage officiation</label>
+		<workerClass>InteractionWorker</workerClass>
+		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+		<symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+		<logRulesInitiator>
+			<include>
+				<li>SpeechUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+
+				<li>speechtopic->chastity</li>
+				<li>speechtopic->virginity and its virtues</li>
+				<li>speechtopic->the importance of not giving into desire</li>
+				<li>speechtopic->right and wrong</li>
+				<li>speechtopic->the purpose of life</li>
+				<li>speechtopic->the meaning of life</li>
+				<li>speechtopic->purity</li>
+				<li>speechtopic->[weather]</li>
+				<li>speechtopic->[clearThing]</li>
+				<li>speechtopic->clarity of mind and body</li>
+				<li>speechtopic->vows and unions</li>
+				<li>speechtopic->how this marriage will drive the colony forward</li>
+				<li>speechtopic->the falsehood of desire</li>
+				<li>speechtopic->their authority which enables them to officiate the ceremony</li>
+
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+</Defs>

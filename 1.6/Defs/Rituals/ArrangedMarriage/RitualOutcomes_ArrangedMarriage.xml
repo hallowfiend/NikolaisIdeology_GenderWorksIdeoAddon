@@ -29,16 +29,10 @@
 			<li Class="RitualOutcomeComp_RitualSeatPresent">
 				<qualityOffset>0.15</qualityOffset>
 			</li>
-			<li Class="RitualOutcomeComp_RoomStat">
-				<label>room impressiveness</label>
-				<statDef>Impressiveness</statDef>
-				<curve>
-					<points>
-						<li>0,  0</li>
-						<li>50,  0.1</li>
-						<li>120, 0.2</li>
-					</points>
-				</curve>
+			<li Class="RitualOutcomeComp_BuildingOfDefUsed">
+				<def>Lectern</def>
+				<qualityOffset>0.2</qualityOffset>
+				<maxHorDistFromTarget>5</maxHorDistFromTarget>
 			</li>
 			<li Class="RitualOutcomeComp_PawnStatScaled">
 				<label>{PAWN_labelShort}'s social impact</label>
@@ -46,6 +40,14 @@
 				<statDef>SocialImpact</statDef>
 				<roleId>performer</roleId>
 				<scaledBy>0.2</scaledBy>
+			</li>
+			<li Class="NikolaisIdeology_GenderWorks.RitualOutcomeComp_PawnsAreLovers">
+				<label>spouses-to-be are lovers</label>
+				<qualityOffset>0.5</qualityOffset>
+			</li>
+			<li Class="NikolaisIdeology_GenderWorks.RitualOutcomeComp_PawnsAreFiances">
+				<label>spouses-to-be are fiances</label>
+				<qualityOffset>1</qualityOffset>
 			</li>
 		</comps>
 		<outcomeChances>
@@ -83,57 +85,57 @@
 	<!-- Thoughts -->
 	
 		<ThoughtDef>
-			<defName>NikolaisIdeology_DullPerformance</defName>
+			<defName>NikolaisIdeology_TerribleArrangedMarriage</defName>
 			<thoughtClass>Thought_AttendedRitual</thoughtClass>
 			<durationDays>6</durationDays>
 			<stackLimit>3</stackLimit>
 			<stages>
 				<li>
-					<label>dull performance</label>
-					<description>The performance was so dull! The performer just repeated some basic dance moves in silence and didn't interact with the audience whatsoever. I was waiting for it to end.</description>
-					<baseMoodEffect>-8</baseMoodEffect>
+					<label>terrible arranged marriage</label>
+					<description>The arranged marriage was terrible. The officiator bumbled and didn't follow the ceremony. It was so bad the two spouses-to-be refused to listen to them.</description>
+					<baseMoodEffect>-5</baseMoodEffect>
 				</li>
 			</stages>
 		</ThoughtDef>
 
 		<ThoughtDef>
-			<defName>NikolaisIdeology_AwkwardPerformance</defName>
+			<defName>NikolaisIdeology_BoringArrangedMarriage</defName>
 			<thoughtClass>Thought_AttendedRitual</thoughtClass>
 			<durationDays>6</durationDays>
 			<stackLimit>3</stackLimit>
 			<stages>
 				<li>
-					<label>awkward performance</label>
-					<description>The performance was awkward. The performer's moves were clumsy and their voice stuttered. At least it feels like they sort of tried.</description>
-					<baseMoodEffect>-4</baseMoodEffect>
+					<label>boring arranged marriage</label>
+					<description>The arranged marriage was boring. The officiator just went through the motions, really. At least they followed procedure, and ensured the joining of the two newlyweds.</description>
+					<baseMoodEffect>-2</baseMoodEffect>
 				</li>
 			</stages>
 		</ThoughtDef>
 
 		<ThoughtDef>
-			<defName>NikolaisIdeology_EnjoyablePerformance</defName>
+			<defName>NikolaisIdeology_PleasingArrangedMarriage</defName>
 			<thoughtClass>Thought_AttendedRitual</thoughtClass>
 			<durationDays>6</durationDays>
 			<stackLimit>3</stackLimit>
 			<stages>
 				<li>
-					<label>enjoyable performance</label>
-					<description>The perfomance was enjoyable. The performer moved smoothly, incorporating song into the rhythm of their dances. They certainly earned the adoration of their spectators.</description>
-					<baseMoodEffect>4</baseMoodEffect>
+					<label>pleasing arranged marriage</label>
+					<description>The arranged marriage was pleasing. The officiator spoke firmly yet persuasively, tying the bond of marriage firmly around the two newlyweds.</description>
+					<baseMoodEffect>2</baseMoodEffect>
 				</li>
 			</stages>
 		</ThoughtDef>
 
 		<ThoughtDef>
-			<defName>NikolaisIdeology_EnchantingPerformance</defName>
+			<defName>NikolaisIdeology_BlessedArrangedMarriage</defName>
 			<thoughtClass>Thought_AttendedRitual</thoughtClass>
 			<durationDays>6</durationDays>
 			<stackLimit>3</stackLimit>
 			<stages>
 				<li>
 					<label>enchanting performance</label>
-					<description>The perfomance was enchanting! The performer's body flowed with sweet allure, their voice dripping with honey. When they teased the audience, I almost fainted.</description>
-					<baseMoodEffect>10</baseMoodEffect>
+					<description>The arranged marriage was blessed! The officiator brought everyone into a deep trance with just their words, and when they spoke to the spouses-to-be it was as if they blessed their bond with the greatest strength!</description>
+					<baseMoodEffect>6</baseMoodEffect>
 				</li>
 			</stages>
 		</ThoughtDef>
