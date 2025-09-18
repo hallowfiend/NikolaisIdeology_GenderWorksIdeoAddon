@@ -52,6 +52,9 @@
 				<li>VME_DumbLabor_Exalted</li>
 				<li>VME_DumbLabor_Liked</li>
 			</li>
+			<li>
+				<li>NikolaisIdeology_GenderWorks_ArrangedMarriagePrecept</li>
+			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li>Ascetic</li>
