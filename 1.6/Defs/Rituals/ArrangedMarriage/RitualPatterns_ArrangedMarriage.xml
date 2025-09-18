@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualPatternDef>
+		<defName>NikolaisIdeology_ArrangedMarriageRitual</defName>
+		<ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+		<ritualBehavior>NikolaisIdeology_ArrangedMarrriageRitualBehavior</ritualBehavior>
+		<ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
+		<ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
+		<alwaysStartAnytime>false</alwaysStartAnytime>
+		<canStartAnytime>true</canStartAnytime>
+		<ritualOutcomeEffect>NikolaisIdeology_ArrangedMarriageRitualOutcome</ritualOutcomeEffect>
+		<playsIdeoMusic>true</playsIdeoMusic>
+	</RitualPatternDef>
+	
+</Defs>
+
+
+
+

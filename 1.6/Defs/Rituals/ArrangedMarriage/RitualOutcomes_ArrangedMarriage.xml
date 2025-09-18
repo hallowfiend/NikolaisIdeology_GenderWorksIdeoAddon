@@ -50,31 +50,31 @@
 		</comps>
 		<outcomeChances>
 			<li>
-				<label>Dull</label>
+				<label>Terrible</label>
 				<chance>0.05</chance>
-				<memory>NikolaisIdeology_DullPerformance</memory>
-				<description>The {0} was so dull! The performer just repeated some basic dance moves in silence and didn't interact with the audience whatsoever. Everyone was waiting for it to end.</description>
+				<memory>NikolaisIdeology_TerribleArrangedMarriage</memory>
+				<description>The {0} was terrible. The officiator bumbled and didn't follow the ceremony. It was so bad the two spouses-to-be refused to listen to them.</description>
 				<positivityIndex>-2</positivityIndex>
 			</li>
 			<li>
-				<label>Awkward</label>
+				<label>Boring</label>
 				<chance>0.15</chance>
-				<memory>NikolaisIdeology_AwkwardPerformance</memory>
-				<description>The {0} was awkward. The performer's moves were clumsy and their voice stuttered. At least it feels like they sort of tried.</description>
+				<memory>NikolaisIdeology_BoringArrangedMarriage</memory>
+				<description>The {0} was boring. The officiator just went through the motions, really. At least they followed procedure, and ensured the joining of the two newlyweds.</description>
 				<positivityIndex>-1</positivityIndex>
 			</li>
 			<li>
-				<label>Enjoyable</label>
+				<label>Pleasing</label>
 				<chance>0.6</chance>
-				<memory>NikolaisIdeology_EnjoyablePerformance</memory>
-				<description>The {0} was enjoyable. The performer moved smoothly, incorporating song into the rhythm of their dances. They certainly earned the adoration of their spectators.</description>
+				<memory>NikolaisIdeology_PleasingArrangedMarriage</memory>
+				<description>The {0} was pleasing. The officiator spoke firmly yet persuasively, tying the bond of marriage firmly around the two newlyweds.</description>
 				<positivityIndex>1</positivityIndex>
 			</li>
 			<li>
-				<label>Enchanting</label>
+				<label>Blessed</label>
 				<chance>0.2</chance>
-				<memory>NikolaisIdeology_EnchantingPerformance</memory>
-				<description>The {0} was enchanting! The performer's body flowed with sweet allure, their voice dripping with honey. When they teased the audience, some of them almost fainted.</description>
+				<memory>NikolaisIdeology_BlessedArrangedMarriage</memory>
+				<description>The {0} was blessed! The officiator brought everyone into a deep trance with just their words, and when they spoke to the spouses-to-be it was as if they blessed their bond with the greatest strength!</description>
 				<positivityIndex>2</positivityIndex>
 			</li>
 		</outcomeChances>

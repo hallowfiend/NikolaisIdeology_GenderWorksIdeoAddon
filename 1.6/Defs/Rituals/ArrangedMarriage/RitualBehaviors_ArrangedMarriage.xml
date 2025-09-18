@@ -103,12 +103,8 @@
 				<spectateDistanceOverride>1</spectateDistanceOverride>
 				<spectatorsRequired>true</spectatorsRequired>
 				<endTriggers>
-					<li Class="StageEndTrigger_RolesArrived">
-						<roleIds>
-							<li>officiator</li>
-							<li>pawn1</li>
-							<li>pawn2</li>
-						</roleIds>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>0.5</percentage>
 					</li>
 				</endTriggers>
 				<failTriggers>
@@ -150,7 +146,53 @@
 					</li>
 				</roleBehaviors>
 			</li>
+			<!-- Get married -->
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<essential>True</essential>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>1</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1</percentage>
+					</li>
+				</endTriggers>
+				<failTriggers>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>pawn asleep</desc>
+						<pawnId>pawn1</pawnId>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>pawn asleep</desc>
+						<pawnId>pawn2</pawnId>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>officiator asleep</desc>
+						<pawnId>officiator</pawnId>
+					</li>
+				</failTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>officiator</roleId>
+						<dutyDef>Spectate</dutyDef>
+					</li>
+					<li>
+						<roleId>pawn1</roleId>
+						<dutyDef>MarryPawn</dutyDef>
+						<customPositions>
+							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse1" />
+						</customPositions>
+					</li>
+					<li>
+						<roleId>pawn2</roleId>
+						<dutyDef>MarryPawn</dutyDef>
+						<customPositions>
+							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse2" />
+						</customPositions>
+					</li>
+				</roleBehaviors>
+			</li>
 		</stages>
 	</RitualBehaviorDef>
-
 </Defs>
