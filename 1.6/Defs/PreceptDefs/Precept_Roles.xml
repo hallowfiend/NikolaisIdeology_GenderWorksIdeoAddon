@@ -293,7 +293,7 @@
 						<li>Neck</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
-						<li>VAE_Headwear_Scarf</li>
+						<li>VAE_Headgear_Scarf</li>
 					</requiredDefs>
 				</requirement>
 			</li>
