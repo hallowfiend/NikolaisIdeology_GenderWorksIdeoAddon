@@ -175,7 +175,10 @@
 				<roleBehaviors>
 					<li>
 						<roleId>officiator</roleId>
-						<dutyDef>Spectate</dutyDef>
+						<dutyDef>StandOnCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_InFrontThingCenter" />
+						</customPositions>
 					</li>
 					<li>
 						<roleId>pawn1</roleId>
