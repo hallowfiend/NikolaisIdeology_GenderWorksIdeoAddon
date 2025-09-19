@@ -26,6 +26,7 @@
 				<countsAsParticipant>False</countsAsParticipant>
 				<allowChild>false</allowChild>
 				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+				<allowOtherIdeos>false</allowOtherIdeos>
 			</li>
 			<li Class="RitualRoleColonist">
 				<label>second pawn to be married</label>
@@ -36,6 +37,7 @@
 				<countsAsParticipant>False</countsAsParticipant>
 				<allowChild>false</allowChild>
 				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+				<allowOtherIdeos>false</allowOtherIdeos>
 			</li>
 		</roles>
 		<spectatorsLabel>Spectators</spectatorsLabel>

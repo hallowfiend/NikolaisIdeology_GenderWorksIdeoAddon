@@ -9,7 +9,7 @@
 		<ritualBehavior>NikolaisIdeology_ArrangedMarriageRitualBehavior</ritualBehavior>
 		<ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
 		<ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
-		<alwaysStartAnytime>false</alwaysStartAnytime>
+		<alwaysStartAnytime>true</alwaysStartAnytime>
 		<canStartAnytime>true</canStartAnytime>
 		<ritualOutcomeEffect>NikolaisIdeology_ArrangedMarriageRitualOutcome</ritualOutcomeEffect>
 		<playsIdeoMusic>true</playsIdeoMusic>
