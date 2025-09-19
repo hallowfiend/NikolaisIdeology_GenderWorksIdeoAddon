@@ -1,6 +1,4 @@
-﻿using LoveyDoveySexWithEuterpe;
-using RimWorld;
-using Verse;
+﻿using RimWorld;
 
 namespace NikolaisIdeology_GenderWorks
 {

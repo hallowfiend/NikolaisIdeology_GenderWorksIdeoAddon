@@ -1,6 +1,4 @@
-﻿using LoveyDoveySexWithEuterpe;
-using RimWorld;
-using System;
+﻿using RimWorld;
 using System.Collections.Generic;
 using Verse;
 

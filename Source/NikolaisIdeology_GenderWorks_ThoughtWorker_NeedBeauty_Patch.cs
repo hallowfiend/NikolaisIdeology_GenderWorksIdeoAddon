@@ -1,7 +1,6 @@
 ﻿using RimWorld;
 using Verse;
 using HarmonyLib;
-using System;
 
 namespace NikolaisIdeology_GenderWorks
 {

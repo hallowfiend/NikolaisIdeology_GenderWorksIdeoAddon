@@ -1,10 +1,5 @@
 ﻿using HarmonyLib;
-using LoveyDoveySexWithEuterpe;
-using LoveyDoveySexWithRosaline;
 using RimWorld;
-using System.Collections.Generic;
-using System.Numerics;
-using System.Text;
 using Verse;
 
 namespace NikolaisIdeology_GenderWorks

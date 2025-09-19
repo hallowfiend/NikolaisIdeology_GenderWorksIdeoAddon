@@ -1,7 +1,5 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using UnityEngine.UIElements;
 using Verse;
 
 namespace NikolaisIdeology_GenderWorks
@@ -23,9 +21,9 @@ namespace NikolaisIdeology_GenderWorks
             List<DirectPawnRelation> directRelations = (List<DirectPawnRelation>)PawnRelationUtility.GetRelations(pawn1, pawn2);
             foreach (var rel in directRelations)
             {
-                if (rel.def == PawnRelationDefOf.Fiance && rel.otherPawn == pawn2)
+                if (rel.def == PawnRelationDefOf.Fiance && rel.otherPawn == pawn2 && ritual is LordJob_Ritual_ArrangedMarriage)
                     positive = true;
-                return true;
+                    return true;
             }
             return false;
         }
