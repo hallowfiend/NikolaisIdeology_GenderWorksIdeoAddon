@@ -1,12 +1,6 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Linq;
-using System.Security.Cryptography;
-using UnityEngine.UIElements;
 using Verse;
-using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
 
 namespace NikolaisIdeology_GenderWorks
 {
@@ -19,6 +13,11 @@ namespace NikolaisIdeology_GenderWorks
 
         public override bool Applies(LordJob_Ritual ritual)
         {
+            return true;
+        }
+
+        public override float Count(LordJob_Ritual ritual, RitualOutcomeComp_Data data)
+        {
             Pawn pawn1 = ritual.assignments.FirstAssignedPawn("pawn1");
             Pawn pawn2 = ritual.assignments.FirstAssignedPawn("pawn2");
             List<DirectPawnRelation> directRelations = (List<DirectPawnRelation>)PawnRelationUtility.GetRelations(pawn1, pawn2);
@@ -26,28 +25,34 @@ namespace NikolaisIdeology_GenderWorks
             foreach (DirectPawnRelation directRelation in directRelations)
             {
                 if (directRelation.def == PawnRelationDefOf.Fiance && directRelation.otherPawn == pawn2)
-                    return true;
+                    return 1;
                 else
-                    return false;
+                    return 0f;
             }
-            return false;
+            return 0f;
         }
 
-        public override QualityFactor GetQualityFactor(
-          Precept_Ritual ritual,
-          TargetInfo ritualTarget,
-          RitualObligation obligation,
-          RitualRoleAssignments assignments,
-          RitualOutcomeComp_Data data)
+        public override QualityFactor GetQualityFactor(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
         {
-            return new QualityFactor()
+            float quality = 0f;
+            bool flag = false;
+            Pawn pawn1 = assignments.FirstAssignedPawn("pawn1");
+            Pawn pawn2 = assignments.FirstAssignedPawn("pawn2");
+            List<DirectPawnRelation> directRelations = (List<DirectPawnRelation>)PawnRelationUtility.GetRelations(pawn1, pawn2);
+            foreach (DirectPawnRelation directRelation in directRelations)
             {
-                label = this.LabelForDesc.CapitalizeFirst(),
-                present = false,
-                uncertainOutcome = true,
-                qualityChange = this.ExpectedOffsetDesc(true, 1f),
-                quality = this.qualityOffset,
-                positive = true
+                if (directRelation.def == PawnRelationDefOf.Fiance && directRelation.otherPawn == pawn2)
+                    flag = true;
+                quality = (flag ? qualityOffset : 0f);
+            }
+            return new QualityFactor
+            {
+                label = label.CapitalizeFirst(),
+                qualityChange = ExpectedOffsetDesc(positive: true, quality),
+                quality = quality,
+                present = flag,
+                positive = true,
+                priority = 0f
             };
         }
     }

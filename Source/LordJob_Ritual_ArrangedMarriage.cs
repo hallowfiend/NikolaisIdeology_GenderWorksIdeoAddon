@@ -10,8 +10,6 @@ namespace NikolaisIdeology_GenderWorks
     public class LordJob_Ritual_ArrangedMarriage : LordJob_Ritual
     {
         public List<Pawn> spouses = new List<Pawn>();
-        public bool pawnsAreLovers;
-        public bool pawnsAreFiances;
         protected override int MinTicksToFinish => this.DurationTicks / 2;
 
         public override bool AllowStartNewGatherings => false;
