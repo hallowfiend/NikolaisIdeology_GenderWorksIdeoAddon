@@ -11,21 +11,16 @@ namespace NikolaisIdeology_GenderWorks
 
         public override bool DataRequired => false;
 
-        private bool positive = false;
+        private bool flag = false;
 
         public override bool Applies(LordJob_Ritual ritual)
         {
             
             Pawn pawn1 = ritual.assignments.FirstAssignedPawn("pawn1");
             Pawn pawn2 = ritual.assignments.FirstAssignedPawn("pawn2");
-            List<DirectPawnRelation> directRelations = (List<DirectPawnRelation>)PawnRelationUtility.GetRelations(pawn1, pawn2);
-            foreach (var rel in directRelations)
-            {
-                if (rel.def == PawnRelationDefOf.Lover && rel.otherPawn == pawn2 && ritual is LordJob_Ritual_ArrangedMarriage)
-                    positive = true;
-                    return true;
-            }
-            return false;
+            if (pawn1.relations.DirectRelationExists(PawnRelationDefOf.Lover, pawn2) == true && ritual is LordJob_Ritual_ArrangedMarriage)
+                flag = true;
+                return true;
         }
 
         public override QualityFactor GetQualityFactor(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
@@ -34,10 +29,11 @@ namespace NikolaisIdeology_GenderWorks
             return new QualityFactor
             {
                 label = label.CapitalizeFirst(),
-                qualityChange = this.ExpectedOffsetDesc(positive, quality),
+                qualityChange = this.ExpectedOffsetDesc(flag, quality),
                 quality = qualityOffset,
-                positive = positive,
-                present = positive,
+                positive = true,
+                present = flag,
+                uncertainOutcome = true,
                 priority = 0f
             };
         }

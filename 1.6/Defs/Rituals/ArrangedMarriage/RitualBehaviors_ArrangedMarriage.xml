@@ -3,7 +3,7 @@
 	
 	<RitualBehaviorDef>
 		<defName>NikolaisIdeology_ArrangedMarriageRitualBehavior</defName>
-		<durationTicks>6000</durationTicks>
+		<durationTicks>4500</durationTicks>
 		<workerClass>NikolaisIdeology_GenderWorks.RitualBehaviorWorker_ArrangedMarriage</workerClass>
 		<roles>
 			<li Class="RitualRoleTag">
@@ -106,7 +106,7 @@
 				<spectatorsRequired>true</spectatorsRequired>
 				<endTriggers>
 					<li Class="StageEndTrigger_DurationPercentage">
-						<percentage>0.5</percentage>
+						<percentage>0.75</percentage>
 					</li>
 				</endTriggers>
 				<failTriggers>
@@ -134,14 +134,14 @@
 					</li>
 					<li>
 						<roleId>pawn1</roleId>
-						<dutyDef>Spectate</dutyDef>
+						<dutyDef>MarryPawn</dutyDef>
 						<customPositions>
 							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse1" />
 						</customPositions>
 					</li>
 					<li>
 						<roleId>pawn2</roleId>
-						<dutyDef>Spectate</dutyDef>
+						<dutyDef>MarryPawn</dutyDef>
 						<customPositions>
 							<li Class="NikolaisIdeology_GenderWorks.RitualPosition_Spouse2" />
 						</customPositions>

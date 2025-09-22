@@ -15,7 +15,6 @@
 		<selectionWeight>1.0</selectionWeight>
 		<ritualPatternBase>NikolaisIdeology_PerformanceRitual</ritualPatternBase>
 		<iconPath>UI/Rituals/Performance</iconPath>
-		<ignoreNameUniqueness>false</ignoreNameUniqueness>
 		<requiredMemes>
 			<li>NikolaisIdeology_Aphroditic</li>
 		</requiredMemes>
@@ -34,7 +33,6 @@
 		<selectionWeight>1.0</selectionWeight>
 		<ritualPatternBase>NikolaisIdeology_ArrangedMarriageRitual</ritualPatternBase>
 		<iconPath>UI/Rituals/ArrangedMarriage</iconPath>
-		<ignoreNameUniqueness>false</ignoreNameUniqueness>
 		<requiredMemes>
 			<li>NikolaisIdeology_Chastity</li>
 		</requiredMemes>

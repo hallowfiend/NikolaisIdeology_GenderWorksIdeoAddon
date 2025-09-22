@@ -23,6 +23,7 @@
  	<ItemGroup>
 	 	<!-- Mod -->
 	 	<Compile Include="../Source/*" />
+	 	<Compile Remove="..\Source\NikolaisIdeology_GenderWorks_RomanceEligible_Patch.cs" />
 	 	<Compile Remove="..\Source\PawnExtension_JunkCheck.cs" />
 	 	<Reference Include="..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll">
 	 	  <Private>False</Private>
