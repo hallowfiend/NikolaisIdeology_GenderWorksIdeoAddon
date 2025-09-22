@@ -17,47 +17,41 @@ namespace NikolaisIdeology_GenderWorks
         {
         }
 
+
         public override void Apply(
-          float progress,
+        float progress,
         Dictionary<Pawn, int> totalPresence,
         LordJob_Ritual jobRitual)
         {
             RitualOutcomePossibility outcome = this.GetOutcome(this.GetQuality(jobRitual, progress), jobRitual);
             LookTargets selectedTarget = (LookTargets)jobRitual.selectedTarget;
-            LordJob_Ritual_ArrangedMarriage lordJobArrangedMarriage = (LordJob_Ritual_ArrangedMarriage)jobRitual;
             string extraLetterText = (string)null;
             float quality = this.GetQuality(jobRitual, progress);
-            Pawn pawn1 = lordJobArrangedMarriage.PawnWithRole("pawn1");
-            Pawn pawn2 = lordJobArrangedMarriage.PawnWithRole("pawn2");
+            Pawn pawn1 = jobRitual.PawnWithRole("pawn1");
+            Pawn pawn2 = jobRitual.PawnWithRole("pawn2");
+            if (jobRitual.Ritual != null)
+                this.ApplyAttachableOutcome(totalPresence, jobRitual, outcome, out extraLetterText, ref selectedTarget);
+            bool flag = false;
+            foreach (Pawn key in totalPresence.Keys)
+                this.GiveMemoryToPawn(key, outcome.memory, jobRitual);
             if (outcome.positivityIndex < -1)
                 return;
-            foreach (Pawn key in totalPresence.Keys)
-            {
-                if (key == pawn1)
-                {
-                    key.relations.RemoveDirectRelation(PawnRelationDefOf.Lover, pawn2);
-                    MarriageCeremonyUtility.Married(key, pawn2);
-                }
-            }
+            pawn1.relations.RemoveDirectRelation(PawnRelationDefOf.Lover, pawn2);
+            MarriageCeremonyUtility.Married(pawn1, pawn2);
             if (!outcome.Positive)
                 return;
             float xp = outcome.BestPositiveOutcome(jobRitual) ? 5000f : 2500f;
             foreach (Pawn key in totalPresence.Keys)
             {
-                if (lordJobArrangedMarriage.assignments.RoleForPawn(key).id == "officiator")
+                if (jobRitual.assignments.RoleForPawn(key).id == "officiator")
                 {
                     key.skills.Learn(SkillDefOf.Social, xp);
                 }
-                else if (lordJobArrangedMarriage.spouses.Contains(key))
+                else if ((jobRitual.assignments.RoleForPawn(key).id == "pawn1") || (jobRitual.assignments.RoleForPawn(key).id == "pawn2"))
                 {
                     key.health.AddHediff(InternalDefOf.NikolaisIdeology_BeFruitful);
                 }
             }
-            foreach (Pawn key in totalPresence.Keys)
-                this.GiveMemoryToPawn(key, outcome.memory, jobRitual);
-            if (jobRitual.Ritual != null)
-                this.ApplyAttachableOutcome(totalPresence, jobRitual, outcome, out extraLetterText, ref selectedTarget);
-            bool flag = false;
             string text = (string)(outcome.description.Formatted((NamedArgument)jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual));
             string str = this.def.OutcomeMoodBreakdown(outcome);
             if (!str.NullOrEmpty())
