@@ -38,8 +38,8 @@
 				<label>{PAWN_labelShort}'s social impact</label>
 				<labelAbstract>Officiator's social impact</labelAbstract>
 				<statDef>SocialImpact</statDef>
-				<roleId>performer</roleId>
-				<scaledBy>0.2</scaledBy>
+				<roleId>officiator</roleId>
+				<scaledBy>0.1</scaledBy>
 			</li>
 			<li Class="NikolaisIdeology_GenderWorks.RitualOutcomeComp_PawnsAreLovers">
 				<label>spouses-to-be are lovers</label>
@@ -133,7 +133,7 @@
 			<stackLimit>3</stackLimit>
 			<stages>
 				<li>
-					<label>enchanting performance</label>
+					<label>blessed arranged marriage</label>
 					<description>The arranged marriage was blessed! The officiator brought everyone into a deep trance with just their words, and when they spoke to the spouses-to-be it was as if they blessed their bond with the greatest strength!</description>
 					<baseMoodEffect>6</baseMoodEffect>
 				</li>

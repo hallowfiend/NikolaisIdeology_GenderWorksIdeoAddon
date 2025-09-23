@@ -17,8 +17,8 @@
 				<allowChild>false</allowChild>
 				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
 			</li>
-			<li Class="RitualRoleColonist">
-				<label>first pawn to be married</label>
+			<li Class="NikolaisIdeology_GenderWorks.RitualRole_NotMarriedAlready">
+				<label>marriage-eligible pawn</label>
 				<id>pawn1</id>
 				<required>True</required>
 				<substitutable>false</substitutable>
@@ -28,8 +28,8 @@
 				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
 				<allowOtherIdeos>false</allowOtherIdeos>
 			</li>
-			<li Class="RitualRoleColonist">
-				<label>second pawn to be married</label>
+			<li Class="NikolaisIdeology_GenderWorks.RitualRole_NotMarriedAlready">
+				<label>marriage-eligible pawn</label>
 				<id>pawn2</id>
 				<required>True</required>
 				<substitutable>false</substitutable>
@@ -157,7 +157,7 @@
 				<spectatorsRequired>true</spectatorsRequired>
 				<endTriggers>
 					<li Class="StageEndTrigger_DurationPercentage">
-						<percentage>1</percentage>
+						<percentage>0.25</percentage>
 					</li>
 				</endTriggers>
 				<failTriggers>
@@ -179,7 +179,7 @@
 						<roleId>officiator</roleId>
 						<dutyDef>StandOnCell</dutyDef>
 						<customPositions>
-							<li Class="RitualPosition_InFrontThingCenter" />
+							<li Class="RitualPosition_BehindThingCenter" />
 						</customPositions>
 					</li>
 					<li>

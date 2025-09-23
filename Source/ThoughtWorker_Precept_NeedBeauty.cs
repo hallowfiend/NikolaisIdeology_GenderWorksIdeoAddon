@@ -12,6 +12,8 @@ namespace NikolaisIdeology_GenderWorks
             {
             if (p.needs.beauty == null)
                 return ThoughtState.Inactive;
+            if ((p.ideo?.Ideo?.HasPrecept(InternalDefOf.NikolaisIdeology_Beauty_Central) == false) || (p.ideo?.Ideo?.HasPrecept(InternalDefOf.NikolaisIdeology_Beauty_Unimportant) == false))
+                return ThoughtState.Inactive;
             switch (p.needs.beauty.CurCategory)
             {
                 case BeautyCategory.Hideous:

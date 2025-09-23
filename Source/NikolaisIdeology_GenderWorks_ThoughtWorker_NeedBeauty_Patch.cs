@@ -5,8 +5,8 @@ using HarmonyLib;
 namespace NikolaisIdeology_GenderWorks
 {
     [HarmonyPatch(typeof(ThoughtWorker_NeedBeauty))]
-    [HarmonyPatch("PreAdd")]
-    public class NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch
+    [HarmonyPatch("PostAdd")]
+    public static class NikolaisIdeology_GenderWorks_ThoughtWorker_NeedBeauty_Patch
     {
         [HarmonyPostfix]
         public static void DontShowIfBeautyPrecept(Pawn p, ref ThoughtState __result)

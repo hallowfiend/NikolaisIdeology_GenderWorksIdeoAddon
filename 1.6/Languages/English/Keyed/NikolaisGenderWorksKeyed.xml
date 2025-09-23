@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<NikolaisIdeology_Beauty_Central>Beauty: Central precept</NikolaisIdeology_Beauty_Central>
+	<NikolaisIdeology_Beauty_Unimportant>Beauty: Unimportant precept</NikolaisIdeology_Beauty_Unimportant>
 	<RoleRequirementBeauty>Must have a Beauty stat above or equal to 1</RoleRequirementBeauty>
 	<RoleRequirementNoLoveRelations>Cannot have any living lovers, fiances or spouses</RoleRequirementNoLoveRelations>
 	<RoleEffectUnromanceable>Cannot take on new lovers or be romanced</RoleEffectUnromanceable>
+	<NikolaisIdeology_MustNotBeMarried>Must not be already married.</NikolaisIdeology_MustNotBeMarried>
 </LanguageData>

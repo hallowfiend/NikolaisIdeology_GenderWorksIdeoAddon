@@ -38,18 +38,19 @@ namespace NikolaisIdeology_GenderWorks
                 return;
             pawn1.relations.RemoveDirectRelation(PawnRelationDefOf.Lover, pawn2);
             MarriageCeremonyUtility.Married(pawn1, pawn2);
-            if (!outcome.Positive)
-                return;
-            float xp = outcome.BestPositiveOutcome(jobRitual) ? 5000f : 2500f;
-            foreach (Pawn key in totalPresence.Keys)
+            if (outcome.Positive)
             {
-                if (jobRitual.assignments.RoleForPawn(key).id == "officiator")
+                float xp = outcome.BestPositiveOutcome(jobRitual) ? 5000f : 2500f;
+                foreach (Pawn key in totalPresence.Keys)
                 {
-                    key.skills.Learn(SkillDefOf.Social, xp);
-                }
-                else if ((jobRitual.assignments.RoleForPawn(key).id == "pawn1") || (jobRitual.assignments.RoleForPawn(key).id == "pawn2"))
-                {
-                    key.health.AddHediff(InternalDefOf.NikolaisIdeology_BeFruitful);
+                    if (jobRitual.assignments.RoleForPawn(key).id == "officiator")
+                    {
+                        key.skills.Learn(SkillDefOf.Social, xp);
+                    }
+                    else if ((jobRitual.assignments.RoleForPawn(key).id == "pawn1") || (jobRitual.assignments.RoleForPawn(key).id == "pawn2"))
+                    {
+                        key.health.AddHediff(InternalDefOf.NikolaisIdeology_BeFruitful);
+                    }
                 }
             }
             string text = (string)(outcome.description.Formatted((NamedArgument)jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual));

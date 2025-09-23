@@ -167,6 +167,69 @@
 					</requiredDefs>
 				</requirement>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Arms</li>
+						<li>Neck</li>
+						<li>Torso</li>
+						<li>Shoulders</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_ShirtRuffle</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Corset</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_VestRoyal</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Coronet</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_HatLadies</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_HatTop</li>
+					</requiredDefs>
+				</requirement>
+			</li>
 			<li MayRequire="OskarPotocki.VFE.Classical">
 				<requirement>
 					<bodyPartGroupsMatchAny>
@@ -175,6 +238,31 @@
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>VFEC_Wreath</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		<li MayRequire="OskarPotocki.VFE.Medieval2">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Arms</li>
+						<li>Legs</li>
+						<li>Torso</li>
+						<li>Shoulders</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VFEM2_Apparel_DameDress</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		<li MayRequire="OskarPotocki.VFE.Medieval2">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Legs</li>
+						<li>Torso</li>
+						<li>Shoulders</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VFEM2_Apparel_KingsRobes</li>
 					</requiredDefs>
 				</requirement>
 			</li>
@@ -367,6 +455,63 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<requirement>
 					<bodyPartGroupsMatchAny>
+						<li>Arms</li>
+						<li>Neck</li>
+						<li>Torso</li>
+						<li>Shoulders</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_ShirtRuffle</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Corset</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_VestRoyal</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+						<li>Neck</li>
+						<li>Shoulders</li>
+						<li>Arms</li>
+						<li>Legs</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_RobeRoyal</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Coronet</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
 						<li>Torso</li>
 					</bodyPartGroupsMatchAny>
 					<requiredTags>
@@ -400,6 +545,29 @@
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
 						<li>Apparel_VisageMask</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="OskarPotocki.VFE.Classical">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+						<li>Legs</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VFEC_Toga</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="OskarPotocki.VFE.Medieval2">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Legs</li>
+						<li>Torso</li>
+						<li>Shoulders</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>VFEM2_Apparel_KingsRobes</li>
 					</requiredDefs>
 				</requirement>
 			</li>
