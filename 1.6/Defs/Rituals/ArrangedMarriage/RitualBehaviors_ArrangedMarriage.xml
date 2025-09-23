@@ -24,7 +24,6 @@
 				<substitutable>false</substitutable>
 				<maxCount>1</maxCount>
 				<countsAsParticipant>False</countsAsParticipant>
-				<allowChild>false</allowChild>
 				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
 				<allowOtherIdeos>false</allowOtherIdeos>
 			</li>
@@ -35,7 +34,6 @@
 				<substitutable>false</substitutable>
 				<maxCount>1</maxCount>
 				<countsAsParticipant>False</countsAsParticipant>
-				<allowChild>false</allowChild>
 				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
 				<allowOtherIdeos>false</allowOtherIdeos>
 			</li>
@@ -78,7 +76,7 @@
 						<roleId>officiator</roleId>
 						<dutyDef>ArriveToCell</dutyDef>
 						<customPositions>
-							<li Class="RitualPosition_InFrontThingCenter" />
+							<li Class="RitualPosition_BehindThingCenter" />
 						</customPositions>
 					</li>
 					<li>

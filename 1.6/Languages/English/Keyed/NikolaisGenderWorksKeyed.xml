@@ -6,4 +6,5 @@
 	<RoleRequirementNoLoveRelations>Cannot have any living lovers, fiances or spouses</RoleRequirementNoLoveRelations>
 	<RoleEffectUnromanceable>Cannot take on new lovers or be romanced</RoleEffectUnromanceable>
 	<NikolaisIdeology_MustNotBeMarried>Must not be already married.</NikolaisIdeology_MustNotBeMarried>
+	<NikolaisIdeology_NoAdultMarriage>Children cannot get married.</NikolaisIdeology_NoAdultMarriage>
 </LanguageData>
