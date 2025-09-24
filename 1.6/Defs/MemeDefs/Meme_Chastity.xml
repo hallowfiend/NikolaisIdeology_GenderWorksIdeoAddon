@@ -52,10 +52,13 @@
 				<li>VME_DumbLabor_Exalted</li>
 				<li>VME_DumbLabor_Liked</li>
 			</li>
-			<li>
-				<li>NikolaisIdeology_GenderWorks_ArrangedMarriagePrecept</li>
-			</li>
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>NikolaisIdeology_GenderWorks_ArrangedMarriagePrecept</precept>
+				<pattern>NikolaisIdeology_GenderWorks_ArrangedMarriageRitual</pattern>
+			</li>
+		</requiredRituals>
 		<agreeableTraits>
 			<li>Ascetic</li>
 			<li>Asexual</li>

@@ -39,13 +39,13 @@
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_Recreation_Loved</li>
 			</li>
-			<li>
-				<li>NikolaisIdeology_IdeoRole_Idol</li>
-			</li>
-			<li>
-				<li>NikolaisIdeology_GenderWorks_PerformancePrecept</li>
-			</li>
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>NikolaisIdeology_GenderWorks_PerformancePrecept</precept>
+				<pattern>NikolaisIdeology_GenderWorks_PerformanceRitual</pattern>
+			</li>
+		</requiredRituals>
 		<agreeableTraits>
 			<li MayRequire="Hautarche.HautsTraits">HVT_Aestheticist</li>
 		</agreeableTraits>
