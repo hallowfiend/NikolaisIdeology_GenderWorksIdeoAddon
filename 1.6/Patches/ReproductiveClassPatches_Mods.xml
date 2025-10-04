@@ -20,10 +20,46 @@
 					<li>
 						<li>NikolaisIdeology_Intimacy_High</li>
 					</li>
+					<li>
+						<li>NikolaisIdeology_GenderedApparel_DontCare</li>
+					</li>
 				</requireOne>
 				<exclusionTags>
 					<li>NoLovelusting</li>
 				</exclusionTags>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded: Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/MemeDef[defName="VME_Scrapper"]/requireOne</xpath>
+			<value>
+				<li>NikolaisIdeology_GenderedApparel_DontCare</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded: Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/MemeDef[defName="VME_Fleshcrafting"]/requireOne</xpath>
+			<value>
+				<li>NikolaisIdeology_GenderedApparel_DontCare</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Altered Carbon 2: ReSleeved</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/MemeDef[defName="AC_Ouroboros"]/requireOne</xpath>
+			<value>
+				<li>NikolaisIdeology_GenderedApparel_DontCare</li>
 			</value>
 		</match>
 	</Operation>

@@ -18,6 +18,28 @@
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
+		<xpath>/Defs/MemeDefs[defName="Transhumanist"]</xpath>
+		<value>
+			<requireOne>
+				<li>
+					<li>NikolaisIdeology_GenderedApparel_DontCare</li>
+				</li>
+			</requireOne>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/MemeDefs[defName="Individualist"]</xpath>
+		<value>
+			<requireOne>
+				<li>
+					<li>NikolaisIdeology_GenderedApparel_DontCare</li>
+				</li>
+			</requireOne>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/MemeDefs[defName="PainIsVirtue"]/requireOne</xpath>
 		<value>
 				<li>

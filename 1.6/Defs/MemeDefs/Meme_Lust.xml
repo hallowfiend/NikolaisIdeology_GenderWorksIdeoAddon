@@ -36,6 +36,9 @@
 			<li>
 				<li>NikolaisIdeology_Intimacy_High</li>
 			</li>
+			<li>
+				<li>NikolaisIdeology_GenderedApparel_DontCare</li>
+			</li>
 			<li MayRequire="VanillaExpanded.VMemesE">
 				<li>VME_Recreation_Loved</li>
 			</li>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>NikolaisIdeology_GenderedApparel</defName>
+		<label>Apparel gender</label>
+		<iconPath>UI/Issues/GenderedApparel</iconPath>
+	</IssueDef>
+	<PreceptDef>
+		<defName>NikolaisIdeology_GenderedApparel_DontCare</defName>
+		<issue>NikolaisIdeology_GenderedApparel</issue>
+		<label>don't care</label>
+		<description>Clothes have no gender, no matter what some may say. People should be allowed to wear what they want.</description>
+		<impact>low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+	</PreceptDef>
+</Defs>
