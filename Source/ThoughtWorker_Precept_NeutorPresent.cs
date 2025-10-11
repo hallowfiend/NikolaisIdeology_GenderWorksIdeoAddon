@@ -14,7 +14,7 @@ namespace NikolaisIdeology_GenderWorks
                 return ThoughtState.Inactive;
             foreach (Pawn pawn in (IEnumerable<Pawn>)p.MapHeld.mapPawns.AllPawnsSpawned)
             {
-                if (GenderUtilities.HasAnyReproductiveOrgan(pawn) && (!pawn.IsPrisonerOfColony && !pawn.IsSlaveOfColony && pawn.IsColonist))
+                if (!GenderUtilities.HasAnyReproductiveOrgan(pawn) && (!pawn.IsPrisonerOfColony && !pawn.IsSlaveOfColony && pawn.IsColonist))
                     return ThoughtState.ActiveDefault;
             }
             return ThoughtState.Inactive;
