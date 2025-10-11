@@ -14,7 +14,7 @@ namespace NikolaisIdeology_GenderWorks
             bool flag = false;
             foreach (Pawn pawn in p.MapHeld.mapPawns.SpawnedPawnsInFaction(p.Faction))
             {
-                if (GenderUtilities.HasAnyReproductiveOrgan(pawn))
+                if (!GenderUtilities.HasAnyReproductiveOrgan(pawn))
                 {
                     flag = true;
                     Precept_Role role = pawn.Ideo?.GetRole(pawn);

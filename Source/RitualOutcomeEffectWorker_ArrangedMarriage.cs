@@ -17,6 +17,8 @@ namespace NikolaisIdeology_GenderWorks
         {
         }
 
+        public override bool SupportsAttachableOutcomeEffect => false;
+
 
         public override void Apply(
         float progress,
